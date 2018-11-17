@@ -1,0 +1,16 @@
+{
+    "assets": {
+        "map_tileset": {"type": "image", "source": "assets/images/Terrain.png"},
+
+        "player_spritesheet": {"type": "spritesheet", "source": "assets/images/world/modern5.png", "frame_width": 32, "frame_height": 32},
+
+        "level_tilemap": {"type": "tilemap", "source": "assets/maps/level1.json"}
+    },
+    "groups": [
+        "players"
+    ],
+    "map": {
+        "key": "level_tilemap",
+        "tilesets": ["map_tileset"]
+    }
+}
