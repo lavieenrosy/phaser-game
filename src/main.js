@@ -11,7 +11,7 @@ let loadingScene = new LoadingScene();
 let config = {
     type: Phaser.AUTO,
     width: 640,
-    height: 360
+    height: 640
 };
 
 let game = new Phaser.Game(config);

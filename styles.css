@@ -1,0 +1,22 @@
+body {
+  padding: 5px 20px;
+  font-family: 'VT323', monospace;
+}
+nav {
+  background-color: DodgerBlue;
+  height: 60px;
+  color: white;
+  margin-bottom: 20px;
+}
+nav h1 {
+  float: left;
+  margin-left: 10px;
+}
+nav h4 {
+  float: right;
+  margin-right: 10px;
+}
+aside {
+  float: right;
+  width: 325px;
+}
