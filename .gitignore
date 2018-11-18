@@ -16,3 +16,4 @@ dump/
 *.bak*
 *.old*
 higherVolume/
+.DS_Store

@@ -1,19 +1,20 @@
 import JSONLevelScene from './JSONLevelScene';
-import Prefab from '../prefabs/Prefab.js';
-import TextPrefab from '../prefabs/TextPrefab.js';
+import Prefab from '../prefabs/Prefab';
+import TextPrefab from '../prefabs/TextPrefab';
+import Player from '../prefabs/world/Player';
 
 class WorldScene extends JSONLevelScene {
     constructor() {
         super('WorldScene');
         
         this.prefab_classes = {
-            player: Prefab.prototype.constructor
+            player: Player.prototype.constructor
         }
     }
     
-    create() {
-        // create map and set tileset
+    create () {
         this.map = this.add.tilemap(this.level_data.map.key);
+        
         let tileset_index = 0;
         this.tilesets = {};
         this.map.tilesets.forEach(function (tileset) {
@@ -21,27 +22,25 @@ class WorldScene extends JSONLevelScene {
             this.tilesets[this.level_data.map.tilesets[tileset_index]] = map_tileset;
             tileset_index += 1;
         }, this);
-	
-        // create map layers before groups
+        
         this.layers = {};
         this.map.layers.forEach(function (layer) {
             this.layers[layer.name] = this.map.createStaticLayer(layer.name, this.tilesets[layer.properties.tileset]);
-            if (layer.properties.collision) { // collision layer
+            if (layer.properties.collision) {
                 this.map.setCollisionByExclusion([-1], true, layer.name);
             }
         }, this);
-
+        
         super.create();
         
         this.map.objects.forEach(function (object_layer) {
             object_layer.objects.forEach(this.create_object, this);
         }, this);
+
     }
     
-    create_object(object) {
-        // tiled coordinates starts in the bottom left corner
-        let position = {"x": object.x + (object.width / 2), "y": object.y + (object.height / 2)};
-        // create object according to its type
+    create_object (object) {
+        let position = {x: object.x + (object.width / 2), y: object.y + (object.height / 2)};
         if (this.prefab_classes.hasOwnProperty(object.type)) {
             let prefab = new this.prefab_classes[object.type](this, object.name, position, object.properties);
         }
