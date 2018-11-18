@@ -118,19 +118,6 @@
          "tilecount":1776,
          "tileheight":16,
          "tilewidth":16
-        }, 
-        {
-         "columns":8,
-         "firstgid":1777,
-         "image":"..\/..\/..\/..\/Downloads\/tf_ashlands\/2x_RMVX\/tf_A5_ashlands_2.png",
-         "imageheight":512,
-         "imagewidth":256,
-         "margin":0,
-         "name":"tf_A5_ashlands_2",
-         "spacing":0,
-         "tilecount":128,
-         "tileheight":32,
-         "tilewidth":32
         }],
  "tilewidth":16,
  "type":"map",
