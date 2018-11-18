@@ -7,14 +7,12 @@
          "id":1,
          "name":"background",
          "opacity":1,
-         "properties":
+         "properties":[
                 {
-                 "tileset":"map_tileset"
-                },
-        "propertytypes":
-                {
-                 "tileset":"string"
-                },
+                 "name":"tileset",
+                 "type":"string",
+                 "value":"map_tileset"
+                }],
          "type":"tilelayer",
          "visible":true,
          "width":30,
@@ -27,14 +25,12 @@
          "id":2,
          "name":"roads",
          "opacity":1,
-         "properties":
+         "properties":[
                 {
-                 "tileset":"map_tileset"
-                },
-        "propertytypes":
-                {
-                 "tileset":"string"
-                },
+                 "name":"tileset",
+                 "type":"string",
+                 "value":"map_tileset"
+                }],
          "type":"tilelayer",
          "visible":true,
          "width":30,
@@ -47,16 +43,17 @@
          "id":3,
          "name":"buildings",
          "opacity":1,
-         "properties":
-            {
-             "collision":true,
-             "tileset":"map_tileset"
-            },
-         "propertytypes":
-            {
-             "collision":"bool",
-             "tileset":"string"
-            },
+         "properties":[
+                {
+                 "name":"collision",
+                 "type":"bool",
+                 "value":true
+                },
+                {
+                 "name":"tileset",
+                 "type":"string",
+                 "value":"map_tileset"
+                }],
          "type":"tilelayer",
          "visible":true,
          "width":30,
@@ -72,16 +69,17 @@
                  "height":30.2187847394051,
                  "id":1,
                  "name":"player",
-                 "properties":
-                    {
-                     "group":"players",
-                     "texture":"player_spritesheet"
-                    },
-                 "propertytypes":
-                    {
-                     "group":"string",
-                     "texture":"string"
-                    },
+                 "properties":[
+                        {
+                         "name":"group",
+                         "type":"string",
+                         "value":"players"
+                        },
+                        {
+                         "name":"texture",
+                         "type":"string",
+                         "value":"player_spritesheet"
+                        }],
                  "rotation":0,
                  "type":"player",
                  "visible":true,
@@ -90,14 +88,12 @@
                  "y":448.163222905577
                 }],
          "opacity":1,
-         "properties":
-            {
-             "tileset":"map_tileset"
-            },
-         "propertytypes":
-            {
-             "tileset":"string"
-            },
+         "properties":[
+                {
+                 "name":"tileset",
+                 "type":"string",
+                 "value":"map_tileset"
+                }],
          "type":"objectgroup",
          "visible":true,
          "x":0,
@@ -121,20 +117,6 @@
          "spacing":0,
          "tilecount":1776,
          "tileheight":32,
-                  "tileproperties":
-            {
-             "51":
-                {
-                 "collision":true
-                }
-            },
-         "tilepropertytypes":
-            {
-             "51":
-                {
-                 "collision":"bool"
-                }
-            },
          "tilewidth":32
         }],
  "tilewidth":32,

@@ -9,15 +9,13 @@ class LoadingScene extends Phaser.Scene {
         console.log("LoadingScene received data: ", data);
         this.level_data = data.level_data;
 
-        let loading_message = this.add.text(320, 240, "Loading", {font: "48px Kells", fill:    "#ffffff"});
+        let loading_message = this.add.text(320, 250, "Loading", {font: "32px VT323", fill:    "#ffffff"});
     }
 
     preload () {
         let assets = this.level_data.assets;
         for (let asset_key in assets) {
             let asset = assets[asset_key];
-            console.log("asset.type: ", asset.type);
-            console.log("asset_key: ", asset_key);
             switch (asset.type) {
                 case "image":
                     this.load.image(asset_key, asset.source);
