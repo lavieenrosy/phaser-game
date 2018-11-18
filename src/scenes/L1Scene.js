@@ -45,6 +45,7 @@ class L1Scene extends JSONLevelScene {
       super.create();
 
       this.map.objects.forEach(function (object_layer) {
+          console.log(this.map)
           object_layer.objects.forEach(this.create_object, this);
       }, this);
     }
