@@ -71,12 +71,14 @@
                  "properties":
                     {
                      "group":"players",
-                     "texture":"player_spritesheet"
+                     "texture":"player_spritesheet",
+                     "walking_speed":100
                     },
                  "propertytypes":
                     {
                      "group":"string",
-                     "texture":"string"
+                     "texture":"string",
+                     "walking_speed":"int"
                     },
                  "rotation":0,
                  "type":"player",
