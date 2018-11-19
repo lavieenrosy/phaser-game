@@ -1,11 +1,7 @@
-
 <?xml version="1.0" encoding="UTF-8"?>
 <map version="1.0" tiledversion="1.1.5" orientation="orthogonal" renderorder="right-down" width="120" height="120" tilewidth="16" tileheight="16" infinite="0" nextobjectid="6">
  <tileset firstgid="1" name="TerrainObjects" tilewidth="16" tileheight="16" tilecount="1776" columns="48">
   <image source="../images/Terrain.png" width="768" height="592"/>
- </tileset>
- <tileset firstgid="1777" name="tf_A5_ashlands_2" tilewidth="32" tileheight="32" tilecount="128" columns="8">
-  <image source="../../../../Downloads/tf_ashlands/2x_RMVX/tf_A5_ashlands_2.png" width="256" height="512"/>
  </tileset>
  <layer name="background" width="120" height="120">
   <properties>
