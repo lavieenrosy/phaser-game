@@ -2,16 +2,24 @@ import JSONLevelScene from './JSONLevelScene';
 import Prefab from '../prefabs/Prefab';
 import TextPrefab from '../prefabs/TextPrefab';
 import Player from '../prefabs/world/Player';
+import NPC from '../prefabs/world/NPC';
 
 class WorldScene extends JSONLevelScene {
     constructor() {
         super('WorldScene');
 
         this.prefab_classes = {
-            player: Player.prototype.constructor
+            player: Player.prototype.constructor,
+            npc: NPC.prototype.constructor
         }
 
         this.TEXT_STYLE = {font: '14px Kells', fill: '#ffffff'};
+    }
+
+    preload () {
+        for (let npc_message_name in this.level_data.npc_messages) {
+            this.load.text(npc_message_name, this.level_data.npc_messages[npc_message_name]);
+        }
     }
 
     create () {
