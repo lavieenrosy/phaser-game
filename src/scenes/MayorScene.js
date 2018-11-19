@@ -13,8 +13,8 @@ class MayorScene extends Phaser.Scene {
   }
 
   create() {
-    let player1 = new Player2(this, 100, 75, 'characters', 31, 2);
-    let player2 = new Player2(this, 400, 75, 'characters', 64, 2);
+    let player1 = new Player2(this, 200, 150, 'characters', 31, 2);
+    let player2 = new Player2(this, 500, 150, 'characters', 64, 2);
   }
 
   update() {
