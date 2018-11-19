@@ -18,11 +18,11 @@ nav h4 {
 }
 aside {
   float: right;
-  width: 250px;
+  width: 325px;
 }
 
 #game-container {
-  margin: 10px;
-  width: auto;
+  margin: 10px; 
+  width: auto; 
   height: auto;
 }
