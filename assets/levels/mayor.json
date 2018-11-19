@@ -1,0 +1,41 @@
+{
+  "assets": {
+      "black_background": {"type": "image", "source": "assets/images/mayor-scene/BlackScreen.png"},
+      "modern5": {"type": "spritesheet", "source": "assets/images/world/modern5.png", "frame_width": 46, "frame_height": 46 }
+  },
+  "groups": [
+      "background",
+      "texts",
+      "player"
+  ],
+  "prefabs": {
+      "background": {
+          "type": "background",
+          "position": {"x": 0, "y": 0},
+          "properties": {
+              "texture": "black_background",
+              "group": "background",
+              "anchor": {"x": 0, "y": 0}
+          }
+      },
+      "mayor_message": {
+          "type": "text",
+          "position": {"x": 50, "y": 400},
+          "properties": {
+              "style": {"font": "30px VT323", "fill": "#fff"},
+              "text": "Congratulations on your win, Mayor! Now, it's time to fulfill on your mandate: to create jobs. Start by talking to the people in this town... they will give you guidance. Once you're ready to make a decision, return to Townhall. But careful: the decisions you make for this island will have far reaching consequences...",
+              "group": "texts"
+          }
+      },
+      "main_character": {
+        "type": "player",
+        "position": {"x": 100, "y": 100},
+        "properties": {
+          "texture": "player_spritesheet",
+          "group": "player",
+          "anchor": {"x": 0, "y": 0}
+        }
+      }
+  }
+}
+
