@@ -10,6 +10,7 @@ class WorldScene extends JSONLevelScene {
         this.prefab_classes = {
             player: Player.prototype.constructor
         }
+        
     }
     
     create () {
@@ -36,7 +37,7 @@ class WorldScene extends JSONLevelScene {
         this.map.objects.forEach(function (object_layer) {
             object_layer.objects.forEach(this.create_object, this);
         }, this);
-
+        
     }
     
     create_object (object) {

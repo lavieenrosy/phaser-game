@@ -30,3 +30,4 @@ game.scene.add('WorldScene', worldScene);
 game.scene.add('BootScene', bootScene);
 game.scene.add('LoadingScene', loadingScene);
 game.scene.start('BootScene', {scene: 'title'});
+

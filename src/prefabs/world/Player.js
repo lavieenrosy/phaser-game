@@ -55,11 +55,11 @@ class Player extends Prefab {
         
         this.stopped_frames = [0, 1, 0, 2, 3];
 
-        // const camera = scene.cameras.add();
-        scene.cameras.main.startFollow(this);
-        console.log(scene.cameras.main.setBounds)
-        scene.cameras.main.setBounds(0, 0, 960, 960)
-        scene.physics.world.setBounds(0, 0, 960, 960)
+        scene.cameras.main.startFollow(this, true);
+        scene.cameras.main.setBounds(0, 0, 1920, 1920);
+        scene.physics.world.setBounds(0, 0, 1920, 1920);
+        scene.cameras.main.followOffset.set(1, 1);
+        
       }
       
       update() {

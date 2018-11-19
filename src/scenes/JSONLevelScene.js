@@ -4,6 +4,7 @@ import TextPrefab from '../prefabs/TextPrefab';
 class JSONLevelScene extends Phaser.Scene {
     constructor(key) {
         super({key: key});
+        
     }
     
     init (data) {
@@ -21,6 +22,7 @@ class JSONLevelScene extends Phaser.Scene {
             let sprite_data = this.level_data.sprites[sprite_name];
             let sprite = new this.prefab_classes[sprite_data.type](this, sprite_name, sprite_data.position, sprite_data.properties);
         }
+        
     }
 
     update() {
