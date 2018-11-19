@@ -1,6 +1,6 @@
 {
     "assets": {
-        "background_image": {"type": "image", "source": "assets/images/title/IntroScreen.png"}
+        "background_image": {"type": "image", "source": "assets/images/title/IntroScreen500x300.png"}
     },
     "groups": [
         "background",
