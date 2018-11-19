@@ -6,7 +6,7 @@ class BootScene extends Phaser.Scene {
             title: {key: 'TitleScene', path: 'assets/levels/title_screen.json'},
             // level1: {key: 'L1Scene', path: 'assets/levels/level1.json'},
             mayor: {key: 'MayorScene', path: 'assets/levels/mayor.json'},
-            town: {key: 'WorldScene', path: 'assets/levels/townhall.json'}
+            townhall: {key: 'WorldScene', path: 'assets/levels/townhall.json'}
         };
     }
     
