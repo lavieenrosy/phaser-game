@@ -18,10 +18,13 @@ class MayorScene extends Phaser.Scene {
   }
 
   update() {
-    let enterKey = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.ENTER);
-    if (enterKey.isDown) {
+    // let enterKey = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.ENTER);
+    // if (enterKey.isDown) {
+    //   this.start_game();
+    // };
+    if (this.input.activePointer.isDown) {
       this.start_game();
-    };
+    }
   }
 
   start_game() {
