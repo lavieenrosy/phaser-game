@@ -1,4 +1,5 @@
 class Prefab extends Phaser.GameObjects.Sprite {
+
   constructor(scene, name, position, properties) {
     super(scene, position.x, position.y, properties.texture, properties.frame);
 
@@ -19,6 +20,7 @@ class Prefab extends Phaser.GameObjects.Sprite {
 
     // save it in the prefabs list of the scene object
     this.scene.prefabs[name] = this;
+
     }
 }
 

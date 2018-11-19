@@ -1,8 +1,9 @@
 import JSONLevelScene from './JSONLevelScene';
-import Prefab from '../prefabs/Prefab.js';
-import TextPrefab from '../prefabs/TextPrefab.js';
+import Prefab from '../prefabs/Prefab';
+import TextPrefab from '../prefabs/TextPrefab';
 
 class TitleScene extends JSONLevelScene {
+
   constructor() {
     super('TitleScene');
 

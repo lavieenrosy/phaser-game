@@ -1,12 +1,9 @@
 class LoadingScene extends Phaser.Scene {
     constructor() {
-        super({
-            key: 'LoadingScene'
-        });
+        super({key: 'LoadingScene'});
     }
 
     init (data) {
-        console.log("LoadingScene received data: ", data);
         this.level_data = data.level_data;
 
         let loading_message = this.add.text(320, 250, "Loading", {font: "32px VT323", fill:    "#ffffff"});
@@ -17,14 +14,13 @@ class LoadingScene extends Phaser.Scene {
         for (let asset_key in assets) {
             let asset = assets[asset_key];
             switch (asset.type) {
-                case "image":
+                case 'image':
                     this.load.image(asset_key, asset.source);
-                    //i.e. asset_key is "background_image"
                     break;
-                case "spritesheet":
+                case 'spritesheet':
                     this.load.spritesheet(asset_key, asset.source, {frameWidth: asset.frame_width, frameHeight: asset.frame_height, frames: asset.frames, margin: asset.margin, spacing: asset.spacing});
                     break;
-                case "tilemap":
+                case 'tilemap':
                     this.load.tilemapTiledJSON(asset_key, asset.source);
                     break;
             }
@@ -32,9 +28,7 @@ class LoadingScene extends Phaser.Scene {
     }
 
     create (data) {
-        //Here, data is the same data piping in from BootScene
         this.scene.start(data.scene, {level_data: this.level_data});
-        //this.scene.start(TitleScene, {level_data: {assets: {...}, groups: [...], prefabs: {...}})
     }
 }
 

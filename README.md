@@ -1,4 +1,4 @@
-# Generic Platformer and Phaser Bootstrap Project
+## Generic Platformer and Phaser Bootstrap Project
 #### Phaser 3 + ES6 + Webpack
 
 This repository started as a sandbox for testing out Phaser 3 while it was in Beta bundeled with a few examples. These examples are now removed and replaced with a generic platformer project that explores Phaser 3 API. With the example project removed this is still a good boiler plate to start with. The aim of the platformer is not to relase a game but to try stuff out and to share something for others to learn from. I usually think the best way to learn is to read and manipulate source code. A quick disclaimer though, even if my aim is to identify best practices that's far from where the source code is today. I don't use pools. I do define at least one global function. Etc etc.
