@@ -16,7 +16,7 @@
       "key": "level_tilemap",
       "tilesets": ["map_tileset"]
   },
-  "npc-messages": {
-    "townperson_message": "assets/npc_messages/townsperson_message.txt"
+  "npc_messages": {
+    "townperson_message": "assets/npc_messages/townperson_message.txt"
   }
 }
