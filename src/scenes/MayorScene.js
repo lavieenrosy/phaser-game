@@ -13,18 +13,15 @@ class MayorScene extends Phaser.Scene {
   }
 
   create() {
-    let player1 = new Player2(this, 100, 75, 'characters', 31, 2);
-    let player2 = new Player2(this, 400, 75, 'characters', 64, 2);
+    let player1 = new Player2(this, 180, 150, 'characters', 31, 2);
+    let player2 = new Player2(this, 500, 150, 'characters', 64, 2);
   }
 
   update() {
-    // let enterKey = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.ENTER);
-    // if (enterKey.isDown) {
-    //   this.start_game();
-    // };
-    if (this.input.activePointer.isDown) {
+    let enterKey = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.ENTER);
+    if (enterKey.isDown) {
       this.start_game();
-    }
+    };
   }
 
   start_game() {
