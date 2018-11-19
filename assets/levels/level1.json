@@ -3,14 +3,20 @@
       "map_tileset": {"type": "image", "source": "assets/images/Terrain.png"},
 
       "player_spritesheet": {"type": "spritesheet", "source": "assets/images/world/player.png", "frame_width": 16, "frame_height": 16},
-      
+
+      "villager_image": {"type": "image", "source": "assets/images/world/villager.png"},
+
       "level_tilemap": {"type": "tilemap", "source": "assets/maps/level1.json"}
   },
   "groups": [
-      "players"
+      "players",
+      "npcs"
   ],
   "map": {
       "key": "level_tilemap",
       "tilesets": ["map_tileset"]
+  },
+  "npc_messages": {
+    "townperson_message": "assets/npc_messages/townperson_message.txt"
   }
 }
