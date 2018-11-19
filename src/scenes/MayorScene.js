@@ -1,7 +1,7 @@
 import JSONLevelScene from './JSONLevelScene';
 // import Prefab from '../prefabs/Prefab.js';
 // import TextPrefab from '../prefabs/TextPrefab.js';
-import Player from '../prefabs/Player.js';
+import Player2 from '../prefabs/Player2.js';
 
 class MayorScene extends Phaser.Scene {
   constructor() {
@@ -13,8 +13,8 @@ class MayorScene extends Phaser.Scene {
   }
 
   create() {
-    let player1 = new Player(this, 200, 175, 'characters', 31, 5);
-    let player2 = new Player(this, 600, 175, 'characters', 64, 5);
+    let player1 = new Player2(this, 100, 75, 'characters', 31, 2);
+    let player2 = new Player2(this, 400, 75, 'characters', 64, 2);
   }
 
   update() {
@@ -25,7 +25,7 @@ class MayorScene extends Phaser.Scene {
   }
 
   start_game() {
-      this.scene.start('BootScene', {scene: 'level1'});
+      this.scene.start('BootScene', {scene: 'town'});
   }
 }
 

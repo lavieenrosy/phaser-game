@@ -14,8 +14,8 @@ let loadingScene = new LoadingScene();
 
 let config = {
     type: Phaser.AUTO,
-    width: 800,
-    height: 640
+    width: 500,
+    height: 300,
     parent: 'game-container',
     zoom: 2,
     pixelArt: true,
