@@ -89,32 +89,6 @@
                  "y":283
                 }, 
                 {
-                 "height":0,
-                 "id":4,
-                 "name":"townperson",
-                 "point":true,
-                 "properties":
-                    {
-                     "collision":true,
-                     "group":"npcs",
-                     "message":"townperson_message",
-                     "texture":"player_spritesheet"
-                    },
-                 "propertytypes":
-                    {
-                     "collision":"bool",
-                     "group":"string",
-                     "message":"string",
-                     "texture":"string"
-                    },
-                 "rotation":0,
-                 "type":"townperson",
-                 "visible":true,
-                 "width":0,
-                 "x":452,
-                 "y":374
-                }, 
-                {
                  "height":35.0454,
                  "id":14,
                  "name":"door",
@@ -134,6 +108,32 @@
                  "width":29,
                  "x":405,
                  "y":179
+                }, 
+                {
+                 "height":0,
+                 "id":18,
+                 "name":"townperson",
+                 "point":true,
+                 "properties":
+                    {
+                     "collision":true,
+                     "group":"npcs",
+                     "message":"townperson_message",
+                     "texture":"villager_image"
+                    },
+                 "propertytypes":
+                    {
+                     "collision":"bool",
+                     "group":"string",
+                     "message":"string",
+                     "texture":"string"
+                    },
+                 "rotation":0,
+                 "type":"npc",
+                 "visible":true,
+                 "width":0,
+                 "x":457,
+                 "y":348
                 }],
          "opacity":1,
          "properties":
@@ -149,7 +149,7 @@
          "x":0,
          "y":0
         }],
- "nextobjectid":17,
+ "nextobjectid":19,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.1.5",
