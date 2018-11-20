@@ -30,8 +30,8 @@ let config = {
 
 let game = new Phaser.Game(config);
 game.scene.add('TitleScene', titleScene);
-game.scene.add('TownhallScene', townhallScene);
 game.scene.add('WorldScene', worldScene);
+game.scene.add('TownhallScene', townhallScene);
 game.scene.add('MayorScene', mayorScene);
 game.scene.add('BootScene', bootScene);
 game.scene.add('LoadingScene', loadingScene);
