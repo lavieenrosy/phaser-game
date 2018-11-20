@@ -5,12 +5,14 @@
       "player_spritesheet": {"type": "spritesheet", "source": "assets/images/world/player.png", "frame_width": 16, "frame_height": 16},
 
       "villager_image": {"type": "image", "source": "assets/images/world/villager.png"},
+      "message_box_image": {"type": "image", "source": "assets/images/world/message_box.png"},
 
       "level_tilemap": {"type": "tilemap", "source": "assets/maps/level1.json"}
   },
   "groups": [
       "players",
-      "npcs"
+      "npcs",
+      "hud"
   ],
   "map": {
       "key": "level_tilemap",
