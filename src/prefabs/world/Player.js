@@ -9,6 +9,10 @@ class Player extends Prefab {
     this.body.collideWorldBounds = true;
 
     this.scene.physics.add.collider(this, this.scene.layers.buildings);
+    this.scene.physics.add.collider(this, this.scene.layers.water);
+    this.scene.physics.add.collider(this, this.scene.layers.above_buildings);       
+    this.scene.physics.add.collider(this, this.scene.layers.beneath_buildings);
+    
 
     this.body.velocity.x = -this.walking_speed;
 
