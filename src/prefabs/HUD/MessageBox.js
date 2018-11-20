@@ -10,11 +10,10 @@ export default class MessageBox extends Prefab {
     this.setOrigin(0);
     this.message_text.setOrigin(1);
 
-    this.setScale(1)
+    this.setScale(0.9)
   }
 
-  destroy () {
-    super.destroy();
+  removeBox () {
     this.message_text.destroy();
   }
 }
