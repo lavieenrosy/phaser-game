@@ -6,14 +6,14 @@
 
       "villager_image": {"type": "image", "source": "assets/images/world/villager.png"},
 
-      "level_tilemap": {"type": "tilemap", "source": "assets/maps/townhall.json"}
+      "townhall_level_tilemap": {"type": "tilemap", "source": "assets/maps/townhall.json"}
   },
   "groups": [
       "players",
       "npcs"
   ],
   "map": {
-      "key": "level_tilemap",
+      "key": "townhall_level_tilemap",
       "tilesets": ["map_tileset"]
   },
   "npc_messages": {
