@@ -97,13 +97,17 @@ class Player extends Prefab {
       this.setFrame(this.stopped_frames[this.body.facing - 10]);
     }
 
-    if(this.enter_key.isDown) {
-      console.log(this.scene.current_message_box);
+    if(this.scene.current_message_box && this.enter_key.isDown) {
+      this.scene.current_message_box.removeBox();
+      this.scene.current_message_box.destroy();
+      this.scene.current_message_box = null;
+      console.log(this.scene);
     }
+
   }
 
   stop () {
-    this.moving = {left: false, right: false, up: false, down: false};
+    console.log("Stop bruh!")
   }
 }
 

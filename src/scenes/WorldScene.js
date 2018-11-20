@@ -20,7 +20,7 @@ class WorldScene extends JSONLevelScene {
         for (let npc_message_name in this.level_data.npc_messages) {
             this.load.text(npc_message_name, this.level_data.npc_messages[npc_message_name]);
         }
-        
+
     }
 
     create () {
@@ -47,7 +47,7 @@ class WorldScene extends JSONLevelScene {
         this.map.objects.forEach(function (object_layer) {
             object_layer.objects.forEach(this.create_object, this);
         }, this);
-        
+
     }
 
     create_object (object) {
