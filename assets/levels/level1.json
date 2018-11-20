@@ -5,6 +5,7 @@
       "player_spritesheet": {"type": "spritesheet", "source": "assets/images/world/player.png", "frame_width": 16, "frame_height": 16},
       
       "level_tilemap": {"type": "tilemap", "source": "assets/maps/level1.json"}
+      
   },
   "groups": [
       "players"
