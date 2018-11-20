@@ -2,12 +2,11 @@ class LoadingScene extends Phaser.Scene {
     constructor() {
         super({key: 'LoadingScene'});
     }
-    
+
     init (data) {
         this.level_data = data.level_data;
-        let loading_message = this.add.text(220, 140, "Loading", {font: "48px Kells", fill: "#ffffff"});
     }
-    
+
     preload () {
         let assets = this.level_data.assets;
         for (let asset_key in assets) {
@@ -26,7 +25,7 @@ class LoadingScene extends Phaser.Scene {
             }
         }
     }
-    
+
     create (data) {
         this.scene.start(data.scene, {level_data: this.level_data});
     }

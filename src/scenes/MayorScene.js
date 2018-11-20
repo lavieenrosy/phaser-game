@@ -24,18 +24,18 @@ class MayorScene extends Phaser.Scene {
   update() {
     let enterKey = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.ENTER);
     if (enterKey.isDown) {
-      const typewriter = new Typewriter();
-      console.log(typewriter);
-      typewriter.init(this.scene, {
-        x: 290,
-        y: 40,
-        fontFamily: "chillerBlack",
-        fontSize: 26,
-        maxWidth: 300,
-        text: "Some text to be typed!"
-      });
+      // const typewriter = new Typewriter();
+      // console.log(typewriter);
+      // typewriter.init(this.scene, {
+      //   x: 290,
+      //   y: 40,
+      //   fontFamily: "chillerBlack",
+      //   fontSize: 26,
+      //   maxWidth: 300,
+      //   text: "Some text to be typed!"
+      // });
 
-      // this.start_game();
+      this.start_game();
     };
   }
 
