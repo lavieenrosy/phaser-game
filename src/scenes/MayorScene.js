@@ -25,7 +25,7 @@ class MayorScene extends Phaser.Scene {
   }
 
   start_game() {
-      this.scene.start('BootScene', {scene: 'town'});
+      this.scene.start('BootScene', {scene: 'level1'});
   }
 }
 

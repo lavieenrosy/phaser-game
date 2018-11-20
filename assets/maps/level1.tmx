@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" tiledversion="1.1.5" orientation="orthogonal" renderorder="right-down" width="120" height="120" tilewidth="16" tileheight="16" infinite="0" nextobjectid="6">
- <tileset firstgid="1" name="TerrainObjects" tilewidth="16" tileheight="16" tilecount="1776" columns="48">
+<map version="1.0" tiledversion="1.1.5" orientation="orthogonal" renderorder="right-down" width="120" height="120" tilewidth="16" tileheight="16" infinite="0" nextobjectid="19">
+ <tileset firstgid="1" name="terrain" tilewidth="16" tileheight="16" tilecount="1776" columns="48">
   <image source="../images/Terrain.png" width="768" height="592"/>
  </tileset>
  <layer name="background" width="120" height="120">
@@ -389,19 +389,26 @@
   <properties>
    <property name="tileset" value="map_tileset"/>
   </properties>
-  <object id="1" name="player" type="player" x="479.027" y="233.889">
+  <object id="1" name="player" type="player" x="425" y="283">
    <properties>
     <property name="group" value="players"/>
     <property name="texture" value="player_spritesheet"/>
+    <property name="walking_speed" type="int" value="100"/>
    </properties>
    <point/>
   </object>
-  <object id="4" name="townperson" type="townperson" x="393" y="266">
+  <object id="14" name="door" type="door" x="405" y="179" width="29" height="35.0454">
    <properties>
-    <property name="collision" type="bool" value="false"/>
-    <property name="groups" value="npc"/>
+    <property name="group" value="doors"/>
+    <property name="next_level" value="townhall"/>
+   </properties>
+  </object>
+  <object id="18" name="townperson" type="npc" x="457" y="348">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="group" value="npcs"/>
     <property name="message" value="townperson_message"/>
-    <property name="texture" value="player_spritesheet"/>
+    <property name="texture" value="villager_image"/>
    </properties>
    <point/>
   </object>
