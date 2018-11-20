@@ -173,13 +173,13 @@
                 {
                  "height":0,
                  "id":4,
-                 "name":"townperson",
+                 "name":"jim",
                  "point":true,
                  "properties":
                     {
                      "collision":true,
                      "group":"npcs",
-                     "message":"townperson_message",
+                     "message":"jim_message",
                      "texture":"player_spritesheet"
                     },
                  "propertytypes":
@@ -193,8 +193,8 @@
                  "type":"npc",
                  "visible":true,
                  "width":0,
-                 "x":745.97,
-                 "y":891.12
+                 "x":256.508641686183,
+                 "y":870.823356752537
                 }, 
                 {
                  "height":35.0454,
@@ -216,6 +216,162 @@
                  "width":45.0301,
                  "x":817.316,
                  "y":834.768
+                }, 
+                {
+                 "height":0,
+                 "id":17,
+                 "name":"miche",
+                 "point":true,
+                 "properties":
+                    {
+                     "collision":true,
+                     "group":"npcs",
+                     "message":"miche_message",
+                     "texture":"player_spritesheet"
+                    },
+                 "propertytypes":
+                    {
+                     "collision":"bool",
+                     "group":"string",
+                     "message":"string",
+                     "texture":"string"
+                    },
+                 "rotation":0,
+                 "type":"npc",
+                 "visible":true,
+                 "width":0,
+                 "x":1259.1725214676,
+                 "y":854.80093676815
+                }, 
+                {
+                 "height":0,
+                 "id":18,
+                 "name":"david",
+                 "point":true,
+                 "properties":
+                    {
+                     "collision":true,
+                     "group":"npcs",
+                     "message":"david_message",
+                     "texture":"player_spritesheet"
+                    },
+                 "propertytypes":
+                    {
+                     "collision":"bool",
+                     "group":"string",
+                     "message":"string",
+                     "texture":"string"
+                    },
+                 "rotation":0,
+                 "type":"npc",
+                 "visible":true,
+                 "width":0,
+                 "x":526.932084309134,
+                 "y":981.264637002342
+                }, 
+                {
+                 "height":0,
+                 "id":19,
+                 "name":"townperson",
+                 "point":true,
+                 "properties":
+                    {
+                     "collision":true,
+                     "group":"npcs",
+                     "message":"townperson_message",
+                     "texture":"villager_image"
+                    },
+                 "propertytypes":
+                    {
+                     "collision":"bool",
+                     "group":"string",
+                     "message":"string",
+                     "texture":"string"
+                    },
+                 "rotation":0,
+                 "type":"npc",
+                 "visible":true,
+                 "width":0,
+                 "x":622.170179547229,
+                 "y":826.697892271663
+                }, 
+                {
+                 "height":0,
+                 "id":20,
+                 "name":"jeremy",
+                 "point":true,
+                 "properties":
+                    {
+                     "collision":true,
+                     "group":"npcs",
+                     "message":"jeremy_message",
+                     "texture":"player_spritesheet"
+                    },
+                 "propertytypes":
+                    {
+                     "collision":"bool",
+                     "group":"string",
+                     "message":"string",
+                     "texture":"string"
+                    },
+                 "rotation":0,
+                 "type":"npc",
+                 "visible":true,
+                 "width":0,
+                 "x":785.323965651835,
+                 "y":989.851678376269
+                }, 
+                {
+                 "height":0,
+                 "id":21,
+                 "name":"granny",
+                 "point":true,
+                 "properties":
+                    {
+                     "collision":true,
+                     "group":"npcs",
+                     "message":"granny_message",
+                     "texture":"player_spritesheet"
+                    },
+                 "propertytypes":
+                    {
+                     "collision":"bool",
+                     "group":"string",
+                     "message":"string",
+                     "texture":"string"
+                    },
+                 "rotation":0,
+                 "type":"npc",
+                 "visible":true,
+                 "width":0,
+                 "x":992.193598750976,
+                 "y":877.43950039032
+                }, 
+                {
+                 "height":0,
+                 "id":22,
+                 "name":"peter",
+                 "point":true,
+                 "properties":
+                    {
+                     "collision":true,
+                     "group":"npcs",
+                     "message":"peter_message",
+                     "texture":"peter_image"
+                    },
+                 "propertytypes":
+                    {
+                     "collision":"bool",
+                     "group":"string",
+                     "message":"string",
+                     "texture":"string"
+                    },
+                 "rotation":0,
+                 "type":"npc",
+                 "visible":true,
+                 "width":0,
+                 "x":692.427790788447,
+                 "y":1011.70960187354
                 }],
          "opacity":1,
          "properties":
@@ -231,7 +387,7 @@
          "x":0,
          "y":0
         }],
- "nextobjectid":17,
+ "nextobjectid":23,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.1.5",
