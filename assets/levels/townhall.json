@@ -10,7 +10,8 @@
   },
   "groups": [
       "players",
-      "npcs"
+      "npcs", 
+      "doors"
   ],
   "map": {
       "key": "townhall_level_tilemap",

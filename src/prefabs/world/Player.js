@@ -63,38 +63,41 @@ class Player extends Prefab {
       }
 
       update() {
-      if (this.move_left.isDown && this.body.velocity.x <= 0) {
-        this.body.velocity.x = -this.walking_speed;
-        if (this.body.velocity.y === 0) {
-          this.anims.play('walking_left', true)
+        if (this.body) {
+          if (this.move_left.isDown && this.body.velocity.x <= 0) {
+            this.body.velocity.x = -this.walking_speed;
+            if (this.body.velocity.y === 0) {
+              this.anims.play('walking_left', true)
+            }
+          } else if (this.move_right.isDown && this.body.velocity.x >= 0) {
+            this.body.velocity.x = this.walking_speed;
+            if (this.body.velocity.y === 0) {
+              this.anims.play('walking_right', true)
+            }
+          } else {
+            this.body.velocity.x = 0;
+          }
+    
+          if (this.move_up.isDown && this.body.velocity.y <= 0) {
+            this.body.velocity.y = -this.walking_speed;
+            if (this.body.velocity.x === 0) {
+              this.anims.play('walking_up', true)
+            }
+          } else if (this.move_down.isDown && this.body.velocity.y >= 0) {
+            this.body.velocity.y = this.walking_speed;
+            if (this.body.velocity.x === 0) {
+              this.anims.play('walking_down', true)
+            }
+          } else {
+            this.body.velocity.y = 0;
+          }
+    
+          if (this.body.velocity.x === 0 && this.body.velocity.y === 0) {
+            this.anims.stop();
+            this.setFrame(this.stopped_frames[this.body.facing - 10]);
+          }
+        
         }
-      } else if (this.move_right.isDown && this.body.velocity.x >= 0) {
-        this.body.velocity.x = this.walking_speed;
-        if (this.body.velocity.y === 0) {
-          this.anims.play('walking_right', true)
-        }
-      } else {
-        this.body.velocity.x = 0;
-      }
-
-      if (this.move_up.isDown && this.body.velocity.y <= 0) {
-        this.body.velocity.y = -this.walking_speed;
-        if (this.body.velocity.x === 0) {
-          this.anims.play('walking_up', true)
-        }
-      } else if (this.move_down.isDown && this.body.velocity.y >= 0) {
-        this.body.velocity.y = this.walking_speed;
-        if (this.body.velocity.x === 0) {
-          this.anims.play('walking_down', true)
-        }
-      } else {
-        this.body.velocity.y = 0;
-      }
-
-      if (this.body.velocity.x === 0 && this.body.velocity.y === 0) {
-        this.anims.stop();
-        this.setFrame(this.stopped_frames[this.body.facing - 10]);
-      }
     }
 
     stop () {

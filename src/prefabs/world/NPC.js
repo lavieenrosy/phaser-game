@@ -13,6 +13,5 @@ export default class NPC extends Prefab {
 
   talk(npc, player) {
     player.stop();
-    console.log(this.message)
   }
 }

@@ -66,7 +66,7 @@
                  "visible":true,
                  "width":16,
                  "x":942.333,
-                 "y":1168
+                 "y":1144.5
                 }, 
                 {
                  "height":0,
@@ -91,8 +91,8 @@
                  "type":"npc",
                  "visible":true,
                  "width":0,
-                 "x":951.654761555247,
-                 "y":944.026185280698
+                 "x":951.655,
+                 "y":944.026
                 }, 
                 {
                  "height":9,
@@ -111,9 +111,9 @@
                  "rotation":0,
                  "type":"door",
                  "visible":true,
-                 "width":47.5,
-                 "x":928.5,
-                 "y":1194
+                 "width":23.5,
+                 "x":939.5,
+                 "y":1187.5
                 }],
          "opacity":1,
          "properties":
@@ -157,35 +157,7 @@
         {
          "columns":48,
          "firstgid":1,
-         "image":"..\/..\/..\/..\/..\/Downloads\/TimeFantasy_TILES_6.24.17\/TILESETS\/inside.png",
-         "imageheight":560,
-         "imagewidth":768,
-         "margin":0,
-         "name":"inside",
-         "spacing":0,
-         "tilecount":1680,
-         "tileheight":16,
-         "tileproperties":
-            {
-             "1604":
-                {
-                 "tileset":"map_tileset"
-                }
-            },
-         "tilepropertytypes":
-            {
-             "1604":
-                {
-                 "tileset":"string"
-                }
-            },
-         "tilewidth":16,
-         "transparentcolor":"#ff00ff"
-        }, 
-        {
-         "columns":48,
-         "firstgid":1681,
-         "image":"..\/..\/..\/..\/..\/Downloads\/TimeFantasy_TILES_6.24.17\/TILESETS\/inside.png",
+         "image":"inside.png",
          "imageheight":560,
          "imagewidth":768,
          "margin":0,

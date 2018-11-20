@@ -6,14 +6,15 @@
 
       "villager_image": {"type": "image", "source": "assets/images/world/villager.png"},
 
-      "level_tilemap": {"type": "tilemap", "source": "assets/maps/level1.json"}
+      "level1_level_tilemap": {"type": "tilemap", "source": "assets/maps/level1.json"}
   },
   "groups": [
       "players",
-      "npcs"
+      "npcs", 
+      "doors"
   ],
   "map": {
-      "key": "level_tilemap",
+      "key": "level1_level_tilemap",
       "tilesets": ["map_tileset"]
   },
   "npc_messages": {

@@ -275,7 +275,7 @@
   <properties>
    <property name="tileset" value="map_tileset"/>
   </properties>
-  <object id="5" name="player" type="player" x="942.333" y="1168" width="16" height="16">
+  <object id="5" name="player" type="player" x="942.333" y="1144.5" width="16" height="16">
    <properties>
     <property name="group" value="players"/>
     <property name="texture" value="player_spritesheet"/>
@@ -291,7 +291,7 @@
    </properties>
    <point/>
   </object>
-  <object id="11" name="door" type="door" x="928.5" y="1194" width="47.5" height="9">
+  <object id="11" name="door" type="door" x="939.5" y="1187.5" width="23.5" height="9">
    <properties>
     <property name="group" value="doors"/>
     <property name="next_level" value="level1"/>
