@@ -64,44 +64,47 @@ class Player extends Prefab {
   }
 
   update() {
-    if (this.move_left.isDown && this.body.velocity.x <= 0) {
-      this.body.velocity.x = -this.walking_speed;
-      if (this.body.velocity.y === 0) {
-        this.anims.play('walking_left', true)
-      }
-    } else if (this.move_right.isDown && this.body.velocity.x >= 0) {
-      this.body.velocity.x = this.walking_speed;
-      if (this.body.velocity.y === 0) {
-        this.anims.play('walking_right', true)
-      }
-    } else {
-      this.body.velocity.x = 0;
-    }
+    if (this.body) {
 
-    if (this.move_up.isDown && this.body.velocity.y <= 0) {
-      this.body.velocity.y = -this.walking_speed;
-      if (this.body.velocity.x === 0) {
-        this.anims.play('walking_up', true)
+      if (this.move_left.isDown && this.body.velocity.x <= 0) {
+        this.body.velocity.x = -this.walking_speed;
+        if (this.body.velocity.y === 0) {
+          this.anims.play('walking_left', true)
+        }
+      } else if (this.move_right.isDown && this.body.velocity.x >= 0) {
+        this.body.velocity.x = this.walking_speed;
+        if (this.body.velocity.y === 0) {
+          this.anims.play('walking_right', true)
+        }
+      } else {
+        this.body.velocity.x = 0;
       }
-    } else if (this.move_down.isDown && this.body.velocity.y >= 0) {
-      this.body.velocity.y = this.walking_speed;
-      if (this.body.velocity.x === 0) {
-        this.anims.play('walking_down', true)
+  
+      if (this.move_up.isDown && this.body.velocity.y <= 0) {
+        this.body.velocity.y = -this.walking_speed;
+        if (this.body.velocity.x === 0) {
+          this.anims.play('walking_up', true)
+        }
+      } else if (this.move_down.isDown && this.body.velocity.y >= 0) {
+        this.body.velocity.y = this.walking_speed;
+        if (this.body.velocity.x === 0) {
+          this.anims.play('walking_down', true)
+        }
+      } else {
+        this.body.velocity.y = 0;
       }
-    } else {
-      this.body.velocity.y = 0;
-    }
-
-    if (this.body.velocity.x === 0 && this.body.velocity.y === 0) {
-      this.anims.stop();
-      this.setFrame(this.stopped_frames[this.body.facing - 10]);
-    }
-
-    if(this.scene.current_message_box && this.enter_key.isDown) {
-      this.scene.current_message_box.removeBox();
-      this.scene.current_message_box.destroy();
-      this.scene.current_message_box = null;
-      console.log(this.scene);
+  
+      if (this.body.velocity.x === 0 && this.body.velocity.y === 0) {
+        this.anims.stop();
+        this.setFrame(this.stopped_frames[this.body.facing - 10]);
+      }
+  
+      if(this.scene.current_message_box && this.enter_key.isDown) {
+        this.scene.current_message_box.removeBox();
+        this.scene.current_message_box.destroy();
+        this.scene.current_message_box = null;
+        console.log(this.scene);
+      }
     }
 
   }
