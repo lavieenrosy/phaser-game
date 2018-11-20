@@ -21,10 +21,11 @@ export default class NPC extends Prefab {
     let newDiv = document.createElement("div");
     let newP = document.createElement("p");
     let newContent = document.createTextNode(message);
+    let gameContainer = document.querySelector('#game-container');
     newDiv.setAttribute("id", "messagebox");
     newDiv.appendChild(newP);
     newP.appendChild(newContent)
-    document.body.appendChild(newDiv);
+    gameContainer.appendChild(newDiv);
   }
 
   //method for interacting with npcs
