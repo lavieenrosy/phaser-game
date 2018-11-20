@@ -1,20 +1,15 @@
 import WorldScene from './WorldScene';
-import Prefab from '../prefabs/Prefab';
-import TextPrefab from '../prefabs/TextPrefab';
-import Player from '../prefabs/world/Player';
-import NPC from '../prefabs/world/NPC';
-import Door from '../prefabs/world/Door';
 
 
 class TownhallScene extends WorldScene {
   constructor() {
     super('TownhallScene');
 
-    this.prefab_classes = {
-      player: Player.prototype.constructor,
-      npc: NPC.prototype.constructor,
-      door: Door.prototype.constructor
-    }
+    // this.prefab_classes = {
+    //   player: Player.prototype.constructor,
+    //   npc: NPC.prototype.constructor,
+    //   door: Door.prototype.constructor
+    // }
 
     this.next_scene = '';
 
@@ -46,7 +41,7 @@ class TownhallScene extends WorldScene {
 
   }
 
-  start_game() {
+  next_level() {
     this.scene.start('BootScene', {scene: this.next_scene});
   }
 
