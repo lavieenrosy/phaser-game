@@ -36,6 +36,7 @@ class MayorScene extends Phaser.Scene {
       // });
 
       this.start_game();
+
     };
   }
 
