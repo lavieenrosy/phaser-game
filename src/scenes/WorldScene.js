@@ -7,8 +7,8 @@ import Door from '../prefabs/world/Door';
 
 
 class WorldScene extends JSONLevelScene {
-    constructor() {
-        super('WorldScene');
+    constructor(key = 'WorldScene') {
+        super(key);
 
         this.prefab_classes = {
             player: Player.prototype.constructor,

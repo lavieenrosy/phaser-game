@@ -107,7 +107,6 @@ class Player extends Prefab {
         this.scene.current_message_box.removeBox();
         this.scene.current_message_box.destroy();
         this.scene.current_message_box = null;
-        console.log(this.scene);
       }
     }
 
