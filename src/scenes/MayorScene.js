@@ -9,12 +9,14 @@ class MayorScene extends Phaser.Scene {
   }
 
   preload() {
-    this.load.spritesheet('characters', 'assets/images/world/modern5.png', { frameWidth: 46, frameHeight: 64 });
+    this.load.spritesheet('characters', 'assets/images/world/chara5.png', { frameWidth: 26, frameHeight: 36 });
   }
 
   create() {
-    let player1 = new StaticPlayer(this, 180, 100, 'characters', 31, 2);
-    let player2 = new StaticPlayer(this, 500, 100, 'characters', 64, 2);
+    let mainCharacter = new StaticPlayer(this, 180, 100, 'characters', 30, 3);
+    let mainCharacter2 = new StaticPlayer(this, 250, 100, 'characters', 31, 3)
+    let mainCharacter3 = new StaticPlayer(this, 350, 100, 'characters', 32, 3)
+    let senior = new StaticPlayer(this, 500, 100, 'characters', 64, 3);
     this.addMessage("hey");
 
   }
