@@ -1,15 +1,8 @@
 import WorldScene from './WorldScene';
 
-
 class TownhallScene extends WorldScene {
   constructor() {
     super('TownhallScene');
-
-    // this.prefab_classes = {
-    //   player: Player.prototype.constructor,
-    //   npc: NPC.prototype.constructor,
-    //   door: Door.prototype.constructor
-    // }
 
     this.next_scene = '';
 
