@@ -18,14 +18,21 @@ class TownhallScene extends WorldScene {
 
     super.update();
 
-    if (this.optionA.isDown) {
-      this.next_level('level1');
-    } else if (this.optionB.isDown) {
-      this.next_level('townhall')
-    } else if (this.optionC.isDown) {
-      this.next_level('title')
-    } else if (this.optionD.isDown) {
-      this.next_level('mayor')
+    let messageBox = document.querySelector('#messagebox')
+    if (messageBox) {
+      if (this.optionA.isDown) {
+        messageBox.remove();
+        this.next_level('level1');
+      } else if (this.optionB.isDown) {
+        messageBox.remove();
+        this.next_level('townhall')
+      } else if (this.optionC.isDown) {
+        messageBox.remove();
+        this.next_level('title')
+      } else if (this.optionD.isDown) {
+        messageBox.remove();
+        this.next_level('mayor')
+      }
     }
     
   }
