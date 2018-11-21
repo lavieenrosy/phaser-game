@@ -22,22 +22,22 @@ class TownhallScene extends WorldScene {
     if (messageBox) {
       if (this.optionA.isDown) {
         messageBox.remove();
-        this.next_level('level1');
+        this.next_level('level2');
       } else if (this.optionB.isDown) {
         messageBox.remove();
-        this.next_level('townhall')
+        this.next_level('level2')
       } else if (this.optionC.isDown) {
         messageBox.remove();
-        this.next_level('title')
+        this.next_level('level2')
       } else if (this.optionD.isDown) {
         messageBox.remove();
-        this.next_level('mayor')
+        this.next_level('level2')
       }
     }
-    
+
   }
   next_level(level) {
-    this.scene.start('BootScene', {scene: level});
+    this.scene.start('BootScene', {scene: 'mayor', level: level});
   }
 }
 

@@ -11,7 +11,7 @@
       "jeremy_image": {"type": "image", "source": "assets/images/world/jeremy.png"},
       "granny_image": {"type": "image", "source": "assets/images/world/granny.png"},
 
-      "level1_level_tilemap": {"type": "tilemap", "source": "assets/maps/level1.json"}
+      "level2_level_tilemap": {"type": "tilemap", "source": "assets/maps/level2.json"}
   },
   "groups": [
       "players",
@@ -20,7 +20,7 @@
       "doors"
   ],
   "map": {
-      "key": "level1_level_tilemap",
+      "key": "level2_level_tilemap",
       "tilesets": ["map_tileset"]
   },
   "npc_messages": {
@@ -32,5 +32,5 @@
     "miche_message": "assets/npc_messages/miche_message.txt",
     "peter_message": "assets/npc_messages/peter_message.txt"
   },
-  "level": "level1"
+  "level": "level2"
 }

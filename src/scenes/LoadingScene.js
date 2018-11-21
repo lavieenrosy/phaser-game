@@ -5,6 +5,7 @@ class LoadingScene extends Phaser.Scene {
 
     init (data) {
         this.level_data = data.level_data;
+        console.log(data)
     }
 
     preload () {
