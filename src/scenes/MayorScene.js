@@ -1,7 +1,5 @@
 import JSONLevelScene from './JSONLevelScene';
-// import Prefab from '../prefabs/Prefab.js';
-// import TextPrefab from '../prefabs/TextPrefab.js';
-import Player2 from '../prefabs/Player2.js';
+import StaticPlayer from '../prefabs/StaticPlayer.js';
 import Typewriter from '../prefabs/HUD/Typewriter.js'
 
 class MayorScene extends Phaser.Scene {
@@ -12,13 +10,25 @@ class MayorScene extends Phaser.Scene {
 
   preload() {
     this.load.spritesheet('characters', 'assets/images/world/modern5.png', { frameWidth: 46, frameHeight: 64 });
-
   }
 
   create() {
-    let player1 = new Player2(this, 180, 150, 'characters', 31, 2);
-    let player2 = new Player2(this, 500, 150, 'characters', 64, 2);
+    let player1 = new StaticPlayer(this, 180, 100, 'characters', 31, 2);
+    let player2 = new StaticPlayer(this, 500, 100, 'characters', 64, 2);
+    this.addMessage("hey");
 
+  }
+
+  addMessage (message) {
+    let newDiv = document.createElement("div");
+    let newP = document.createElement("p");
+    let newContent = document.createTextNode(message);
+    let gameContainer = document.querySelector('#game-container');
+    newDiv.setAttribute("id", "messagebox");
+    newDiv.setAttribute("class", "message_black");
+    newDiv.appendChild(newP);
+    newP.appendChild(newContent)
+    gameContainer.appendChild(newDiv);
   }
 
   update() {
@@ -38,6 +48,8 @@ class MayorScene extends Phaser.Scene {
       this.start_game();
 
     };
+
+
   }
 
 
