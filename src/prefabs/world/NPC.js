@@ -8,7 +8,6 @@ export default class NPC extends Prefab {
 
     this.message = this.scene.cache.text.get(properties.message);
 
-    console.log(this.x, this.y);
     this.body.immovable = true;
 
     this.Message_box_position = {x: this.x - 300, y: this.y + 90};
@@ -17,10 +16,11 @@ export default class NPC extends Prefab {
 
   }
 
-  addMessage (message) {
+  addMessage () {
     let newDiv = document.createElement("div");
     let newP = document.createElement("p");
-    let newContent = document.createTextNode(message);
+    let newContent = document.createTextNode(this.name + ": " + this.message);
+
     let gameContainer = document.querySelector('#game-container');
     newDiv.setAttribute("id", "messagebox");
     newDiv.setAttribute("class", "message_white");
@@ -36,7 +36,8 @@ export default class NPC extends Prefab {
 
     if(!msgbox){
     //create a new message box and pass the npc message property as the text
-      this.addMessage(this.message);
+
+      this.addMessage();
     }
   }
 }
