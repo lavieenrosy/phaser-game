@@ -14,7 +14,7 @@ class LoadingScene extends Phaser.Scene {
             switch (asset.type) {
                 case 'image':
                     this.load.image(asset_key, asset.source);
-                    console.log(asset_key, asset.source)
+                    // console.log(asset_key, asset.source)
                     break;
                 case 'spritesheet':
                     this.load.spritesheet(asset_key, asset.source, {frameWidth: asset.frame_width, frameHeight: asset.frame_height, frames: asset.frames, margin: asset.margin, spacing: asset.spacing});
