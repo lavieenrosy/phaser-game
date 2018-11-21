@@ -6,14 +6,18 @@
       "peter_image": {"type": "image", "source": "assets/images/world/peter.png"},
 
       "villager_image": {"type": "image", "source": "assets/images/world/villager.png"},
-      "message_box_image": {"type": "image", "source": "assets/images/world/message_box.png"},
+      "jim_image": {"type": "image", "source": "assets/images/world/jim.png"},
+      "miche_image": {"type": "image", "source": "assets/images/world/miche.png"},
+      "david_image": {"type": "image", "source": "assets/images/world/david.png"},
+      "jeremy_image": {"type": "image", "source": "assets/images/world/jeremy.png"},
+      "granny_image": {"type": "image", "source": "assets/images/world/granny.png"},
 
       "level1_level_tilemap": {"type": "tilemap", "source": "assets/maps/level1.json"}
   },
   "groups": [
       "players",
       "npcs",
-      "hud", 
+      "hud",
       "doors"
   ],
   "map": {
@@ -21,6 +25,12 @@
       "tilesets": ["map_tileset"]
   },
   "npc_messages": {
-    "townperson_message": "assets/npc_messages/townperson_message.txt"
+    "townperson_message": "assets/npc_messages/townperson_message.txt",
+    "jim_message": "assets/npc_messages/jim_message.txt",
+    "jeremy_message": "assets/npc_messages/jeremy_message.txt",
+    "david_message": "assets/npc_messages/david_message.txt",
+    "granny_message": "assets/npc_messages/granny_message.txt",
+    "miche_message": "assets/npc_messages/miche_message.txt",
+    "peter_message": "assets/npc_messages/peter_message.txt"
   }
 }
