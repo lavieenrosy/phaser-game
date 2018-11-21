@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" tiledversion="1.1.5" orientation="orthogonal" renderorder="right-down" width="120" height="120" tilewidth="16" tileheight="16" infinite="0" nextobjectid="17">
+<map version="1.0" tiledversion="1.1.5" orientation="orthogonal" renderorder="right-down" width="120" height="120" tilewidth="16" tileheight="16" infinite="0" nextobjectid="23">
  <tileset firstgid="1" name="tileset" tilewidth="16" tileheight="16" tilecount="17731" columns="119">
-  <image source="../images/terrain.png" width="1904" height="2384"/>
+  <image source="../images/Terrain.png" width="1904" height="2384"/>
  </tileset>
  <layer name="background" width="120" height="120" locked="1">
   <properties>
@@ -130,7 +130,7 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </data>
  </layer>
- <layer name="roads" width="120" height="120" locked="1">
+ <layer name="roads" width="120" height="120">
   <properties>
    <property name="tileset" value="map_tileset"/>
   </properties>
@@ -640,7 +640,7 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </data>
  </layer>
- <layer name="buildings" width="120" height="120" locked="1">
+ <layer name="buildings" width="120" height="120">
   <properties>
    <property name="collision" type="bool" value="true"/>
    <property name="tileset" value="map_tileset"/>
@@ -896,15 +896,11 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </data>
  </layer>
- <objectgroup name="objects" locked="1">
+ <objectgroup name="objects">
   <properties>
    <property name="tileset" value="map_tileset"/>
   </properties>
-<<<<<<< HEAD
-  <object id="1" name="player" type="player" x="425" y="283">
-=======
   <object id="1" name="player" type="player" x="693.408" y="893.682">
->>>>>>> feature/fix-map
    <properties>
     <property name="group" value="players"/>
     <property name="texture" value="player_spritesheet"/>
@@ -912,22 +908,12 @@
    </properties>
    <point/>
   </object>
-<<<<<<< HEAD
-  <object id="14" name="door" type="door" x="405" y="179" width="29" height="35.0454">
-   <properties>
-    <property name="group" value="doors"/>
-    <property name="next_level" value="townhall"/>
-   </properties>
-  </object>
-  <object id="18" name="townperson" type="npc" x="457" y="348">
-=======
-  <object id="4" name="townperson" type="npc" x="745.97" y="891.12">
->>>>>>> feature/fix-map
+  <object id="4" name="jim" type="npc" x="256.509" y="870.823">
    <properties>
     <property name="collision" type="bool" value="true"/>
     <property name="group" value="npcs"/>
-    <property name="message" value="townperson_message"/>
-    <property name="texture" value="villager_image"/>
+    <property name="message" value="jim_message"/>
+    <property name="texture" value="player_spritesheet"/>
    </properties>
    <point/>
   </object>
@@ -936,6 +922,60 @@
     <property name="group" value="doors"/>
     <property name="next_level" value="townhall"/>
    </properties>
+  </object>
+  <object id="17" name="miche" type="npc" x="1259.17" y="854.801">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="group" value="npcs"/>
+    <property name="message" value="miche_message"/>
+    <property name="texture" value="player_spritesheet"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="18" name="david" type="npc" x="526.932" y="981.265">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="group" value="npcs"/>
+    <property name="message" value="david_message"/>
+    <property name="texture" value="player_spritesheet"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="19" name="townperson" type="npc" x="622.17" y="826.698">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="group" value="npcs"/>
+    <property name="message" value="townperson_message"/>
+    <property name="texture" value="villager_image"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="20" name="jeremy" type="npc" x="785.324" y="989.852">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="group" value="npcs"/>
+    <property name="message" value="jeremy_message"/>
+    <property name="texture" value="player_spritesheet"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="21" name="granny" type="npc" x="992.194" y="877.44">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="group" value="npcs"/>
+    <property name="message" value="granny_message"/>
+    <property name="texture" value="player_spritesheet"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="22" name="peter" type="npc" x="692.428" y="1011.71">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="group" value="npcs"/>
+    <property name="message" value="peter_message"/>
+    <property name="texture" value="npc1"/>
+   </properties>
+   <point/>
   </object>
  </objectgroup>
 </map>
