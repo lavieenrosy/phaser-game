@@ -20,6 +20,7 @@ export default class NPC extends Prefab {
     let newDiv = document.createElement("div");
     let newP = document.createElement("p");
     let newContent = document.createTextNode(this.name + ": " + this.message);
+
     let gameContainer = document.querySelector('#game-container');
     newDiv.setAttribute("id", "messagebox");
     newDiv.setAttribute("class", "message_white");
@@ -35,6 +36,7 @@ export default class NPC extends Prefab {
 
     if(!msgbox){
     //create a new message box and pass the npc message property as the text
+
       this.addMessage();
     }
   }
