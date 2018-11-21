@@ -27,7 +27,6 @@ In order to fulfil on your election promise, you must find those on Bajo who hav
 Speaking as the previous mayor, let me give you one valuable piece of advice: choose carefully, because the decisions you make for Bajo will have far reaching consequences…`
     }
 
-
     let mainChar1 = new StaticPlayer(this, 180, 100, 'character', 31, 3);
     // let mainChar2 = new StaticPlayer(this, 30, 100, 'characters', 31, 3);
     // let mainChar3 = new StaticPlayer(this, 200, 100, 'characters', 32, 3);
@@ -45,8 +44,13 @@ Speaking as the previous mayor, let me give you one valuable piece of advice: ch
     // this.anims.create(config);
     // this.runAnimation(10);
     // this.mainChar.anims.play('character');
+// set up text to print, each item in array is new line
+
 
     this.addMessage(message.level1);
+
+  
+
 
   }
 
