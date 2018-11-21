@@ -8,7 +8,6 @@ export default class NPC extends Prefab {
 
     this.message = this.scene.cache.text.get(properties.message);
 
-    console.log(this.x, this.y);
     this.body.immovable = true;
 
     this.Message_box_position = {x: this.x - 300, y: this.y + 90};
