@@ -10,9 +10,9 @@ class Player extends Prefab {
 
     this.scene.physics.add.collider(this, this.scene.layers.buildings);
     this.scene.physics.add.collider(this, this.scene.layers.water);
-    this.scene.physics.add.collider(this, this.scene.layers.above_buildings);       
+    this.scene.physics.add.collider(this, this.scene.layers.above_buildings);
     this.scene.physics.add.collider(this, this.scene.layers.beneath_buildings);
-    
+
 
     this.body.velocity.x = -this.walking_speed;
 
@@ -83,7 +83,7 @@ class Player extends Prefab {
       } else {
         this.body.velocity.x = 0;
       }
-  
+
       if (this.move_up.isDown && this.body.velocity.y <= 0) {
         this.body.velocity.y = -this.walking_speed;
         if (this.body.velocity.x === 0) {
@@ -97,16 +97,15 @@ class Player extends Prefab {
       } else {
         this.body.velocity.y = 0;
       }
-  
+
       if (this.body.velocity.x === 0 && this.body.velocity.y === 0) {
         this.anims.stop();
         this.setFrame(this.stopped_frames[this.body.facing - 10]);
       }
-  
-      if(this.scene.current_message_box && this.enter_key.isDown) {
-        this.scene.current_message_box.removeBox();
-        this.scene.current_message_box.destroy();
-        this.scene.current_message_box = null;
+
+      let messageBox = document.querySelector('#messagebox');
+      if(messageBox && this.enter_key.isDown) {
+        messageBox.remove();
       }
     }
 

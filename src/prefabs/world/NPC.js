@@ -16,14 +16,27 @@ export default class NPC extends Prefab {
 
   }
 
+  addMessage () {
+    let newDiv = document.createElement("div");
+    let newP = document.createElement("p");
+    let newContent = document.createTextNode(this.name + ": " + this.message);
+    let gameContainer = document.querySelector('#game-container');
+    newDiv.setAttribute("id", "messagebox");
+    newDiv.setAttribute("class", "message_white");
+    newDiv.appendChild(newP);
+    newP.appendChild(newContent)
+    gameContainer.appendChild(newDiv);
+  }
+
   //method for interacting with npcs
   talk(npc, player) {
     player.stop();
-    //create a new message box and pass the npc message property as the text
-    if (!(this.scene.current_message_box)){
-      this.scene.current_message_box = new MessageBox(this.scene, this.name + '_message_box', this.Message_box_position, {texture: 'message_box_image', group: 'hud', message: this.message});
+    let msgbox = document.querySelector('#messagebox')
 
-      // console.log('this2', this.scene.current_message_box)
+    if(!msgbox){
+    //create a new message box and pass the npc message property as the text
+      this.addMessage();
     }
   }
 }
+
