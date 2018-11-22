@@ -31,6 +31,5 @@
     "granny_message": "assets/npc_messages/granny_message.txt",
     "miche_message": "assets/npc_messages/miche_message.txt",
     "peter_message": "assets/npc_messages/peter_message.txt"
-  },
-  "level": "level1"
+  }
 }
