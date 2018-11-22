@@ -5,12 +5,15 @@ import StaticPlayer from '../prefabs/StaticPlayer.js';
 
 class MayorScene extends Phaser.Scene {
 
-  init(data) {
-    console.log(data);
-  }
-
   constructor() {
     super('MayorScene');
+    this.next_level = "";
+  }
+
+  init(data) {
+    if (data.next_level) {
+      this.next_level = data.next_level;
+    }
   }
 
   preload() {
@@ -24,13 +27,12 @@ class MayorScene extends Phaser.Scene {
 
 In order to fulfil on your election promise, you must find those on Bajo who have vested interests in your platform. Gather their advice and when you are ready, return to Townhall where you will make your decision.
 
-Speaking as the previous mayor, let me give you one valuable piece of advice: choose carefully, because the decisions you make for Bajo will have far reaching consequences…`
-    }
+Speaking as the previous mayor, let me give you one valuable piece of advice: choose carefully, because the decisions you make for Bajo will have far reaching consequences…`}
 
     let mainChar1 = new StaticPlayer(this, 180, 100, 'character', 31, 3);
-    // let mainChar2 = new StaticPlayer(this, 30, 100, 'characters', 31, 3);
-    // let mainChar3 = new StaticPlayer(this, 200, 100, 'characters', 32, 3);
     let senior = new StaticPlayer(this, 500, 100, 'character', 64, 3);
+
+    this.addMessage(message.level1);
 
     // const config = {
     //   key: 'character',
@@ -44,13 +46,6 @@ Speaking as the previous mayor, let me give you one valuable piece of advice: ch
     // this.anims.create(config);
     // this.runAnimation(10);
     // this.mainChar.anims.play('character');
-// set up text to print, each item in array is new line
-
-
-    this.addMessage(message.level1);
-
-  
-
 
   }
 
@@ -97,7 +92,7 @@ Speaking as the previous mayor, let me give you one valuable piece of advice: ch
   }
 
   start_game() {
-      this.scene.start('BootScene', {scene: 'level1'});
+    this.scene.start('BootScene', {scene: this.next_level ? this.next_level : 'level1'});
   }
 }
 
