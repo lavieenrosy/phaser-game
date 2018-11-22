@@ -1,0 +1,70 @@
+body {
+  padding: 5px 20px;
+  font-family: 'VT323', monospace;
+  image-rendering: optimizeSpeed;              /* Older versions of FF */
+  image-rendering: -moz-crisp-edges;           /* FF 6.0+ */
+  image-rendering: -webkit-optimize-contrast;  /* Webkit (non standard naming) */
+  image-rendering: -o-crisp-edges;             /* OS X & Windows Opera (12.02+) */
+  image-rendering: crisp-edges;                /* Possible future browsers. */
+  -ms-interpolation-mode: nearest-neighbor;    /* IE (non standard naming) */
+  image-rendering: pixelated;                  /* Chrome 41 */
+}
+
+nav {
+  background-color: DodgerBlue;
+  height: 60px;
+  color: white;
+  margin-bottom: 20px;
+}
+nav h1 {
+  float: left;
+  margin-left: 10px;
+}
+nav h4 {
+  float: right;
+  margin-right: 10px;
+}
+aside {
+  float: right;
+  width: 325px;
+}
+
+#game-container {
+  margin: 10px;
+  width: auto;
+  height: auto;
+  position: relative;
+  float: left;
+  text-align: center;
+}
+
+#messagebox {
+  position: absolute;
+  text-align: left;
+  width: 90%;
+  margin: auto;
+  left: 0;
+  right: 0;
+  opacity: 0.8;
+  padding-left: 20px;
+  bottom: 40px;
+  overflow: scroll;
+  border-radius: 6px;
+  font-size: 1.5em;
+  white-space: pre-wrap;
+}
+
+.message_white {
+  background-color: white;
+  color: black;
+  height: 150px;
+}
+
+.message_black {
+  background-color: #333333;
+  border: 2px #d4af37 solid;
+  color: white;
+  opacity: 0.3;
+  height: 250px;
+}
+
