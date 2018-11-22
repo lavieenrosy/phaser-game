@@ -35,7 +35,6 @@ var aText = new Array(
      }
     }
 
-
     // typewriter();
 
 // PREVIOUS CODE
