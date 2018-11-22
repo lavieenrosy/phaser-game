@@ -5,12 +5,15 @@ import StaticPlayer from '../prefabs/StaticPlayer.js';
 
 class MayorScene extends Phaser.Scene {
 
-  init(data) {
-    console.log(data);
-  }
-
   constructor() {
     super('MayorScene');
+    this.next_level = "";
+  }
+
+  init(data) {
+    if (data.next_level) {
+      this.next_level = data.next_level;
+    }
   }
 
   preload() {
@@ -93,7 +96,7 @@ Speaking as the previous mayor, let me give you one valuable piece of advice: ch
   }
 
   start_game() {
-      this.scene.start('BootScene', {scene: 'level1'});
+    this.scene.start('BootScene', {scene: this.next_level ? this.next_level : 'level1'});
   }
 }
 
