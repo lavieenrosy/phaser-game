@@ -8,7 +8,7 @@
     "dev": "webpack",
     "deploy": "webpack --config webpack.production.config.js",
     "test": "eslint ./src/**/**.js", 
-    "start": "npm run dev"
+    "start": "node server.js"
   },
   "license": "MIT",
   "devDependencies": {
