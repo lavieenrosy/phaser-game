@@ -1,6 +1,26 @@
+@import 'nav.scss';
+@import 'game.scss';
+
+/* MAIN CSS */
+
+ html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/*
+ * Global layout stuff
+ */
 body {
-  padding: 5px 20px;
-  font-family: 'VT323', monospace;
+  margin: 0;
+  background-color: $primary;
+  font-family: $font;
+  color: $reverse;
   image-rendering: optimizeSpeed;              /* Older versions of FF */
   image-rendering: -moz-crisp-edges;           /* FF 6.0+ */
   image-rendering: -webkit-optimize-contrast;  /* Webkit (non standard naming) */
@@ -8,25 +28,40 @@ body {
   image-rendering: crisp-edges;                /* Possible future browsers. */
   -ms-interpolation-mode: nearest-neighbor;    /* IE (non standard naming) */
   image-rendering: pixelated;                  /* Chrome 41 */
+
 }
 
-nav {
-  background-color: DodgerBlue;
-  height: 60px;
-  color: white;
-  margin-bottom: 20px;
+main {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 }
-nav h1 {
-  float: left;
-  margin-left: 10px;
+
+section {
+  display: flex;
 }
-nav h4 {
-  float: right;
-  margin-right: 10px;
+
+a {
+  text-decoration: none;
 }
-aside {
-  float: right;
-  width: 325px;
+
+a:hover {
+  text-decoration: none;
+}
+
+button {
+  text-decoration: none;
+  border-color: none;
+  border-style: none;
+  cursor: pointer;
+}
+
+button:hover {
+  text-decoration: none;
+}
+
+button:focus {
+  outline: none;
 }
 
 #game-container {
@@ -67,4 +102,3 @@ aside {
   opacity: 0.3;
   height: 250px;
 }
-

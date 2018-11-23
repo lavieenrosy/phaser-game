@@ -16,3 +16,4 @@ dump/
 *.old*
 higherVolume/
 .DS_Store
+public/styles

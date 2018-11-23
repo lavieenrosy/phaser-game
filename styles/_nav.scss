@@ -1,0 +1,16 @@
+@import 'brand.scss';
+
+nav {
+  background-color: $secondary;
+  height: 60px;
+  color: $reverse;
+  margin-bottom: 20px;
+}
+nav h1 {
+  float: left;
+  margin-left: 10px;
+}
+nav h4 {
+  float: right;
+  margin-right: 10px;
+}

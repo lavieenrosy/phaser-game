@@ -1,6 +1,50 @@
+nav {
+  background-color: #385497;
+  height: 60px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+nav h1 {
+  float: left;
+  margin-left: 10px;
+}
+
+nav h4 {
+  float: right;
+  margin-right: 10px;
+}
+
+.game {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 5em 0 1em 0;
+}
+.game__container {
+  flex-basis: 100%;
+}
+
+/* MAIN CSS */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/*
+ * Global layout stuff
+ */
 body {
-  padding: 5px 20px;
+  margin: 0;
+  background-color: #061C40;
   font-family: "VT323", monospace;
+  color: #fff;
   image-rendering: optimizeSpeed;
   /* Older versions of FF */
   image-rendering: -moz-crisp-edges;
@@ -17,26 +61,37 @@ body {
   /* Chrome 41 */
 }
 
-nav {
-  background-color: DodgerBlue;
-  height: 60px;
-  color: white;
-  margin-bottom: 20px;
+main {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 
-nav h1 {
-  float: left;
-  margin-left: 10px;
+section {
+  display: flex;
 }
 
-nav h4 {
-  float: right;
-  margin-right: 10px;
+a {
+  text-decoration: none;
 }
 
-aside {
-  float: right;
-  width: 325px;
+a:hover {
+  text-decoration: none;
+}
+
+button {
+  text-decoration: none;
+  border-color: none;
+  border-style: none;
+  cursor: pointer;
+}
+
+button:hover {
+  text-decoration: none;
+}
+
+button:focus {
+  outline: none;
 }
 
 #game-container {

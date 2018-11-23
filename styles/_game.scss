@@ -1,0 +1,14 @@
+@import 'brand.scss';
+
+.game {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 5em 0 1em 0;
+
+  &__container{
+    flex-basis: 100%;
+  }
+
+}
