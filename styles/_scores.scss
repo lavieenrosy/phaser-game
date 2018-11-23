@@ -24,13 +24,14 @@
     text-align: center;
 
   }
+  &__td {
+    color: $highScore;
+    padding: 0 1.5em 0 1.5em;
+    justify-content: space-evenly;
+  
+  }
 
 }
 
-td {
-  color: $highScore;
-  padding: 0 1.5em 0 1.5em;
-  justify-content: space-evenly;
 
-}
 

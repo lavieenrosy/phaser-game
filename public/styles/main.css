@@ -51,6 +51,25 @@
   opacity: 0.3;
   height: 250px;
 }
+.game__status-bar {
+  position: absolute;
+  text-align: left;
+  width: 1020px;
+  margin: auto;
+  left: 0;
+  right: 0;
+  opacity: 0.8;
+  padding-left: 20px;
+  font-size: 1.5em;
+  white-space: pre-wrap;
+  background-color: #fff;
+}
+.game__table {
+  padding: 0.2em;
+  font-size: 0.9em;
+  text-align: center;
+  color: #061C40;
+}
 
 #messagebox {
   position: absolute;
@@ -106,8 +125,7 @@
   font-size: 2em;
   text-align: center;
 }
-
-td {
+.scores__td {
   color: #F40847;
   padding: 0 1.5em 0 1.5em;
   justify-content: space-evenly;

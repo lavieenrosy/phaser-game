@@ -32,6 +32,28 @@
     height: 250px;
   }
 
+  &__status-bar {
+    position: absolute;
+    text-align: left;
+    width: 1020px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    opacity: 0.8;
+    padding-left: 20px;
+    // bottom: 40px;
+    font-size: 1.5em;
+    white-space: pre-wrap;
+    background-color: $reverse;
+  }
+
+  &__table{
+    padding: .2em;
+    font-size: .9em;
+    text-align: center;
+    color: $primary;
+  }
+
 }
 
 #messagebox {
