@@ -1,13 +1,9 @@
-import JSONLevelScene from './JSONLevelScene';
 import StaticPlayer from '../prefabs/StaticPlayer.js';
-
-// let i = 1;
 
 class MayorScene extends Phaser.Scene {
 
   constructor() {
     super('MayorScene');
-    this.next_level = "";
   }
 
   init(data) {
@@ -34,36 +30,7 @@ Speaking as the previous mayor, let me give you one valuable piece of advice: ch
 
     this.addMessage(message.level1);
 
-    // const config = {
-    //   key: 'character',
-    //   frames: this.anims.generateFrameNumbers('character', {
-    //     start: 30,
-    //     end: 32
-    //   }),
-    //   repeat: -1,
-    //   frameRate: 3
-    // };
-    // this.anims.create(config);
-    // this.runAnimation(10);
-    // this.mainChar.anims.play('character');
-
   }
-
-  // runAnimation(xPosition) {
-
-  //   while (i < 10) {
-  //     this.mainChar = this.add.sprite(xPosition, 100, 'character');
-  //     i++;
-  //     this.runAnimation(xPosition += 20)
-  //   }
-
-    // let xPosition = x;
-    // for (var i = 0; i < 10; i++) {
-    //   this.mainChar = this.add.sprite(xPosition, 100, 'character')
-    //   xPosition + 20;
-    //   this.mainChar.destroy();
-    // }
-  // }
 
   addMessage (message) {
     let newDiv = document.createElement("div");
@@ -71,7 +38,7 @@ Speaking as the previous mayor, let me give you one valuable piece of advice: ch
     let newContent = document.createTextNode(message);
     let gameContainer = document.querySelector('#game-container');
     newDiv.setAttribute("id", "messagebox");
-    newDiv.setAttribute("class", "message_black");
+    newDiv.setAttribute("class", "game__message_black");
     newDiv.appendChild(newP);
     newP.appendChild(newContent)
     gameContainer.appendChild(newDiv);

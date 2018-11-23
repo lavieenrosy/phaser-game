@@ -3308,49 +3308,79 @@ exports[DATA_VIEW] = $DataView;
 
 /***/ }),
 /* 217 */
-/*!**************************************!*\
-  !*** ./src/scenes/JSONLevelScene.js ***!
-  \**************************************/
+/*!**********************************!*\
+  !*** ./src/scenes/WorldScene.js ***!
+  \**********************************/
 /*! exports provided: default */
 /*! exports used: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__prefabs_Prefab__ = __webpack_require__(/*! ../prefabs/Prefab */ 94);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__prefabs_TextPrefab__ = __webpack_require__(/*! ../prefabs/TextPrefab */ 162);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__JSONLevelScene__ = __webpack_require__(/*! ./JSONLevelScene */ 331);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__prefabs_Prefab__ = __webpack_require__(/*! ../prefabs/Prefab */ 94);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__prefabs_TextPrefab__ = __webpack_require__(/*! ../prefabs/TextPrefab */ 162);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__prefabs_world_Player__ = __webpack_require__(/*! ../prefabs/world/Player */ 332);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__prefabs_world_NPC__ = __webpack_require__(/*! ../prefabs/world/NPC */ 762);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__prefabs_world_Door__ = __webpack_require__(/*! ../prefabs/world/Door */ 764);
 
 
 
-class JSONLevelScene extends Phaser.Scene {
-    constructor(key) {
-        super({ key: key });
+
+
+
+
+class WorldScene extends __WEBPACK_IMPORTED_MODULE_0__JSONLevelScene__["a" /* default */] {
+  constructor(key = 'WorldScene') {
+    super(key);
+
+    this.prefab_classes = {
+      player: __WEBPACK_IMPORTED_MODULE_3__prefabs_world_Player__["a" /* default */].prototype.constructor,
+      npc: __WEBPACK_IMPORTED_MODULE_4__prefabs_world_NPC__["a" /* default */].prototype.constructor,
+      door: __WEBPACK_IMPORTED_MODULE_5__prefabs_world_Door__["a" /* default */].prototype.constructor
+    };
+  }
+
+  preload() {
+    for (let npc_message_name in this.level_data.npc_messages) {
+      this.load.text(npc_message_name, this.level_data.npc_messages[npc_message_name]);
     }
+  }
 
-    init(data) {
-        this.level_data = data.level_data;
+  create() {
+    this.map = this.add.tilemap(this.level_data.map.key);
+
+    let tileset_index = 0;
+    this.tilesets = {};
+    this.map.tilesets.forEach(function (tileset) {
+      let map_tileset = this.map.addTilesetImage(tileset.name, this.level_data.map.tilesets[tileset_index]);
+      this.tilesets[this.level_data.map.tilesets[tileset_index]] = map_tileset;
+      tileset_index += 1;
+    }, this);
+
+    this.layers = {};
+    this.map.layers.forEach(function (layer) {
+      this.layers[layer.name] = this.map.createStaticLayer(layer.name, this.tilesets[layer.properties.tileset]);
+      if (layer.properties.collision) {
+        this.map.setCollisionByExclusion([-1], true, layer.name);
+      }
+    }, this);
+
+    super.create();
+
+    this.map.objects.forEach(function (object_layer) {
+      object_layer.objects.forEach(this.create_object, this);
+    }, this);
+  }
+
+  create_object(object) {
+    let position = { x: object.x + object.width / 2, y: object.y + object.height / 2 };
+    if (this.prefab_classes.hasOwnProperty(object.type)) {
+      let prefab = new this.prefab_classes[object.type](this, object.name, position, object.properties);
     }
-
-    create() {
-        this.groups = {};
-        this.level_data.groups.forEach(function (group_name) {
-            this.groups[group_name] = this.physics.add.group();
-        }, this);
-
-        this.prefabs = {};
-        for (let sprite_name in this.level_data.sprites) {
-            let sprite_data = this.level_data.sprites[sprite_name];
-            let sprite = new this.prefab_classes[sprite_data.type](this, sprite_name, sprite_data.position, sprite_data.properties);
-        }
-    }
-
-    update() {
-        for (let prefab_name in this.prefabs) {
-            this.prefabs[prefab_name].update();
-        }
-    }
+  }
 }
 
-/* harmony default export */ __webpack_exports__["a"] = (JSONLevelScene);
+/* harmony default export */ __webpack_exports__["a"] = (WorldScene);
 
 /***/ }),
 /* 218 */,
@@ -4538,81 +4568,49 @@ module.exports = Math.scale || function scale(x, inLow, inHigh, outLow, outHigh)
 
 /***/ }),
 /* 331 */
-/*!**********************************!*\
-  !*** ./src/scenes/WorldScene.js ***!
-  \**********************************/
+/*!**************************************!*\
+  !*** ./src/scenes/JSONLevelScene.js ***!
+  \**************************************/
 /*! exports provided: default */
 /*! exports used: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__JSONLevelScene__ = __webpack_require__(/*! ./JSONLevelScene */ 217);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__prefabs_Prefab__ = __webpack_require__(/*! ../prefabs/Prefab */ 94);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__prefabs_TextPrefab__ = __webpack_require__(/*! ../prefabs/TextPrefab */ 162);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__prefabs_world_Player__ = __webpack_require__(/*! ../prefabs/world/Player */ 332);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__prefabs_world_NPC__ = __webpack_require__(/*! ../prefabs/world/NPC */ 762);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__prefabs_world_Door__ = __webpack_require__(/*! ../prefabs/world/Door */ 764);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__prefabs_Prefab__ = __webpack_require__(/*! ../prefabs/Prefab */ 94);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__prefabs_TextPrefab__ = __webpack_require__(/*! ../prefabs/TextPrefab */ 162);
 
 
 
-
-
-
-
-class WorldScene extends __WEBPACK_IMPORTED_MODULE_0__JSONLevelScene__["a" /* default */] {
-    constructor(key = 'WorldScene') {
-        super(key);
-
-        this.prefab_classes = {
-            player: __WEBPACK_IMPORTED_MODULE_3__prefabs_world_Player__["a" /* default */].prototype.constructor,
-            npc: __WEBPACK_IMPORTED_MODULE_4__prefabs_world_NPC__["a" /* default */].prototype.constructor,
-            door: __WEBPACK_IMPORTED_MODULE_5__prefabs_world_Door__["a" /* default */].prototype.constructor
-        };
-
-        this.TEXT_STYLE = { font: '14px Kells', fill: '#ffffff' };
+class JSONLevelScene extends Phaser.Scene {
+    constructor(key) {
+        super({ key: key });
     }
 
-    preload() {
-        for (let npc_message_name in this.level_data.npc_messages) {
-            this.load.text(npc_message_name, this.level_data.npc_messages[npc_message_name]);
-        }
+    init(data) {
+        this.level_data = data.level_data;
     }
 
     create() {
-        this.map = this.add.tilemap(this.level_data.map.key);
-
-        let tileset_index = 0;
-        this.tilesets = {};
-        this.map.tilesets.forEach(function (tileset) {
-            let map_tileset = this.map.addTilesetImage(tileset.name, this.level_data.map.tilesets[tileset_index]);
-            this.tilesets[this.level_data.map.tilesets[tileset_index]] = map_tileset;
-            tileset_index += 1;
+        this.groups = {};
+        this.level_data.groups.forEach(function (group_name) {
+            this.groups[group_name] = this.physics.add.group();
         }, this);
 
-        this.layers = {};
-        this.map.layers.forEach(function (layer) {
-            this.layers[layer.name] = this.map.createStaticLayer(layer.name, this.tilesets[layer.properties.tileset]);
-            if (layer.properties.collision) {
-                this.map.setCollisionByExclusion([-1], true, layer.name);
-            }
-        }, this);
-
-        super.create();
-
-        this.map.objects.forEach(function (object_layer) {
-            object_layer.objects.forEach(this.create_object, this);
-        }, this);
+        this.prefabs = {};
+        for (let sprite_name in this.level_data.sprites) {
+            let sprite_data = this.level_data.sprites[sprite_name];
+            let sprite = new this.prefab_classes[sprite_data.type](this, sprite_name, sprite_data.position, sprite_data.properties);
+        }
     }
 
-    create_object(object) {
-        let position = { x: object.x + object.width / 2, y: object.y + object.height / 2 };
-        if (this.prefab_classes.hasOwnProperty(object.type)) {
-            let prefab = new this.prefab_classes[object.type](this, object.name, position, object.properties);
+    update() {
+        for (let prefab_name in this.prefabs) {
+            this.prefabs[prefab_name].update();
         }
     }
 }
 
-/* harmony default export */ __webpack_exports__["a"] = (WorldScene);
+/* harmony default export */ __webpack_exports__["a"] = (JSONLevelScene);
 
 /***/ }),
 /* 332 */
@@ -11318,11 +11316,15 @@ module.exports = function (regExp, replace) {
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__scenes_TitleScene__ = __webpack_require__(/*! ./scenes/TitleScene */ 761);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__scenes_WorldScene__ = __webpack_require__(/*! ./scenes/WorldScene */ 331);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__scenes_WorldScene__ = __webpack_require__(/*! ./scenes/WorldScene */ 217);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__scenes_MayorScene__ = __webpack_require__(/*! ./scenes/MayorScene */ 765);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__scenes_TownhallScene__ = __webpack_require__(/*! ./scenes/TownhallScene */ 1403);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__scenes_BootScene__ = __webpack_require__(/*! ./scenes/BootScene */ 1404);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__scenes_LoadingScene__ = __webpack_require__(/*! ./scenes/LoadingScene */ 1405);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__scenes_Level4Scene__ = __webpack_require__(/*! ./scenes/Level4Scene */ 1404);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__scenes_GameOverScene__ = __webpack_require__(/*! ./scenes/GameOverScene */ 1405);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__scenes_BootScene__ = __webpack_require__(/*! ./scenes/BootScene */ 1406);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__scenes_LoadingScene__ = __webpack_require__(/*! ./scenes/LoadingScene */ 1407);
+
+
 
 
 
@@ -11333,9 +11335,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 let titleScene = new __WEBPACK_IMPORTED_MODULE_0__scenes_TitleScene__["a" /* default */]();
 let worldScene = new __WEBPACK_IMPORTED_MODULE_1__scenes_WorldScene__["a" /* default */]();
 let townhallScene = new __WEBPACK_IMPORTED_MODULE_3__scenes_TownhallScene__["a" /* default */]();
+let level4scene = new __WEBPACK_IMPORTED_MODULE_4__scenes_Level4Scene__["a" /* default */]();
+let gameoverscene = new __WEBPACK_IMPORTED_MODULE_5__scenes_GameOverScene__["a" /* default */]();
 let mayorScene = new __WEBPACK_IMPORTED_MODULE_2__scenes_MayorScene__["a" /* default */]();
-let bootScene = new __WEBPACK_IMPORTED_MODULE_4__scenes_BootScene__["a" /* default */]();
-let loadingScene = new __WEBPACK_IMPORTED_MODULE_5__scenes_LoadingScene__["a" /* default */]();
+let bootScene = new __WEBPACK_IMPORTED_MODULE_6__scenes_BootScene__["a" /* default */]();
+let loadingScene = new __WEBPACK_IMPORTED_MODULE_7__scenes_LoadingScene__["a" /* default */]();
 
 let config = {
     type: Phaser.AUTO,
@@ -11357,6 +11361,8 @@ let game = new Phaser.Game(config);
 game.scene.add('TitleScene', titleScene);
 game.scene.add('WorldScene', worldScene);
 game.scene.add('TownhallScene', townhallScene);
+game.scene.add('Level4Scene', level4scene);
+game.scene.add('GameOverScene', gameoverscene);
 game.scene.add('MayorScene', mayorScene);
 game.scene.add('BootScene', bootScene);
 game.scene.add('LoadingScene', loadingScene);
@@ -11372,7 +11378,7 @@ game.scene.start('BootScene', { scene: 'title' });
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__JSONLevelScene__ = __webpack_require__(/*! ./JSONLevelScene */ 217);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__JSONLevelScene__ = __webpack_require__(/*! ./JSONLevelScene */ 331);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__prefabs_Prefab__ = __webpack_require__(/*! ../prefabs/Prefab */ 94);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__prefabs_TextPrefab__ = __webpack_require__(/*! ../prefabs/TextPrefab */ 162);
 
@@ -11439,7 +11445,7 @@ class NPC extends __WEBPACK_IMPORTED_MODULE_0__Prefab__["a" /* default */] {
 
     let gameContainer = document.querySelector('#game-container');
     newDiv.setAttribute("id", "messagebox");
-    newDiv.setAttribute("class", "message_white");
+    newDiv.setAttribute("class", "game__message_white");
     newDiv.appendChild(newP);
     newP.appendChild(newContent);
     gameContainer.appendChild(newDiv);
@@ -11533,18 +11539,13 @@ class Door extends __WEBPACK_IMPORTED_MODULE_0__Prefab__["a" /* default */] {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__JSONLevelScene__ = __webpack_require__(/*! ./JSONLevelScene */ 217);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__prefabs_StaticPlayer_js__ = __webpack_require__(/*! ../prefabs/StaticPlayer.js */ 766);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__prefabs_StaticPlayer_js__ = __webpack_require__(/*! ../prefabs/StaticPlayer.js */ 766);
 
-
-
-// let i = 1;
 
 class MayorScene extends Phaser.Scene {
 
   constructor() {
     super('MayorScene');
-    this.next_level = "";
   }
 
   init(data) {
@@ -11566,40 +11567,11 @@ In order to fulfil on your election promise, you must find those on Bajo who hav
 
 Speaking as the previous mayor, let me give you one valuable piece of advice: choose carefully, because the decisions you make for Bajo will have far reaching consequences…` };
 
-    let mainChar1 = new __WEBPACK_IMPORTED_MODULE_1__prefabs_StaticPlayer_js__["a" /* default */](this, 180, 100, 'character', 31, 3);
-    let senior = new __WEBPACK_IMPORTED_MODULE_1__prefabs_StaticPlayer_js__["a" /* default */](this, 500, 100, 'character', 64, 3);
+    let mainChar1 = new __WEBPACK_IMPORTED_MODULE_0__prefabs_StaticPlayer_js__["a" /* default */](this, 180, 100, 'character', 31, 3);
+    let senior = new __WEBPACK_IMPORTED_MODULE_0__prefabs_StaticPlayer_js__["a" /* default */](this, 500, 100, 'character', 64, 3);
 
     this.addMessage(message.level1);
-
-    // const config = {
-    //   key: 'character',
-    //   frames: this.anims.generateFrameNumbers('character', {
-    //     start: 30,
-    //     end: 32
-    //   }),
-    //   repeat: -1,
-    //   frameRate: 3
-    // };
-    // this.anims.create(config);
-    // this.runAnimation(10);
-    // this.mainChar.anims.play('character');
   }
-
-  // runAnimation(xPosition) {
-
-  //   while (i < 10) {
-  //     this.mainChar = this.add.sprite(xPosition, 100, 'character');
-  //     i++;
-  //     this.runAnimation(xPosition += 20)
-  //   }
-
-  // let xPosition = x;
-  // for (var i = 0; i < 10; i++) {
-  //   this.mainChar = this.add.sprite(xPosition, 100, 'character')
-  //   xPosition + 20;
-  //   this.mainChar.destroy();
-  // }
-  // }
 
   addMessage(message) {
     let newDiv = document.createElement("div");
@@ -11607,7 +11579,7 @@ Speaking as the previous mayor, let me give you one valuable piece of advice: ch
     let newContent = document.createTextNode(message);
     let gameContainer = document.querySelector('#game-container');
     newDiv.setAttribute("id", "messagebox");
-    newDiv.setAttribute("class", "message_black");
+    newDiv.setAttribute("class", "game__message_black");
     newDiv.appendChild(newP);
     newP.appendChild(newContent);
     gameContainer.appendChild(newDiv);
@@ -12305,17 +12277,18 @@ class StaticPlayer extends Phaser.Physics.Arcade.Sprite {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__WorldScene__ = __webpack_require__(/*! ./WorldScene */ 331);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__WorldScene__ = __webpack_require__(/*! ./WorldScene */ 217);
 
 
 class TownhallScene extends __WEBPACK_IMPORTED_MODULE_0__WorldScene__["a" /* default */] {
   constructor() {
     super('TownhallScene');
-    this.chosen_scene = "";
   }
 
   create(data) {
     super.create();
+    this.data = data;
+
     this.optionA = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.A);
     this.optionB = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.B);
     this.optionC = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.C);
@@ -12323,6 +12296,10 @@ class TownhallScene extends __WEBPACK_IMPORTED_MODULE_0__WorldScene__["a" /* def
 
     if (data.next_level === 'level2') {
       this.chosen_scene = 'level3';
+    } else if (data.next_level === 'level3') {
+      this.chosen_scene = 'level4';
+    } else {
+      this.chosen_scene = 'level2';
     }
   }
   update() {
@@ -12333,21 +12310,25 @@ class TownhallScene extends __WEBPACK_IMPORTED_MODULE_0__WorldScene__["a" /* def
     if (messageBox) {
       if (this.optionA.isDown) {
         messageBox.remove();
-        this.next_level(this.chosen_scene ? this.chosen_scene : 'level2');
+        this.next_level(this.chosen_scene);
       } else if (this.optionB.isDown) {
         messageBox.remove();
-        this.next_level(this.chosen_scene ? this.chosen_scene : 'level2');
+        this.next_level(this.chosen_scene);
       } else if (this.optionC.isDown) {
         messageBox.remove();
-        this.next_level(this.chosen_scene ? this.chosen_scene : 'level2');
+        this.next_level(this.chosen_scene);
       } else if (this.optionD.isDown) {
         messageBox.remove();
-        this.next_level(this.chosen_scene ? this.chosen_scene : 'level2');
+        this.next_level(this.chosen_scene);
       }
     }
   }
   next_level(level) {
-    this.scene.start('BootScene', { scene: 'mayor', level: level });
+    if (this.data && this.data.next_level === 'level3') {
+      this.scene.start('BootScene', { scene: 'level4' });
+    } else {
+      this.scene.start('BootScene', { scene: 'mayor', level: level });
+    }
   }
 }
 
@@ -12355,6 +12336,74 @@ class TownhallScene extends __WEBPACK_IMPORTED_MODULE_0__WorldScene__["a" /* def
 
 /***/ }),
 /* 1404 */
+/*!***********************************!*\
+  !*** ./src/scenes/Level4Scene.js ***!
+  \***********************************/
+/*! exports provided: default */
+/*! exports used: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__WorldScene__ = __webpack_require__(/*! ./WorldScene */ 217);
+
+
+class Level4Scene extends __WEBPACK_IMPORTED_MODULE_0__WorldScene__["a" /* default */] {
+  constructor() {
+    super('Level4Scene');
+  }
+
+  create(data) {
+    super.create();
+    this.spaceBar = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.SPACE);
+  }
+
+  update() {
+
+    super.update();
+
+    let messageBox = document.querySelector('#messagebox');
+    if (messageBox && this.spaceBar.isDown) {
+      messageBox.remove();
+      this.next_level();
+    }
+  }
+  next_level() {
+    this.scene.start('BootScene', { scene: 'gameover' });
+  }
+}
+
+/* harmony default export */ __webpack_exports__["a"] = (Level4Scene);
+
+/***/ }),
+/* 1405 */
+/*!*************************************!*\
+  !*** ./src/scenes/GameOverScene.js ***!
+  \*************************************/
+/*! exports provided: default */
+/*! exports used: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+class GameOverScene extends Phaser.Scene {
+
+  constructor() {
+    super('GameOverScene');
+  }
+
+  preload() {
+    this.load.image('game_over', 'assets/images/game-over/BajoIsland.png');
+  }
+
+  create() {
+    let image = this.add.image(340, 200, 'game_over');
+  }
+
+}
+
+/* harmony default export */ __webpack_exports__["a"] = (GameOverScene);
+
+/***/ }),
+/* 1406 */
 /*!*********************************!*\
   !*** ./src/scenes/BootScene.js ***!
   \*********************************/
@@ -12371,10 +12420,11 @@ class BootScene extends Phaser.Scene {
       level1: { key: 'WorldScene', path: 'assets/levels/level1.json' },
       level2: { key: 'WorldScene', path: 'assets/levels/level2.json' },
       level3: { key: 'WorldScene', path: 'assets/levels/level3.json' },
+      level4: { key: 'Level4Scene', path: 'assets/levels/level4.json' },
       mayor: { key: 'MayorScene', path: 'assets/levels/mayor.json' },
+      gameover: { key: 'GameOverScene', path: 'assets/levels/game_over.json' },
       townhall: { key: 'TownhallScene', path: 'assets/levels/townhall.json' }
     };
-    this.next_level = "";
   }
 
   init(data) {
@@ -12392,7 +12442,6 @@ class BootScene extends Phaser.Scene {
 
   create(data) {
     let level_data;
-    console.log("DATA:", data);
     if (data.next_level) {
       level_data = this.cache.json.get(data.level);
     } else {
@@ -12405,7 +12454,7 @@ class BootScene extends Phaser.Scene {
 /* harmony default export */ __webpack_exports__["a"] = (BootScene);
 
 /***/ }),
-/* 1405 */
+/* 1407 */
 /*!************************************!*\
   !*** ./src/scenes/LoadingScene.js ***!
   \************************************/
@@ -12431,7 +12480,6 @@ class LoadingScene extends Phaser.Scene {
       switch (asset.type) {
         case 'image':
           this.load.image(asset_key, asset.source);
-          // console.log(asset_key, asset.source)
           break;
         case 'spritesheet':
           this.load.spritesheet(asset_key, asset.source, { frameWidth: asset.frame_width, frameHeight: asset.frame_height, frames: asset.frames, margin: asset.margin, spacing: asset.spacing });
@@ -12444,6 +12492,7 @@ class LoadingScene extends Phaser.Scene {
   }
 
   create(data) {
+
     this.scene.start(data.scene, { level_data: this.level_data, next_level: data.next_level });
   }
 }

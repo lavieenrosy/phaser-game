@@ -1,68 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <title>Doomsday Island</title>
-
-    <link rel="stylesheet" href="/styles.css" type="text/css">
-     <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+    <link rel="stylesheet" href="/public/styles/main.css" type="text/css">
+    <link rel="stylesheet" href="/public/vendor/normalize-4.1.1.css">
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
     <meta http-equiv="cleartype" content="on">
     <meta name="format-detection" content="telephone=no">
-
-    <style>
-        html,
-        body {
-
-          image-rendering: optimizeSpeed;              /* Older versions of FF */
-          image-rendering: -moz-crisp-edges;           /* FF 6.0+ */
-          image-rendering: -webkit-optimize-contrast;  /* Webkit (non standard naming) */
-          image-rendering: -o-crisp-edges;             /* OS X & Windows Opera (12.02+) */
-          image-rendering: crisp-edges;                /* Possible future browsers. */
-          -ms-interpolation-mode: nearest-neighbor;    /* IE (non standard naming) */
-          image-rendering: pixelated;                  /* Chrome 41 */
-        }
-
-        @font-face {
-            font-family: 'Kells';
-            src: url('assets/fonts/kells_uncial.ttf');
-        }
-
-        .fontPreload {
-            font-family: 'Kells';
-            position:absolute;
-            left:-100px;
-        }
-    </style>
 </head>
-
 <body>
-    <nav>
-      <h1>DOOMSDAY ISLAND</h1>
-      <h4>Login</h4>
-    </nav>
-    <aside>
-      <h2>Game Instructions</h2>
-      <h3>Up</h3>
-      <h3>Down</h3>
-      <h3>Left</h3>
-      <h3>Right</h3>
-    </aside>
-    <div class="fontPreload">.</div>
-
-<div id="game-container">
-</div>
-
-<footer>
-  <p>test</p>
-  <div id= "typedtext"></div>
-
-  <script type="text/javascript" src="src/prefabs/Typewriter.js"></script>
-</footer>
-<!-- <script type="text/javascript" src="./dist/vendor.bundle.js"></script><script type="text/javascript" src="./dist/bundle.js"></script> -->
+  <main>
+    <section>
+        <nav class="navbar">
+            <h1 class = "navbar__title">Bajo Island</h1>
+            <a href="#" class="navbar__btn">Login</h4>
+        </nav>
+        <section class="game">
+          <div class="game__container" id="game-container"></div>
+        </section>
+    </section>
+    <section class="guide">
+      <article class="guide__container">
+        <h2>Welcome to Bajo Island!</h2>
+        <p class="guide__content">You are the mayor of Bajo Island, talk to townspeople to help make decisions that will improve the island for generations to come.</p>
+        <p class="guide__content">Use cursor keys and mouse.</p>
+        <p class="guide__content">Good luck, friend!</p>
+      </article>
+    </section>
+    <section class="scores">
+      <article class="scores__container">
+          <h2>High Scores</h2>
+        <table class="scores__table">
+          <tr>
+            <th>RANK</th>
+            <th>SCORE</th>
+            <th>NAME</th>
+          </tr> 
+          <tr>
+            <td>1ST</td>
+            <td>2150</td>
+            <td>BASSEM</td>
+          </tr> 
+          <tr>
+            <td>2ND</td>
+            <td>2050</td>
+            <td>ANDREA</td>
+          </tr>
+          <tr>
+            <td>3RD</td>
+            <td>1800</td>
+            <td>ROSY</td>
+          </tr>
+        </table>
+      </article>
+    </section>
+    <section class="results">
+      <article class="results__container">
+        <img class="results__img" src="../public/images/BajoGazette.png">
+      </article>
+    </section>
+  </main>
 </body>
 </html>
