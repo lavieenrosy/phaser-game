@@ -38,7 +38,7 @@ Speaking as the previous mayor, let me give you one valuable piece of advice: ch
     let newContent = document.createTextNode(message);
     let gameContainer = document.querySelector('#game-container');
     newDiv.setAttribute("id", "messagebox");
-    newDiv.setAttribute("class", "message_black");
+    newDiv.setAttribute("class", "game__message_black");
     newDiv.appendChild(newP);
     newP.appendChild(newContent)
     gameContainer.appendChild(newDiv);

@@ -1,0 +1,66 @@
+@import 'nav.scss';
+@import 'game.scss';
+@import 'guide.scss';
+@import 'scores.scss';
+@import 'results.scss';
+
+ html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  background-color: $primary;
+  font-family: $font;
+  color: $reverse;
+  image-rendering: optimizeSpeed;              /* Older versions of FF */
+  image-rendering: -moz-crisp-edges;           /* FF 6.0+ */
+  image-rendering: -webkit-optimize-contrast;  /* Webkit (non standard naming) */
+  image-rendering: -o-crisp-edges;             /* OS X & Windows Opera (12.02+) */
+  image-rendering: crisp-edges;                /* Possible future browsers. */
+  -ms-interpolation-mode: nearest-neighbor;    /* IE (non standard naming) */
+  image-rendering: pixelated;                  /* Chrome 41 */
+
+}
+
+main {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+section {
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+button {
+  text-decoration: none;
+  border-color: none;
+  border-style: none;
+  cursor: pointer;
+}
+
+button:hover {
+  text-decoration: none;
+}
+
+button:focus {
+  outline: none;
+}
+
+
+
