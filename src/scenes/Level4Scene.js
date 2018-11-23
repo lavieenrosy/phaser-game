@@ -7,7 +7,7 @@ class Level4Scene extends WorldScene {
 
   create(data) {
     super.create();
-    this.aKey = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.ENTER);
+    this.spaceBar = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.SPACE);
   }
 
   update() {
@@ -15,10 +15,9 @@ class Level4Scene extends WorldScene {
     super.update();
 
     let messageBox = document.querySelector('#messagebox');
-    if (messageBox) {
-      if (this.aKey.isDown) {
-        this.next_level();
-      }
+    if (messageBox && this.spaceBar.isDown) {
+      messageBox.remove();
+      this.next_level();
     }
 
   }
