@@ -7,7 +7,7 @@ class Level4Scene extends WorldScene {
 
   create(data) {
     super.create();
-    this.enter = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.ENTER);
+    this.aKey = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.ENTER);
   }
 
   update() {
@@ -16,14 +16,14 @@ class Level4Scene extends WorldScene {
 
     let messageBox = document.querySelector('#messagebox');
     if (messageBox) {
-      if (this.input.activePointer.isDown) {
+      if (this.aKey.isDown) {
         this.next_level();
       }
     }
 
   }
   next_level() {
-    this.scene.start('BootScene', {scene: 'game-over'});
+    this.scene.start('BootScene', {scene: 'gameover'});
   }
 }
 

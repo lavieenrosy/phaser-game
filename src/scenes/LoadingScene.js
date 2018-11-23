@@ -14,14 +14,14 @@ class LoadingScene extends Phaser.Scene {
       let asset = assets[asset_key];
       switch (asset.type) {
         case 'image':
-            this.load.image(asset_key, asset.source);
-            break;
+          this.load.image(asset_key, asset.source);
+          break;
         case 'spritesheet':
-            this.load.spritesheet(asset_key, asset.source, {frameWidth: asset.frame_width, frameHeight: asset.frame_height, frames: asset.frames, margin: asset.margin, spacing: asset.spacing});
-            break;
+          this.load.spritesheet(asset_key, asset.source, {frameWidth: asset.frame_width, frameHeight: asset.frame_height, frames: asset.frames, margin: asset.margin, spacing: asset.spacing});
+          break;
         case 'tilemap':
-            this.load.tilemapTiledJSON(asset_key, asset.source);
-            break;
+          this.load.tilemapTiledJSON(asset_key, asset.source);
+          break;
       }
     }
   }

@@ -1,7 +1,7 @@
 {
   "assets": {
-      "black_background": {"type": "image", "source": "assets/images/mayor-scene/BlackScreen.png"},
-      "modern5": {"type": "spritesheet", "source": "assets/images/world/modern5.png", "frame_width": 46, "frame_height": 46 }
+    "black_background": {"type": "image", "source": "assets/images/mayor-scene/BlackScreen.png"},
+    "modern5": {"type": "spritesheet", "source": "assets/images/world/modern5.png", "frame_width": 46, "frame_height": 46 }
   },
   "groups": [
       "background",
