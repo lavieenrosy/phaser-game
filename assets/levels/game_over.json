@@ -1,0 +1,17 @@
+{
+  "assets": {
+    "game_over_background": {"type": "image", "source": "assets/images/game-over/BajoIsland.png"}
+  },
+  "prefabs": {
+    "background": {
+      "type": "background",
+      "position": {"x": 0, "y": 0},
+      "properties": {
+          "texture": "game_over_background",
+          "group": "background",
+          "anchor": {"x": 0, "y": 0}
+      }
+    }
+  }
+}
+

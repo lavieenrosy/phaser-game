@@ -1,11 +1,9 @@
-import JSONLevelScene from './JSONLevelScene';
 import StaticPlayer from '../prefabs/StaticPlayer.js';
 
 class MayorScene extends Phaser.Scene {
 
   constructor() {
     super('MayorScene');
-    this.next_level = "";
   }
 
   init(data) {

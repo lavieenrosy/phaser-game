@@ -15,8 +15,6 @@ class WorldScene extends JSONLevelScene {
       npc: NPC.prototype.constructor,
       door: Door.prototype.constructor
     }
-
-    this.TEXT_STYLE = {font: '14px Kells', fill: '#ffffff'};
   }
 
   preload () {
@@ -25,7 +23,7 @@ class WorldScene extends JSONLevelScene {
     }
   }
 
-  create (data) {
+  create () {
     this.map = this.add.tilemap(this.level_data.map.key);
 
     let tileset_index = 0;
@@ -49,11 +47,6 @@ class WorldScene extends JSONLevelScene {
     this.map.objects.forEach(function (object_layer) {
       object_layer.objects.forEach(this.create_object, this);
     }, this);
-
-    console.log("WORLDSCENE DATA: ", data)
-    // if (data.next_level === 'level4') {
-    //   this.scene.start('BootScene', {scene: 'game-over'})
-    // }
 
   }
 

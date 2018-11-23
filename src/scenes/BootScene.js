@@ -6,11 +6,11 @@ class BootScene extends Phaser.Scene {
       level1: {key: 'WorldScene', path: 'assets/levels/level1.json'},
       level2: {key: 'WorldScene', path: 'assets/levels/level2.json'},
       level3: {key: 'WorldScene', path: 'assets/levels/level3.json'},
-      level4: {key: 'WorldScene', path: 'assets/levels/level4.json'},
+      level4: {key: 'Level4Scene', path: 'assets/levels/level4.json'},
       mayor: {key: 'MayorScene', path: 'assets/levels/mayor.json'},
+      // game-over: {key: 'GameOverScene', path: 'assets/levels/game_over.json'},
       townhall: {key: 'TownhallScene', path: 'assets/levels/townhall.json'}
     };
-    this.next_level = "";
   }
 
   init(data) {
