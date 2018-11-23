@@ -1,20 +1,19 @@
 {
-    "assets": {
-        "background_image": {"type": "image", "source": "assets/images/title/IntroScreen.png"}
-    },
-    "groups": [
-        "background",
-        "texts"
-    ],
-    "sprites": {
-        "background": {
-            "type": "background",
-            "position": {"x": 0, "y": 0},
-            "properties": {
-                "texture": "background_image",
-                "group": "background",
-                "anchor": {"x": 0, "y": 0}
-            }
-        }
+  "assets": {
+    "background_image": {"type": "image", "source": "assets/images/title/IntroScreen.png"}
+  },
+  "groups": [
+    "background"
+  ],
+  "sprites": {
+    "background": {
+      "type": "background",
+      "position": {"x": 0, "y": 0},
+      "properties": {
+        "texture": "background_image",
+        "group": "background",
+        "anchor": {"x": 0, "y": 0}
+      }
     }
+  }
 }
