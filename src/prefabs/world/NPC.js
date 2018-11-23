@@ -23,7 +23,7 @@ export default class NPC extends Prefab {
 
     let gameContainer = document.querySelector('#game-container');
     newDiv.setAttribute("id", "messagebox");
-    newDiv.setAttribute("class", "message_white");
+    newDiv.setAttribute("class", "game__message_white");
     newDiv.appendChild(newP);
     newP.appendChild(newContent)
     gameContainer.appendChild(newDiv);

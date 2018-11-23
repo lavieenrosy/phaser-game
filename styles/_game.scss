@@ -1,0 +1,54 @@
+@import 'brand.scss';
+
+.game {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 5em 0 1em 0;
+
+  &__container{
+    flex-basis: 100%;
+    margin: 10px;
+    width: auto;
+    height: auto;
+    position: relative;
+    float: left;
+    text-align: center;
+  }
+  
+  &__message_white {
+    background-color: $reverse;
+    color: $black;
+    height: 150px;
+  }
+  
+  &__message_black {
+    background-color: $black;
+    flex-basis: 100%;
+    border: 2px $highlight solid;
+    color: $reverse;
+    opacity: 0.3;
+    height: 250px;
+  }
+
+}
+
+#messagebox {
+  position: absolute;
+  text-align: left;
+  width: 900px;
+  margin: auto;
+  left: 0;
+  right: 0;
+  opacity: 0.8;
+  padding-left: 20px;
+  bottom: 40px;
+  overflow: scroll;
+  border-radius: 6px;
+  font-size: 1.5em;
+  white-space: pre-wrap;
+}
+
+
+
