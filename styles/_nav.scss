@@ -1,16 +1,27 @@
 @import 'brand.scss';
 
-nav {
+.navbar {
   background-color: $secondary;
-  height: 60px;
+  padding: 1.8em;
+  height: 120px;
   color: $reverse;
   margin-bottom: 20px;
-}
-nav h1 {
-  float: left;
-  margin-left: 10px;
-}
-nav h4 {
-  float: right;
-  margin-right: 10px;
+
+  &__btn {
+    color: $reverse;
+    background-color: $primary;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    padding: 1em;
+    font-size: 1.3em;
+    text-decoration: none;
+    border-radius: 10px;
+    float: right;
+  }
+
+  &__title {
+    float: left;
+    margin-left: 10px;
+  }
+
 }

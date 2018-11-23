@@ -1,18 +1,24 @@
-nav {
+.navbar {
   background-color: #385497;
-  height: 60px;
+  padding: 1.8em;
+  height: 120px;
   color: #fff;
   margin-bottom: 20px;
 }
-
-nav h1 {
+.navbar__btn {
+  color: #fff;
+  background-color: #061C40;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  padding: 1em;
+  font-size: 1.3em;
+  text-decoration: none;
+  border-radius: 10px;
+  float: right;
+}
+.navbar__title {
   float: left;
   margin-left: 10px;
-}
-
-nav h4 {
-  float: right;
-  margin-right: 10px;
 }
 
 .game {
@@ -24,6 +30,41 @@ nav h4 {
 }
 .game__container {
   flex-basis: 100%;
+  margin: 10px;
+  width: auto;
+  height: auto;
+  position: relative;
+  float: left;
+  text-align: center;
+}
+.game__message_white {
+  background-color: #fff;
+  color: #000;
+  height: 150px;
+}
+.game__message_black {
+  background-color: #000;
+  flex-basis: 100%;
+  border: 2px #d4af37 solid;
+  color: #fff;
+  opacity: 0.3;
+  height: 250px;
+}
+
+#messagebox {
+  position: absolute;
+  text-align: left;
+  width: 900px;
+  margin: auto;
+  left: 0;
+  right: 0;
+  opacity: 0.8;
+  padding-left: 20px;
+  bottom: 40px;
+  overflow: scroll;
+  border-radius: 6px;
+  font-size: 1.5em;
+  white-space: pre-wrap;
 }
 
 /* MAIN CSS */
@@ -92,45 +133,6 @@ button:hover {
 
 button:focus {
   outline: none;
-}
-
-#game-container {
-  margin: 10px;
-  width: auto;
-  height: auto;
-  position: relative;
-  float: left;
-  text-align: center;
-}
-
-#messagebox {
-  position: absolute;
-  text-align: left;
-  width: 90%;
-  margin: auto;
-  left: 0;
-  right: 0;
-  opacity: 0.8;
-  padding-left: 20px;
-  bottom: 40px;
-  overflow: scroll;
-  border-radius: 6px;
-  font-size: 1.5em;
-  white-space: pre-wrap;
-}
-
-.message_white {
-  background-color: white;
-  color: black;
-  height: 150px;
-}
-
-.message_black {
-  background-color: #333333;
-  border: 2px #d4af37 solid;
-  color: white;
-  opacity: 0.3;
-  height: 250px;
 }
 
 /*# sourceMappingURL=main.css.map */
