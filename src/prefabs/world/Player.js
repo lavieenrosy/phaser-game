@@ -104,6 +104,14 @@ class Player extends Prefab {
       }
 
       let messageBox = document.querySelector('#messagebox');
+
+      if (messageBox) {
+        this.anims.stop();
+        this.body.velocity.x = 0;
+        this.body.velocity.y = 0;
+        this.setFrame(this.stopped_frames[this.body.facing - 10])
+      }
+      
       if(messageBox && this.enter_key.isDown) {
         messageBox.remove();
       }
