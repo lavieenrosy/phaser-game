@@ -81,6 +81,7 @@
   height: auto;
   position: relative;
   float: left;
+  border-bottom: 5px #fff solid;
 }
 
 .scores {
@@ -95,13 +96,18 @@
   width: auto;
   height: auto;
   position: relative;
-  border-top: 5px #fff solid;
   border-bottom: 5px #fff solid;
 }
 .scores__table {
-  padding: 2em 0 2em 0;
+  padding: 1.5em 0 1.5em 0;
   font-size: 2em;
   text-align: center;
+}
+
+td {
+  color: #F40847;
+  padding: 0 1.5em 0 1.5em;
+  justify-content: space-evenly;
 }
 
 html {
