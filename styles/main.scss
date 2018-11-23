@@ -1,7 +1,7 @@
 @import 'nav.scss';
 @import 'game.scss';
-
-/* MAIN CSS */
+@import 'guide.scss';
+@import 'scores.scss';
 
  html {
   box-sizing: border-box;
@@ -13,9 +13,6 @@
   box-sizing: inherit;
 }
 
-/*
- * Global layout stuff
- */
 body {
   margin: 0;
   background-color: $primary;
@@ -39,6 +36,9 @@ main {
 
 section {
   display: flex;
+}
+p {
+  font-size: 1.5em;
 }
 
 a {

@@ -19,6 +19,7 @@
 .navbar__title {
   float: left;
   margin-left: 10px;
+  font-size: 2.5em;
 }
 
 .game {
@@ -67,7 +68,42 @@
   white-space: pre-wrap;
 }
 
-/* MAIN CSS */
+.guide {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.guide__container {
+  flex-basis: 75%;
+  margin: 10px;
+  width: auto;
+  height: auto;
+  position: relative;
+  float: left;
+}
+
+.scores {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.scores__container {
+  flex-basis: 75%;
+  margin: 10px;
+  width: auto;
+  height: auto;
+  position: relative;
+  border-top: 5px #fff solid;
+  border-bottom: 5px #fff solid;
+}
+.scores__table {
+  padding: 2em 0 2em 0;
+  font-size: 2em;
+  text-align: center;
+}
+
 html {
   box-sizing: border-box;
 }
@@ -78,9 +114,6 @@ html {
   box-sizing: inherit;
 }
 
-/*
- * Global layout stuff
- */
 body {
   margin: 0;
   background-color: #061C40;
@@ -110,6 +143,10 @@ main {
 
 section {
   display: flex;
+}
+
+p {
+  font-size: 1.5em;
 }
 
 a {

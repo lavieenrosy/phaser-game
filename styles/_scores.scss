@@ -1,0 +1,30 @@
+@import 'brand.scss';
+
+.scores {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  // padding: 5em 0 1em 0;
+
+  &__container {
+    flex-basis: 75%;
+    margin: 10px;
+    width: auto;
+    height: auto;
+    position: relative;
+    border-top: 5px $reverse solid;
+    border-bottom: 5px $reverse solid;
+    // float: left;
+    // text-align: center;
+  }
+
+  &__table {
+    padding: 2em 0 2em 0;
+    font-size: 2em;
+    text-align: center;
+  }
+
+}
+
+
