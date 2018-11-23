@@ -8,7 +8,6 @@
     "dev": "webpack",
     "deploy": "webpack --config webpack.production.config.js",
     "test": "eslint ./src/**/**.js", 
-    // "heroku-postbuild": "webpack -p", 
     "start": "node server.js"
   },
   "license": "MIT",
