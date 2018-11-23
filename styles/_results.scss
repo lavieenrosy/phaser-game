@@ -1,11 +1,10 @@
 @import 'brand.scss';
 
-.guide {
+.results {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  // padding: 5em 0 1em 0;
 
   &__container {
     flex-basis: 75%;
@@ -15,11 +14,10 @@
     position: relative;
     float: left;
     border-bottom: 5px $reverse solid;
-    // text-align: center;
   }
 
-  &__content {
-    font-size: 1.5em;
+  &__img {
+    width: 100%;
   }
 
 }
