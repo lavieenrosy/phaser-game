@@ -111,11 +111,14 @@ class TownhallScene extends WorldScene {
   }
 
   startScene(level) {
-    if (this.data && this.data.next_level === 'level3') {
-      this.scene.start('BootScene', {scene: 'level4', money: this.money, popularity: this.popularity})
-    } else {
-    this.scene.start('BootScene', {scene: 'mayor', level: level, money: this.money, popularity: this.popularity});
-    }
+    this.cameras.main.fade(700, 0, 0, 0);
+    this.cameras.main.on('camerafadeoutcomplete', () => {
+      if (this.data && this.data.next_level === 'level3') {
+        this.scene.start('BootScene', {scene: 'level4', money: this.money, popularity: this.popularity})
+      } else {
+      this.scene.start('BootScene', {scene: 'mayor', level: level, money: this.money, popularity: this.popularity});
+      }
+    });
   }
 
 }
