@@ -42,4 +42,35 @@ game.scene.add('MayorScene', mayorScene);
 game.scene.add('BootScene', bootScene);
 game.scene.add('LoadingScene', loadingScene);
 game.scene.start('BootScene', {scene: 'title'});
+game.data = 'poop';
+console.log('Game:', game)
+
+//toggle for login and reg form
+
+document.querySelector('.navbar__reg-btn').addEventListener('click', (event) => {
+    const dropDown = document.querySelector('.reg-box')
+    if (dropDown.style.display === "none") {
+        dropDown.style.display = "block";
+    } else {
+        dropDown.style.display = "none";
+    }
+});
+
+document.querySelector('.navbar__login-btn').addEventListener('click', (event) => {
+    const dropDown = document.querySelector('.login-box')
+    if (dropDown.style.display === "none") {
+        dropDown.style.display = "block";
+    } else {
+        dropDown.style.display = "none";
+    }
+});
+
+//this is the code from Tweeter
+
+  // $('.compose').on('click', function (event) {
+  //   $('.new-tweet').slideToggle("400", function() {
+  //     $('.new-tweet textarea').focus();
+  //   });
+  // });
+
 

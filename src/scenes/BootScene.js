@@ -16,6 +16,7 @@ class BootScene extends Phaser.Scene {
   init(data) {
     if (data.level) {
       this.next_level = data.level
+      console.log('Data from BootScene:', data);
     }
   }
 
