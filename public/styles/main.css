@@ -24,7 +24,6 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
-<<<<<<< HEAD
   padding: 5em 0 1em 0;
 }
 .game__container {
@@ -68,28 +67,6 @@
   text-align: center;
   color: #061C40;
 }
-=======
-  padding: 5em 0 1em 0; }
-  .game__container {
-    flex-basis: 100%;
-    margin: 10px;
-    width: auto;
-    height: auto;
-    position: relative;
-    float: left;
-    text-align: center; }
-  .game__message_white {
-    background-color: #fff;
-    color: #000;
-    height: 150px; }
-  .game__message_black {
-    background-color: #000;
-    flex-basis: 100%;
-    border: 2px #d4af37 solid;
-    color: #fff;
-    opacity: 0.3;
-    height: 250px; }
->>>>>>> master
 
 #messagebox {
   position: absolute;
@@ -126,7 +103,6 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-<<<<<<< HEAD
   justify-content: space-evenly;
 }
 .scores__container {
@@ -143,22 +119,6 @@
   text-align: center;
 }
 .scores__td {
-=======
-  justify-content: space-evenly; }
-  .scores__container {
-    flex-basis: 75%;
-    margin: 10px;
-    width: auto;
-    height: auto;
-    position: relative;
-    border-bottom: 5px #fff solid; }
-  .scores__table {
-    padding: 1.5em 0 1.5em 0;
-    font-size: 2em;
-    text-align: center; }
-
-td {
->>>>>>> master
   color: #F40847;
   padding: 0 1.5em 0 1.5em;
   justify-content: space-evenly; }
