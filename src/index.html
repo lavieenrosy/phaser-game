@@ -26,7 +26,9 @@
             <a href="#" class="navbar__btn">Login</h4>
         </nav>
         <section class="game">
-          <div class="game__container" id="game-container"></div>
+          <div class="game__container" id="game-container">
+            <!-- game renders here -->
+          </div>
         </section>
     </section>
     <section class="guide">
@@ -41,29 +43,15 @@
       <article class="scores__container">
           <h2>High Scores</h2>
         <table class="scores__table">
-          
-          <tr>
-            <th class="scores__th">NAME</th>
-            <th class="scores__th">SCORE</th>
-          </tr> 
-          </table>
-          <table id="scores" class="scores__table">
-          <tr>
-            <td class="scores__td">2150</td>
-            <td class="scores__td">BASSEM</td>
-          </tr> 
-          <tr>
-            <td class="scores__td">2050</td>
-            <td class="scores__td">ANDREA</td>
-          </tr>
-          <tr>
-            <td class="scores__td">1800</td>
-            <td class="scores__td">ROSY</td>
-          </tr>
-          <tr>
-              <td class="scores__td">1750</td>
-              <td class="scores__td">ANDREA</td>
-            </tr>
+          <thead>
+            <tr>
+              <th class="scores__th">NAME</th>
+              <th class="scores__th">SCORE</th>
+            </tr> 
+          </thead>
+          <tbody id="scores"> 
+            <!-- high scores render here -->
+          </tbody>   
         </table>
       </article>
     </section>
