@@ -17,3 +17,5 @@ dump/
 *.old*
 higherVolume/
 public/styles
+.sass-cache/
+dist/
