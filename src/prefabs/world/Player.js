@@ -2,8 +2,9 @@ import Prefab from '../Prefab';
 
 class Player extends Prefab {
   constructor(scene, name, position, properties) {
-    super(scene, name, position, properties);
 
+    super(scene, name, position, properties);
+    
     this.walking_speed = +properties.walking_speed * 3;
 
     this.body.collideWorldBounds = true;
@@ -21,6 +22,7 @@ class Player extends Prefab {
     this.move_up = this.scene.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.UP);
     this.move_down = this.scene.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.DOWN);
     this.enter_key = this.scene.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.ENTER);
+    
 
     if (!this.scene.anims.anims.has('walking_down')) {
       this.scene.anims.create({
@@ -74,7 +76,7 @@ class Player extends Prefab {
         this.body.velocity.x = -this.walking_speed;
         if (this.body.velocity.y === 0) {
           this.anims.play('walking_left', true)
-        }
+        } 
       } else if (this.move_right.isDown && this.body.velocity.x >= 0) {
         this.body.velocity.x = this.walking_speed;
         if (this.body.velocity.y === 0) {
@@ -103,7 +105,16 @@ class Player extends Prefab {
         this.setFrame(this.stopped_frames[this.body.facing - 10]);
       }
 
+      
       let messageBox = document.querySelector('#messagebox');
+
+      if (messageBox) {
+        this.anims.stop();
+        this.body.velocity.x = 0;
+        this.body.velocity.y = 0;
+        this.setFrame(this.stopped_frames[this.body.facing - 10])
+      }
+      
       if(messageBox && this.enter_key.isDown) {
         messageBox.remove();
       }

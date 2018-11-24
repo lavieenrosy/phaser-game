@@ -6,15 +6,17 @@ class BootScene extends Phaser.Scene {
       level1: {key: 'WorldScene', path: 'assets/levels/level1.json'},
       level2: {key: 'WorldScene', path: 'assets/levels/level2.json'},
       level3: {key: 'WorldScene', path: 'assets/levels/level3.json'},
+      level4: {key: 'Level4Scene', path: 'assets/levels/level4.json'},
       mayor: {key: 'MayorScene', path: 'assets/levels/mayor.json'},
+      gameover: {key: 'GameOverScene', path: 'assets/levels/game_over.json'},
       townhall: {key: 'TownhallScene', path: 'assets/levels/townhall.json'}
     };
-    this.next_level = "";
   }
 
   init(data) {
     if (data.level) {
       this.next_level = data.level
+      console.log('Data from BootScene:', data);
     }
   }
 
@@ -28,7 +30,6 @@ class BootScene extends Phaser.Scene {
 
   create (data) {
       let level_data;
-      console.log("DATA:", data)
       if (data.next_level) {
         level_data = this.cache.json.get(data.level);
       } else {

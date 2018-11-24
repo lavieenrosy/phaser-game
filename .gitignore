@@ -1,5 +1,4 @@
 node_modules/
-dist/
 build/
 .vscode/
 .idea
@@ -17,3 +16,5 @@ dump/
 higherVolume/
 .DS_Store
 public/styles
+.sass-cache/
+dist/

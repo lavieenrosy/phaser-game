@@ -1,6 +1,6 @@
 {
   "assets": {
-      "map_tileset": {"type": "image", "source": "assets/images/terrain_effects.png"},
+      "map_tileset": {"type": "image", "source": "assets/images/Terrain.png"},
 
       "player_spritesheet": {"type": "spritesheet", "source": "assets/images/world/player.png", "frame_width": 16, "frame_height": 16},
       "peter_image": {"type": "image", "source": "assets/images/world/peter.png"},
@@ -9,9 +9,9 @@
       "miche_image": {"type": "image", "source": "assets/images/world/miche.png"},
       "david_image": {"type": "image", "source": "assets/images/world/david.png"},
       "jeremy_image": {"type": "image", "source": "assets/images/world/jeremy.png"},
-      "grannygit _image": {"type": "image", "source": "assets/images/world/granny.png"},
+      "granny_image": {"type": "image", "source": "assets/images/world/granny.png"},
 
-      "level2_level_tilemap": {"type": "tilemap", "source": "assets/maps/level2.json"}
+      "level4_level_tilemap": {"type": "tilemap", "source": "assets/maps/level4.json"}
   },
   "groups": [
       "players",
@@ -20,7 +20,7 @@
       "doors"
   ],
   "map": {
-      "key": "level2_level_tilemap",
+      "key": "level4_level_tilemap",
       "tilesets": ["map_tileset"]
   },
   "npc_messages": {
