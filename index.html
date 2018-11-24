@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Doomsday Island</title>
+    <title>Bajo Island</title>
     <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
     <link rel="stylesheet" href="/public/styles/main.css" type="text/css">
     <link rel="stylesheet" href="/public/vendor/normalize-4.1.1.css">
@@ -15,14 +15,26 @@
 <body>
   <main>
     <section>
-        <nav class="navbar">
-            <h1 class="navbar__title">Bajo Island</h1>
-            <a href="#" class="navbar__btn">Login
-        </a></nav>
-        <section class="game">
-          <div class="game__container" id="game-container"></div>
-        </section>
+      <nav class="navbar">
+        <h1 class="navbar__title">Bajo Island</h1>
+        <a href="#" class="navbar__btn">Login
+      </a></nav>
+    </section>    
+    <section class="game">
+      <div class="game__container" id="game-container">
+          <article class="game__status-bar">
+            <p>Player: Andrea  |  Level: 1</p>
+              <!-- <table class="game__table">
+                    <td>Player: Andrea</td>
+                    <td>Level: 1</td>
+                    <td>Money: $100</td>
+                    <td>Popularity: 9</td>
+                </table> -->
+            </article>
+      </div>
+
     </section>
+    
     <section class="guide">
       <article class="guide__container">
         <h2>Welcome to Bajo Island!</h2>
@@ -31,8 +43,9 @@
         <p class="guide__content">Good luck, friend!</p>
       </article>
     </section>
-    <section class="scores">
-      <article class="scores__container">
+    <section id="scores" class="scores">
+      <!-- the article will render dynamically -->
+      <!-- <article id="scores__container" class="scores__container">
           <h2>High Scores</h2>
         <table class="scores__table">
           <tr>
@@ -40,19 +53,19 @@
             <th>NAME</th>
           </tr> 
           <tr>
-            <td>2150</td>
-            <td>BASSEM</td>
+            <td class ="scores__td">2150</td>
+            <td class ="scores__td">BASSEM</td>
           </tr> 
           <tr>
-            <td>2050</td>
-            <td>ANDREA</td>
+            <td class ="scores__td">2050</td>
+            <td class ="scores__td">ANDREA</td>
           </tr>
           <tr>
-            <td>1800</td>
-            <td>ROSY</td>
+            <td class ="scores__td">1800</td>
+            <td class ="scores__td">ROSY</td>
           </tr>
         </table>
-      </article>
+      </article> -->
     </section>
     <section class="results">
       <article class="results__container">
@@ -60,5 +73,8 @@
       </article>
     </section>
   </main>
+  <!-- JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="/scripts/app.js"></script>
 <script type="text/javascript" src="./dist/vendor.bundle.js"></script><script type="text/javascript" src="./dist/bundle.js"></script></body>
 </html>
