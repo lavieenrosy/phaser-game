@@ -1,35 +1,46 @@
 $(() => {
+  console.log("we are in document ready")
+
   function createScoreTableRows(score) {
     
-    const name = score.name;
-    const score = score.score;
-    const row = $('<tr>');
-    const nameData = $('<td>').addClass('scores__td').text(name);
-    const scoreData = $('<td>').addClass('scores__td').text(score);
+    const vname = score.name;
+    const vscore = score.score;
+    const vrow = $('<tr>');
+    const nameData = $('<td>').addClass('scores__td').text(vname);
+    const scoreData = $('<td>').addClass('scores__td').text(vscore);
     
-    let scoreRow = row.append(nameData).append(scoreData);
-    console.log('score row', scoreRow)
+    let scoreRow = vrow.append(nameData).append(scoreData);
 
     return scoreRow;
   }
 
   //iterate through the score data 
   function renderScores(scores){
-    for(let i = 0; i <= scores.length; i ++){
-      $('#scores').prepend(createScoreTableRows(scores[i]))
-    }
+    scores.forEach(function (score) {
+      $('#scores').append(createScoreTableRows(score));
+    });
   }
 
+    $.ajax({
+      url: 'https://bajo-island-api.herokuapp.com/api/users/scores',
+      method: 'GET',
+      success: function(result){
+        console.log("we are in success ",result);
+      },
+      error: function(error){
+        console.log("we are in error",error);
+      }
+    });
+ 
   // load scores from the server 
   function loadScores(){
-    $.ajax('https://bajo-island-api.herokuapp.com/api/users/scores', {method: 'GET'})
-      .then(function(score){
-        $('#scores').empty();
-        renderScores(score);
-      });
-    }
-  
-    loadScores();
+    $.get('https://bajo-island-api.herokuapp.com/api/users/scores', function(score) {
+      $('#scores').empty();
+      renderScores(score);
+    });
+  }
 
+  loadScores();
+  
 });
 

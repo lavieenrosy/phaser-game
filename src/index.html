@@ -5,6 +5,12 @@
     <title>Bajo Island</title>
     <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
     <link rel="stylesheet" href="/public/styles/main.css" type="text/css">
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="/public/scripts/app.js"></script>
     <link rel="stylesheet" href="/public/vendor/normalize-4.1.1.css">
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
     <meta name="HandheldFriendly" content="True">
@@ -30,6 +36,7 @@
                     <td>Popularity: 9</td>
                 </table>
             </article>
+            <!-- game renders here -->
       </div>
 
     </section>
@@ -46,29 +53,15 @@
       <article class="scores__container">
           <h2>High Scores</h2>
         <table class="scores__table">
-          
-          <tr>
-            <th class="scores__th">SCORE</th>
-            <th class="scores__th">NAME</th>
-          </tr> 
-          </table>
-          <table id="scores" class="scores__table">
-          <tr>
-            <td class="scores__td">2150</td>
-            <td class="scores__td">BASSEM</td>
-          </tr> 
-          <tr>
-            <td class="scores__td">2050</td>
-            <td class="scores__td">ANDREA</td>
-          </tr>
-          <tr>
-            <td class="scores__td">1800</td>
-            <td class="scores__td">ROSY</td>
-          </tr>
-          <tr>
-              <td class="scores__td">1750</td>
-              <td class="scores__td">ANDREA</td>
-            </tr>
+          <thead>
+            <tr>
+              <th class="scores__th">NAME</th>
+              <th class="scores__th">SCORE</th>
+            </tr> 
+          </thead>
+          <tbody id="scores"> 
+            <!-- high scores render here -->
+          </tbody>   
         </table>
       </article>
     </section>
@@ -78,5 +71,6 @@
       </article>
     </section>
   </main>
+  <!-- JS -->
 </body>
 </html>
