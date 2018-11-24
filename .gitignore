@@ -16,3 +16,4 @@ dump/
 higherVolume/
 .DS_Store
 public/styles
+.sass-cache
