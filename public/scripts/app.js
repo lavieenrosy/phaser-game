@@ -13,14 +13,14 @@ $(() => {
     return scoreRow;
   }
 
-  //iterate throught the score data 
+  //iterate through the score data 
   function renderScores(scores){
     for(let i = 0; i <= scores.length; i ++){
       $('#scores').prepend(createScoreTableRows(scores[i]))
     }
   }
 
-  // load scores from the server
+  // load scores from the server 
   function loadScores(){
     $.ajax('https://bajo-island-api.herokuapp.com/api/users/scores', {method: 'GET'})
       .then(function(score){
