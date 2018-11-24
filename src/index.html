@@ -2,9 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Doomsday Island</title>
+    <title>Bajo Island</title>
     <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
     <link rel="stylesheet" href="/public/styles/main.css" type="text/css">
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="/public/scripts/app.js"></script>
     <link rel="stylesheet" href="/public/vendor/normalize-4.1.1.css">
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
     <meta name="HandheldFriendly" content="True">
@@ -39,8 +45,19 @@
             </section>
         </nav>
         <section class="game">
-          <div class="game__container" id="game-container"></div>
-        </section>
+            <div class="game__container" id="game-container">
+                <article class="game__status-bar">
+                    <table class="game__table">
+                          <td>Player: Andrea</td>
+                          <td>Level: 1</td>
+                          <td>Money: $100</td>
+                          <td>Popularity: 9</td>
+                      </table>
+                  </article>
+                  <!-- game renders here -->
+            </div>
+      
+          </section>
     </section>
     <section class="guide">
       <article class="guide__container">
@@ -54,26 +71,15 @@
       <article class="scores__container">
           <h2>High Scores</h2>
         <table class="scores__table">
-          <tr>
-            <th>RANK</th>
-            <th>SCORE</th>
-            <th>NAME</th>
-          </tr>
-          <tr>
-            <td>1ST</td>
-            <td>2150</td>
-            <td>BASSEM</td>
-          </tr>
-          <tr>
-            <td>2ND</td>
-            <td>2050</td>
-            <td>ANDREA</td>
-          </tr>
-          <tr>
-            <td>3RD</td>
-            <td>1800</td>
-            <td>ROSY</td>
-          </tr>
+          <thead>
+            <tr>
+              <th class="scores__th">NAME</th>
+              <th class="scores__th">SCORE</th>
+            </tr> 
+          </thead>
+          <tbody id="scores"> 
+            <!-- high scores render here -->
+          </tbody>   
         </table>
       </article>
     </section>
@@ -83,5 +89,6 @@
       </article>
     </section>
   </main>
+  <!-- JS -->
 </body>
 </html>

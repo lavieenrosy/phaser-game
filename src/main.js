@@ -42,6 +42,8 @@ game.scene.add('MayorScene', mayorScene);
 game.scene.add('BootScene', bootScene);
 game.scene.add('LoadingScene', loadingScene);
 game.scene.start('BootScene', {scene: 'title'});
+game.data = 'poop';
+console.log('Game:', game)
 
 //toggle for login and reg form
 

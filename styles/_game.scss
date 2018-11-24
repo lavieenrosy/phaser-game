@@ -5,7 +5,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  padding: 5em 0 1em 0;
+  padding: 2em 0 1em 0;
 
   &__container{
     flex-basis: 100%;
@@ -30,6 +30,27 @@
     color: $reverse;
     opacity: 0.3;
     height: 250px;
+  }
+
+  &__status-bar {
+    position: absolute;
+    text-align: left;
+    width: 1020px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    opacity: 0.8;
+    background-color: $reverse;
+    // justify-content: space-between;
+  }
+
+  &__table{
+    font-size: 1.5em;
+    text-align: center;
+    color: $primary;
+    width: 100%;
+    justify-content: space-between;
+
   }
 
 }
