@@ -32,6 +32,68 @@
     height: 250px;
   }
 
+  &__status-bar {
+    position: absolute;
+    text-align: left;
+    width: 1020px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    opacity: 0.8;
+    background-color: $reverse;
+    // justify-content: space-between;
+  }
+
+  &__table{
+    font-size: 1.5em;
+    text-align: center;
+    color: $primary;
+    width: 100%;
+    justify-content: space-between;
+    
+  }
+
+  .scores {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  // padding: 5em 0 1em 0;
+
+  &__container {
+    flex-basis: 45%;
+    margin: 10px;
+    width: auto;
+    height: auto;
+    position: relative;
+    border-bottom: 5px $reverse solid;
+    // float: left;
+    // text-align: center;
+  }
+
+  &__table {
+    padding: .5em 0 1.5em 0;
+    font-size: 2em;
+    text-align: center;
+
+  }
+
+  &__td {
+    color: $highScore;
+    padding-right:1.5em;
+    justify-content: space-evenly;
+  
+  }
+
+  &__th {
+    padding-right:1.5em;
+    justify-content: space-evenly;
+  
+  }
+
+}
+
+
 }
 
 #messagebox {
