@@ -21,25 +21,43 @@
 <body>
   <main>
     <section>
-      <nav class="navbar">
-        <h1 class = "navbar__title">Bajo Island</h1>
-        <a href="#" class="navbar__btn">Login</h4>
-      </nav>
-    </section>    
-    <section class="game">
-      <div class="game__container" id="game-container">
-          <article class="game__status-bar">
-              <table class="game__table">
-                    <td>Player: Andrea</td>
-                    <td>Level: 1</td>
-                    <td>Money: $100</td>
-                    <td>Popularity: 9</td>
-                </table>
-            </article>
-            <!-- game renders here -->
-      </div>
-
-    </section>
+        <nav class="navbar">
+            <h1 class = "navbar__title">Bajo Island</h1>
+            <a href="#" class="navbar__reg-btn">Register</h4>
+            <a href="#" class="navbar__login-btn">Login</h4>
+            <section class="navbar__drop-down reg-box">
+              <form action="" method="post" class="navbar__form">
+                <p>Register your player name</p>
+                <input type="text" placeholder="Player name" class="navbar__form-input">
+                <br>
+                <input type="password" placeholder="Password" class="navbar__form-input">
+                <a href="#" class="navbar__nav-link">Register</a>
+              </form>
+            </section>
+            <section class="navbar__drop-down login-box">
+              <form action="" method="post" class="navbar__form">
+                <p>Login</p>
+                <input type="text" placeholder="Player name" class="navbar__form-input">
+                <br>
+                <input type="password" placeholder="Password" class="navbar__form-input">
+                <a href="#" class="navbar__nav-link">Login</a>
+              </form>
+            </section>
+        </nav>
+        <section class="game">
+            <div class="game__container" id="game-container">
+                <article class="game__status-bar">
+                    <table class="game__table">
+                          <td>Player: Andrea</td>
+                          <td>Level: 1</td>
+                          <td>Money: $100</td>
+                          <td>Popularity: 9</td>
+                      </table>
+                  </article>
+                  <!-- game renders here -->
+            </div>
+      
+          </section>
     </section>
     <section class="guide">
       <article class="guide__container">
