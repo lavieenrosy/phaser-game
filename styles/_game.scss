@@ -5,7 +5,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  padding: 5em 0 1em 0;
+  padding: 2em 0 1em 0;
 
   &__container{
     flex-basis: 100%;
@@ -40,18 +40,17 @@
     left: 0;
     right: 0;
     opacity: 0.8;
-    padding-left: 20px;
-    // bottom: 40px;
-    font-size: 1.5em;
-    white-space: pre-wrap;
     background-color: $reverse;
+    // justify-content: space-between;
   }
 
   &__table{
-    padding: .2em;
-    font-size: .9em;
+    font-size: 1.5em;
     text-align: center;
     color: $primary;
+    width: 100%;
+    justify-content: space-between;
+
   }
 
 }

@@ -4627,6 +4627,7 @@ class JSONLevelScene extends Phaser.Scene {
 
 class Player extends __WEBPACK_IMPORTED_MODULE_0__Prefab__["a" /* default */] {
   constructor(scene, name, position, properties) {
+
     super(scene, name, position, properties);
 
     this.walking_speed = +properties.walking_speed * 3;
@@ -11367,6 +11368,8 @@ game.scene.add('MayorScene', mayorScene);
 game.scene.add('BootScene', bootScene);
 game.scene.add('LoadingScene', loadingScene);
 game.scene.start('BootScene', { scene: 'title' });
+game.data = 'poop';
+console.log('Game:', game);
 
 /***/ }),
 /* 761 */
