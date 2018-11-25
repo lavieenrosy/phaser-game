@@ -51,8 +51,13 @@ class WorldScene extends JSONLevelScene {
       object_layer.objects.forEach(this.create_object, this);
     }, this);
 
-    this.addStatusBar();
+    if (document.querySelector('.game__table')) {
+      const statusBar = document.querySelector('.game__table')
+      statusBar.style.display = "none";
+    } 
 
+    this.addStatusBar();
+    
   }
 
 
