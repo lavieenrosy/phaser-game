@@ -28,7 +28,7 @@
             <section class="navbar__drop-down reg-box">
               <form action="https://bajo-island-api.herokuapp.com/api/register" method="post" class="navbar__form">
                 <p>Register your player name</p>
-                <input name="name" type="text" placeholder="Player name" class="navbar__form-input navbar__player-name">
+                <input name="name" type="text" placeholder="Player name" class="navbar__form-input navbar__reg-name">
                 <br>
                 <input type="password" placeholder="Password" class="navbar__form-input">
                 <br>
@@ -37,11 +37,13 @@
               </form>
             </section>
             <section class="navbar__drop-down login-box">
-              <form action="" method="post" class="navbar__form">
+              <form action="https://bajo-island-api.herokuapp.com/api/register" method="get" class="navbar__form">
                 <p>Login</p>
-                <input type="text" placeholder="Player name" class="navbar__form-input navbar__player-name">
+                <input name="name" type="text" placeholder="Player name" class="navbar__form-input navbar__login-name">
                 <br>
                 <input type="password" placeholder="Password" class="navbar__form-input">
+                <br>
+                <span class="navbar__form-validation"></span>
                 <input type="submit" value="Login" class="navbar__nav-link">
               </form>
             </section>
