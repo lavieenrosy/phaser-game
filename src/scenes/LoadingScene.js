@@ -27,9 +27,15 @@ class LoadingScene extends Phaser.Scene {
   }
 
   create (data) {
-
+    this.hideGazette();
     this.scene.start(data.scene, {level_data: this.level_data, next_level: data.next_level});
   }
+
+  hideGazette() {
+    const gazette = document.querySelector('.results');
+    gazette.style.display = "none";
+  }
+
 }
 
 export default LoadingScene;
