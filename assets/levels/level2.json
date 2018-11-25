@@ -1,6 +1,6 @@
 {
   "assets": {
-      "map_tileset": {"type": "image", "source": "assets/images/terrain_effects.png"},
+      "map_tileset": {"type": "image", "source": "/assets/images/Terrain_effects.png"},
 
       "player_spritesheet": {"type": "spritesheet", "source": "assets/images/world/player.png", "frame_width": 16, "frame_height": 16},
       "peter_image": {"type": "image", "source": "assets/images/world/peter.png"},
