@@ -12,6 +12,7 @@ class Door extends Prefab {
   }
 
   enter() {
+    console.log(this.scene)
     this.scene.scene.start('BootScene', {scene: this.next_level}); 
   }
 }

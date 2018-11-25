@@ -11526,6 +11526,7 @@ class Door extends __WEBPACK_IMPORTED_MODULE_0__Prefab__["a" /* default */] {
   }
 
   enter() {
+    console.log(this.scene);
     this.scene.scene.start('BootScene', { scene: this.next_level });
   }
 }
