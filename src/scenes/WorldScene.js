@@ -15,6 +15,7 @@ class WorldScene extends JSONLevelScene {
       npc: NPC.prototype.constructor,
       door: Door.prototype.constructor
     }
+
   }
 
   preload () {
@@ -49,6 +50,48 @@ class WorldScene extends JSONLevelScene {
     }, this);
 
   }
+//   <article class="game__status-bar">
+//   <table id="statusbar" class="game__table">
+//     <!-- status bar renders here -->
+//       <!-- <tr>
+//         <td>Player: Andrea</td>
+//         <td>Level: 1</td>
+//         <td>Money: $2000</td>
+//         <td>Popularity: 9</td>
+//         <td>Score: 2250</td>
+//       </tr> -->
+//     </table>
+// </article>
+
+  addStatusBar () {
+    console.log('whats this?', this)
+
+    let newTable = document.createElement("table");
+    let newRow = document.createElement("tr");
+    let newCol = document.createElement("td");
+    let nameCol = document.createTextNode("Player: " + this.name);
+    let levelCol = document.createTextNode("Level: " + this.level);
+    let moneyCol = document.createTextNode("Money: " + this.money);
+    let popCol = document.createTextNode("Popularity: " + this.popularity);
+    let scoreCol = document.createTextNode("Score: " + this.score);
+    let statusBar = document.querySelector('#statusbar');
+
+    newTable.setAttribute("id", "statusbar");
+    newTable.setAttribute("class", "game__table");
+    newRow.appendChild(newCol);
+    newCol.appendChild(nameCol);
+    newCol.appendChild(levelCol);
+    newCol.appendChild(moneyCol);
+    newCol.appendChild(popCol);
+    newCol.appendChild(scoreCol);
+    statusBar.appendChild(newTable);
+    
+  }
+
+  update() {
+    this.addStatusBar();
+  }
+
 
   create_object (object) {
     let position = {x: object.x + (object.width / 2), y: object.y + (object.height / 2)};
@@ -56,6 +99,7 @@ class WorldScene extends JSONLevelScene {
         let prefab = new this.prefab_classes[object.type](this, object.name, position, object.properties);
     }
   }
+
 }
 
 export default WorldScene;

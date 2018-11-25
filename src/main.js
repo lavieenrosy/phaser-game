@@ -43,5 +43,6 @@ game.scene.add('BootScene', bootScene);
 game.scene.add('LoadingScene', loadingScene);
 game.scene.start('BootScene', {scene: 'title'});
 game.data = 'poop';
+game.playerStats = {name: 'Peter', money: 2000, popularity: 100, level: 1, score: 2250}
 console.log('Game:', game)
 
