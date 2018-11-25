@@ -11343,19 +11343,19 @@ let bootScene = new __WEBPACK_IMPORTED_MODULE_6__scenes_BootScene__["a" /* defau
 let loadingScene = new __WEBPACK_IMPORTED_MODULE_7__scenes_LoadingScene__["a" /* default */]();
 
 let config = {
-    type: Phaser.AUTO,
-    width: 680,
-    height: 400,
-    parent: 'game-container',
-    zoom: 1.5,
-    pixelArt: true,
-    roundPixels: true,
-    physics: {
-        default: 'arcade',
-        arcade: {
-            gravity: { y: 0 }
-        }
+  type: Phaser.AUTO,
+  width: 680,
+  height: 400,
+  parent: 'game-container',
+  zoom: 1.5,
+  pixelArt: true,
+  roundPixels: true,
+  physics: {
+    default: 'arcade',
+    arcade: {
+      gravity: { y: 0 }
     }
+  }
 };
 
 let game = new Phaser.Game(config);
@@ -11370,34 +11370,6 @@ game.scene.add('LoadingScene', loadingScene);
 game.scene.start('BootScene', { scene: 'title' });
 game.data = 'poop';
 console.log('Game:', game);
-
-//toggle for login and reg form
-
-document.querySelector('.navbar__reg-btn').addEventListener('click', event => {
-    const dropDown = document.querySelector('.reg-box');
-    if (dropDown.style.display === "none") {
-        dropDown.style.display = "block";
-    } else {
-        dropDown.style.display = "none";
-    }
-});
-
-document.querySelector('.navbar__login-btn').addEventListener('click', event => {
-    const dropDown = document.querySelector('.login-box');
-    if (dropDown.style.display === "none") {
-        dropDown.style.display = "block";
-    } else {
-        dropDown.style.display = "none";
-    }
-});
-
-//this is the code from Tweeter
-
-// $('.compose').on('click', function (event) {
-//   $('.new-tweet').slideToggle("400", function() {
-//     $('.new-tweet textarea').focus();
-//   });
-// });
 
 /***/ }),
 /* 761 */

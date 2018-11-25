@@ -41,6 +41,39 @@ $(() => {
   }
 
   loadScores();
+  // toggle for login and reg form
+
+  $('.navbar__reg-btn').on('click', (event) => {
+    $('.reg-box').slideToggle('300', () => {
+      $('.player-name').focus();
+    });
+  });
+
+  $('.navbar__login-btn').on('click', (event) => {
+    $('.login-box').slideToggle('300', () => {
+      $('.player-name').focus();
+    });
+  });
+
+  // AJAX call for reg
+
+  $('.reg-box form').on('submit', () => {
+    event.preventDefault();
+    const playerName = $('.player-name').val();
+    const nameData = $('.player-name').serialize();
+
+    $.ajax({
+      url: 'https://bajo-island-api.herokuapp.com/api/register',
+      method: 'POST',
+      data: nameData,
+      success: function(result) {
+        console.log("data returning: ", result);
+      },
+      error: function(error) {
+        console.log("error: ", error);
+      }
+    });
+  });
 
 });
 
