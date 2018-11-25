@@ -24,6 +24,7 @@ class TownhallScene extends WorldScene {
 
     let messageBox = document.querySelector('#messagebox')
     if (messageBox) {
+      console.log(this.sys.game);
       if (this.optionA.isDown) {
         messageBox.remove();
         this.choice = 'A';
