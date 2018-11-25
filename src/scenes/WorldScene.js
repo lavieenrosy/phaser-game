@@ -7,14 +7,16 @@ import Door from '../prefabs/world/Door';
 
 
 class WorldScene extends JSONLevelScene {
-  constructor(key = 'WorldScene') {
-    super(key);
+  constructor(key = 'WorldScene', scene) {
+    super(key, scene);
 
     this.prefab_classes = {
       player: Player.prototype.constructor,
       npc: NPC.prototype.constructor,
       door: Door.prototype.constructor
     }
+
+    this.scene = scene
 
   }
 
@@ -49,48 +51,29 @@ class WorldScene extends JSONLevelScene {
       object_layer.objects.forEach(this.create_object, this);
     }, this);
 
+    this.addStatusBar();
+
   }
-//   <article class="game__status-bar">
-//   <table id="statusbar" class="game__table">
-//     <!-- status bar renders here -->
-//       <!-- <tr>
-//         <td>Player: Andrea</td>
-//         <td>Level: 1</td>
-//         <td>Money: $2000</td>
-//         <td>Popularity: 9</td>
-//         <td>Score: 2250</td>
-//       </tr> -->
-//     </table>
-// </article>
 
-  addStatusBar () {
-    console.log('whats this?', this)
 
-    let newTable = document.createElement("table");
-    let newRow = document.createElement("tr");
-    let newCol = document.createElement("td");
-    let nameCol = document.createTextNode("Player: " + this.name);
-    let levelCol = document.createTextNode("Level: " + this.level);
-    let moneyCol = document.createTextNode("Money: " + this.money);
-    let popCol = document.createTextNode("Popularity: " + this.popularity);
-    let scoreCol = document.createTextNode("Score: " + this.score);
-    let statusBar = document.querySelector('#statusbar');
+ addStatusBar () {
 
-    newTable.setAttribute("id", "statusbar");
-    newTable.setAttribute("class", "game__table");
-    newRow.appendChild(newCol);
-    newCol.appendChild(nameCol);
-    newCol.appendChild(levelCol);
-    newCol.appendChild(moneyCol);
-    newCol.appendChild(popCol);
-    newCol.appendChild(scoreCol);
-    statusBar.appendChild(newTable);
+    let {name, level, money, pop_points, score} = this.sys.game.playerStats
+
+    let newTable = $('<table>').addClass('game__table');
+    let newRow = $('<tr>');
+    let nameCol = $('<td>').text(`Player: ${name}`);
+    let levelCol = $('<td>').text(`Level: ${level}`);
+    let moneyCol = $('<td>').text(`Money: $${money}`);
+    let popCol = $('<td>').text(`Popularity: ${pop_points}`);
+    let scoreCol = $('<td>').text(`Score: ${score}`);
+
+    let statusBar = newTable.append(newRow).append(nameCol).append(levelCol).append(moneyCol).append(popCol).append(scoreCol);
+    $('#statusbar').append(statusBar);
     
   }
 
-  update() {
-    this.addStatusBar();
-  }
+
 
 
   create_object (object) {
