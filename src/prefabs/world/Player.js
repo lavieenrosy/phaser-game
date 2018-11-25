@@ -8,15 +8,22 @@ class Player extends Prefab {
     this.walking_speed = +properties.walking_speed * 3;
 
     this.body.collideWorldBounds = true;
-
+    
     this.scene.physics.add.collider(this, this.scene.layers.blocked);
     this.scene.physics.add.collider(this, this.scene.layers.water);
     this.scene.physics.add.collider(this, this.scene.layers.above_blocked);       
     this.scene.physics.add.collider(this, this.scene.layers.beneath_blocked);
     
 
+    this.body.offset.x = 5;
+    this.body.offset.y = 16;
+
+    this.body.height = 16; 
+    this.body.width = 16;
+
     this.body.velocity.x = -this.walking_speed;
 
+    
     this.move_left = this.scene.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.LEFT);
     this.move_right = this.scene.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.RIGHT);
     this.move_up = this.scene.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.UP);
