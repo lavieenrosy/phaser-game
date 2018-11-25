@@ -26,21 +26,21 @@
             <a href="#" class="navbar__reg-btn">Register</h4>
             <a href="#" class="navbar__login-btn">Login</h4>
             <section class="navbar__drop-down reg-box">
-              <form action="" method="post" class="navbar__form">
+              <form action="https://bajo-island-api.herokuapp.com/api/register" method="post" class="navbar__form">
                 <p>Register your player name</p>
-                <input type="text" placeholder="Player name" class="navbar__form-input">
+                <input name="name" type="text" placeholder="Player name" class="navbar__form-input player-name">
                 <br>
                 <input type="password" placeholder="Password" class="navbar__form-input">
-                <a href="#" class="navbar__nav-link">Register</a>
+                <input type="submit" value="Register" class="navbar__nav-link">
               </form>
             </section>
             <section class="navbar__drop-down login-box">
               <form action="" method="post" class="navbar__form">
                 <p>Login</p>
-                <input type="text" placeholder="Player name" class="navbar__form-input">
+                <input type="text" placeholder="Player name" class="navbar__form-input player-name">
                 <br>
                 <input type="password" placeholder="Password" class="navbar__form-input">
-                <a href="#" class="navbar__nav-link">Login</a>
+                <input type="submit" value="Login" class="navbar__nav-link">
               </form>
             </section>
         </nav>
@@ -56,7 +56,7 @@
                   </article>
                   <!-- game renders here -->
             </div>
-      
+
           </section>
     </section>
     <section class="guide">
@@ -75,11 +75,11 @@
             <tr>
               <th class="scores__th">NAME</th>
               <th class="scores__th">SCORE</th>
-            </tr> 
+            </tr>
           </thead>
-          <tbody id="scores"> 
+          <tbody id="scores">
             <!-- high scores render here -->
-          </tbody>   
+          </tbody>
         </table>
       </article>
     </section>
