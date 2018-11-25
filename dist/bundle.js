@@ -4983,7 +4983,7 @@ class Player extends __WEBPACK_IMPORTED_MODULE_0__Prefab__["a" /* default */] {
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(/*! babel-polyfill */558);
-module.exports = __webpack_require__(/*! /Users/bassemkaddour/lighthouse/final/phaser-game/src/main.js */760);
+module.exports = __webpack_require__(/*! /Users/andreahirji/lighthouse/phaser-game/src/main.js */760);
 
 
 /***/ }),
