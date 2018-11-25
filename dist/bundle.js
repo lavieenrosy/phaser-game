@@ -4650,7 +4650,7 @@ class Player extends __WEBPACK_IMPORTED_MODULE_0__Prefab__["a" /* default */] {
     if (!this.scene.anims.anims.has('walking_down')) {
       this.scene.anims.create({
         key: 'walking_down',
-        frames: this.scene.anims.generateFrameNumbers(this.texture.key, { frames: [0, 4, 8, 12] }),
+        frames: this.scene.anims.generateFrameNumbers(this.texture.key, { frames: [0, 1, 2] }),
         frameRate: 6,
         repeat: -1
       });
@@ -4659,7 +4659,7 @@ class Player extends __WEBPACK_IMPORTED_MODULE_0__Prefab__["a" /* default */] {
     if (!this.scene.anims.anims.has('walking_up')) {
       this.scene.anims.create({
         key: 'walking_up',
-        frames: this.scene.anims.generateFrameNumbers(this.texture.key, { frames: [1, 5, 9, 13] }),
+        frames: this.scene.anims.generateFrameNumbers(this.texture.key, { frames: [36, 37, 38] }),
         frameRate: 6,
         repeat: -1
       });
@@ -4668,7 +4668,7 @@ class Player extends __WEBPACK_IMPORTED_MODULE_0__Prefab__["a" /* default */] {
     if (!this.scene.anims.anims.has('walking_left')) {
       this.scene.anims.create({
         key: 'walking_left',
-        frames: this.scene.anims.generateFrameNumbers(this.texture.key, { frames: [2, 6, 10, 14] }),
+        frames: this.scene.anims.generateFrameNumbers(this.texture.key, { frames: [12, 13, 14] }),
         frameRate: 6,
         repeat: -1
       });
@@ -4677,13 +4677,13 @@ class Player extends __WEBPACK_IMPORTED_MODULE_0__Prefab__["a" /* default */] {
     if (!this.scene.anims.anims.has('walking_right')) {
       this.scene.anims.create({
         key: 'walking_right',
-        frames: this.scene.anims.generateFrameNumbers(this.texture.key, { frames: [3, 7, 11, 15] }),
+        frames: this.scene.anims.generateFrameNumbers(this.texture.key, { frames: [24, 25, 26] }),
         frameRate: 6,
         repeat: -1
       });
     }
 
-    this.stopped_frames = [0, 1, 0, 2, 3];
+    this.stopped_frames = [1, 37, 1, 13, 25];
 
     scene.cameras.main.startFollow(this, true);
     scene.cameras.main.setBounds(0, 0, 1920, 1920);
@@ -12307,7 +12307,6 @@ class TownhallScene extends __WEBPACK_IMPORTED_MODULE_0__WorldScene__["a" /* def
 
     let messageBox = document.querySelector('#messagebox');
     if (messageBox) {
-      console.log(this.sys.game);
       if (this.optionA.isDown) {
         messageBox.remove();
         this.choice = 'A';
