@@ -51,9 +51,6 @@ class WorldScene extends JSONLevelScene {
       object_layer.objects.forEach(this.create_object, this);
     }, this);
 
-<<<<<<< HEAD
-    
-=======
     this.addStatusBar();
 
   }
@@ -73,7 +70,6 @@ class WorldScene extends JSONLevelScene {
     $('.game__status-bar').empty();
     $('.game__status-bar').append(statusBar);
 
->>>>>>> upstream/master
   }
 
 
