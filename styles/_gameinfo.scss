@@ -1,0 +1,27 @@
+@import 'brand.scss';
+
+.gameinfo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 1020px;
+  justify-content: center;
+  // padding: 5em 0 1em 0;
+
+  &__container {
+    flex-basis: 45%;
+    margin: 10px;
+    width: auto;
+    height: auto;
+    position: relative;
+    float: left;
+    border-bottom: 5px $reverse solid;
+    // text-align: center;
+  }
+
+  &__content {
+    font-size: 1.5em;
+  }
+
+}
+
