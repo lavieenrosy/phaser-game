@@ -1,18 +1,15 @@
 @import 'brand.scss';
-
 .navbar {
   background-color: $secondary;
   padding: 1.8em;
   height: 120px;
   color: $reverse;
   margin-bottom: 20px;
-
   &__title {
     float: left;
     margin-left: 10px;
     font-size: 2.5em;
   }
-
   &__drop-down {
     height: 190px;
     width: 275px;
@@ -24,7 +21,6 @@
     color: $primary;
     display: none;
   }
-
   &__reg-btn {
     color: $primary;
     text-transform: uppercase;
@@ -35,7 +31,6 @@
     padding-right: 0px;
     text-decoration: underline;
   }
-
   &__login-btn {
     color: $reverse;
     background-color: $primary;
@@ -51,7 +46,6 @@
   &__form {
     margin: 0 20px;
   }
-
   &__form-input {
     border: 1px solid $primary;
     border-radius: 10px;
@@ -60,16 +54,12 @@
     width: 100%;
     font-size: 1.2em;
   }
-
   &__nav-link {
     border: 0;
     border-bottom: solid 2px;
     float: right;
   }
-
   &__form-validation {
     color: $highScore;
   }
-
-
 }
