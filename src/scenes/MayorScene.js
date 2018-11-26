@@ -13,7 +13,8 @@ class MayorScene extends Phaser.Scene {
   }
 
   preload() {
-    this.load.spritesheet('character', 'assets/images/world/chara5.png', { frameWidth: 26, frameHeight: 36 });
+    this.load.spritesheet('senior', 'assets/images/world/military2.png', { frameWidth: 26, frameHeight: 36 });
+    this.load.spritesheet('player', 'assets/images/world/player.png', { frameWidth: 26, frameHeight: 36 });
   }
 
   create() {
@@ -25,8 +26,8 @@ In order to fulfil on your election promise, you must find those on Bajo who hav
 
 Speaking as the previous mayor, let me give you one valuable piece of advice: choose carefully, because the decisions you make for Bajo will have far reaching consequences…`}
 
-    let mainChar1 = new StaticPlayer(this, 180, 100, 'character', 31, 3);
-    let senior = new StaticPlayer(this, 500, 100, 'character', 64, 3);
+    let player = new StaticPlayer(this, 180, 100, 'player', 25, 3);
+    let senior = new StaticPlayer(this, 500, 100, 'senior', 70, 3);
 
     this.addMessage(message.level1);
 
