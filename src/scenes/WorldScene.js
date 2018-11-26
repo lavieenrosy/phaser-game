@@ -7,14 +7,17 @@ import Door from '../prefabs/world/Door';
 
 
 class WorldScene extends JSONLevelScene {
-  constructor(key = 'WorldScene') {
-    super(key);
+  constructor(key = 'WorldScene', scene) {
+    super(key, scene);
 
     this.prefab_classes = {
       player: Player.prototype.constructor,
       npc: NPC.prototype.constructor,
       door: Door.prototype.constructor
     }
+
+    this.scene = scene
+
   }
 
   preload () {
@@ -48,7 +51,9 @@ class WorldScene extends JSONLevelScene {
       object_layer.objects.forEach(this.create_object, this);
     }, this);
 
+    
   }
+
 
   create_object (object) {
     let position = {x: object.x + (object.width / 2), y: object.y + (object.height / 2)};
@@ -56,6 +61,7 @@ class WorldScene extends JSONLevelScene {
         let prefab = new this.prefab_classes[object.type](this, object.name, position, object.properties);
     }
   }
+
 }
 
 export default WorldScene;

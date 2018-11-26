@@ -27,7 +27,7 @@ let config = {
   physics: {
     default: 'arcade',
     arcade: {
-        gravity: {y: 0}
+      gravity: {y: 0}
     }
   }
 };
@@ -43,5 +43,5 @@ game.scene.add('BootScene', bootScene);
 game.scene.add('LoadingScene', loadingScene);
 game.scene.start('BootScene', {scene: 'title'});
 game.data = 'poop';
-console.log('Game:', game)
+game.playerStats = {name: 'Peter', money: 2000, pop_points: 100, level: "1", score: 2250}
 
