@@ -349,7 +349,7 @@
                     {
                      "collision":true,
                      "group":"npcs",
-                     "message":"peter_message_2",
+                     "message":"peter_message",
                      "texture":"peter_image"
                     },
                  "propertytypes":
