@@ -42,7 +42,7 @@ $(() => {
 
   loadScores();
 
-  // toggle for login and reg form
+  // --------------------- LOGIN & REG --------------------- //
 
   $('.navbar__reg-btn').on('click', (event) => {
     toggleForm('.reg-box', '.navbar__reg-name');

@@ -43,5 +43,7 @@ game.scene.add('BootScene', bootScene);
 game.scene.add('LoadingScene', loadingScene);
 game.scene.start('BootScene', {scene: 'title'});
 game.data = 'poop';
-game.playerStats = {name: 'Peter', money: 2000, pop_points: 100, level: "1", score: 2250}
+console.log('Game:', game);
+game.playerStats = { level: 'level 1', name: 'Rosy', money: 1000000, popularity: 50, score: 100 }
+
 
