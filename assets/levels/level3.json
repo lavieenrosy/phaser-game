@@ -36,11 +36,9 @@
       "tilesets": ["map_tileset"]
   },
   "npc_messages": {
-    "townperson_message_3": "assets/npc_messages/townperson_message_3.txt",
     "jim_message_3": "assets/npc_messages/jim_message_3.txt",
     "jeremy_message_3": "assets/npc_messages/jeremy_message_3.txt",
     "david_message_3": "assets/npc_messages/david_message_3.txt",
-    "granny_message_3": "assets/npc_messages/granny_message_3.txt",
     "miche_message_3": "assets/npc_messages/miche_message_3.txt",
     "peter_message_3": "assets/npc_messages/peter_message_3.txt",
     "nima_message_3": "assets/npc_messages/nima_message_3.txt",
