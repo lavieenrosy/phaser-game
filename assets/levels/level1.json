@@ -4,7 +4,6 @@
 
       "player_spritesheet": {"type": "spritesheet", "source": "assets/images/world/player.png", "frame_width": 26, "frame_height": 36},
       "peter_image": {"type": "image", "source": "assets/images/world/peter.png"},
-      "villager_image": {"type": "image", "source": "assets/images/world/villager.png"},
       "jim_image": {"type": "image", "source": "assets/images/world/jim.png"},
       "miche_image": {"type": "image", "source": "assets/images/world/miche.png"},
       "david_image": {"type": "image", "source": "assets/images/world/david.png"},
