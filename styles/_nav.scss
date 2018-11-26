@@ -48,6 +48,8 @@
     float: right;
   }
 
+  &__logout-btn extends &__login-btn
+
   &__form {
     margin: 0 20px;
   }
