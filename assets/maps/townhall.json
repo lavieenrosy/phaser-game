@@ -153,14 +153,14 @@
                 {
                  "height":0,
                  "id":4,
-                 "name":"townperson",
+                 "name":"mayor",
                  "point":true,
                  "properties":
                     {
                      "collision":true,
                      "group":"npcs",
-                     "message":"townperson_message",
-                     "texture":"player_spritesheet"
+                     "message":"mayor_message",
+                     "texture":"mayor_image"
                     },
                  "propertytypes":
                     {
