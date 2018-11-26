@@ -9,7 +9,7 @@
       "miche_image": {"type": "image", "source": "assets/images/world/miche.png"},
       "david_image": {"type": "image", "source": "assets/images/world/david.png"},
       "jeremy_image": {"type": "image", "source": "assets/images/world/jeremy.png"},
-      "granny_image": {"type": "image", "source": "assets/images/world/granny.png"},
+      "monica_image": {"type": "image", "source": "assets/images/world/monica.png"},
 
       "level1_level_tilemap": {"type": "tilemap", "source": "assets/maps/level1.json"}
   },

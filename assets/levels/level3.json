@@ -9,7 +9,19 @@
       "miche_image": {"type": "image", "source": "assets/images/world/miche.png"},
       "david_image": {"type": "image", "source": "assets/images/world/david.png"},
       "jeremy_image": {"type": "image", "source": "assets/images/world/jeremy.png"},
-      "granny_image": {"type": "image", "source": "assets/images/world/granny.png"},
+      "nima_image": {"type": "image", "source": "assets/images/world/nima.png"},
+      "kanye_image": {"type": "image", "source": "assets/images/world/kanye.png"},
+      "laine_image": {"type": "image", "source": "assets/images/world/laine.png"},
+      "nick_image": {"type": "image", "source": "assets/images/world/nick.png"},
+      "brennan_image": {"type": "image", "source": "assets/images/world/brennan.png"},
+      "gaurav_image": {"type": "image", "source": "assets/images/world/gaurav.png"},
+      "kevin_image": {"type": "image", "source": "assets/images/world/kevin.png"},
+      "angela_image": {"type": "image", "source": "assets/images/world/angela.png"},
+      "jenny_image": {"type": "image", "source": "assets/images/world/jenny.png"},
+      "jay_image": {"type": "image", "source": "assets/images/world/jay.png"},
+      "lindsay_image": {"type": "image", "source": "assets/images/world/lindsay.png"},
+      "chingiz_image": {"type": "image", "source": "assets/images/world/chingiz.png"},
+      "zoe_image": {"type": "image", "source": "assets/images/world/zoe.png"},
 
       "level3_level_tilemap": {"type": "tilemap", "source": "assets/maps/level3.json"}
   },
@@ -24,6 +36,7 @@
       "tilesets": ["map_tileset"]
   },
   "npc_messages": {
+<<<<<<< HEAD
     "townperson_message_3": "assets/npc_messages/townperson_message_3.txt",
     "jim_message_3": "assets/npc_messages/jim_message_3.txt",
     "jeremy_message_3": "assets/npc_messages/jeremy_message_3.txt",
@@ -43,5 +56,13 @@
     "lindsay_message_3": "assets/npc_messages/lindsay_message_3.txt",
     "chingiz_message_3": "assets/npc_messages/chingiz_message_3.txt",
     "zoe_message_3": "assets/npc_messages/zoe_message_3.txt"
+=======
+    "townperson_message": "assets/npc_messages/townperson_message.txt",
+    "jim_message_3": "assets/npc_messages/jim_message.txt",
+    "jeremy_message_3": "assets/npc_messages/jeremy_message.txt",
+    "david_message_3": "assets/npc_messages/david_message.txt",
+    "miche_message_3": "assets/npc_messages/miche_message.txt",
+    "peter_message_3": "assets/npc_messages/peter_message.txt"
+>>>>>>> master
   }
 }

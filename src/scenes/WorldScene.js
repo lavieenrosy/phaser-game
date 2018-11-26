@@ -7,14 +7,17 @@ import Door from '../prefabs/world/Door';
 
 
 class WorldScene extends JSONLevelScene {
-  constructor(key = 'WorldScene') {
-    super(key);
+  constructor(key = 'WorldScene', scene) {
+    super(key, scene);
 
     this.prefab_classes = {
       player: Player.prototype.constructor,
       npc: NPC.prototype.constructor,
       door: Door.prototype.constructor
     }
+
+    this.scene = scene
+
   }
 
   preload () {
@@ -48,7 +51,27 @@ class WorldScene extends JSONLevelScene {
       object_layer.objects.forEach(this.create_object, this);
     }, this);
 
+    this.addStatusBar();
+
   }
+
+
+ addStatusBar () {
+
+    let {name, level, money, popularity, score} = this.sys.game.playerStats
+    let newTable = $('<table>').addClass('game__table');
+    let newRow = $('<tr>');
+    let nameCol = $('<td>').text(`Player: ${name}`);
+    let levelCol = $('<td>').text(`Level: ${level}`);
+    let moneyCol = $('<td>').text(`Money: $${money}`);
+    let popCol = $('<td>').text(`Popularity: ${popularity}`);
+    let scoreCol = $('<td>').text(`Score: ${score}`);
+    let statusBar = newTable.append(newRow).append(nameCol).append(levelCol).append(moneyCol).append(popCol).append(scoreCol);
+    $('.game__status-bar').empty();
+    $('.game__status-bar').append(statusBar);
+
+  }
+
 
   create_object (object) {
     let position = {x: object.x + (object.width / 2), y: object.y + (object.height / 2)};
@@ -56,6 +79,7 @@ class WorldScene extends JSONLevelScene {
         let prefab = new this.prefab_classes[object.type](this, object.name, position, object.properties);
     }
   }
+
 }
 
 export default WorldScene;

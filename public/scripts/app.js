@@ -41,7 +41,12 @@ $(() => {
   }
 
   loadScores();
+<<<<<<< HEAD
   // toggle for login and reg form
+=======
+
+  // --------------------- LOGIN & REG --------------------- //
+>>>>>>> upstream/master
 
   $('.navbar__reg-btn').on('click', (event) => {
     toggleForm('.reg-box', '.navbar__reg-name');
