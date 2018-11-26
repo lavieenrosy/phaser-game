@@ -12,6 +12,16 @@
       "nima_image": {"type": "image", "source": "assets/images/world/nima.png"},
       "kanye_image": {"type": "image", "source": "assets/images/world/kanye.png"},
       "laine_image": {"type": "image", "source": "assets/images/world/laine.png"},
+      "nick_image": {"type": "image", "source": "assets/images/world/nick.png"},
+      "brennan_image": {"type": "image", "source": "assets/images/world/brennan.png"},
+      "gaurav_image": {"type": "image", "source": "assets/images/world/gaurav.png"},
+      "kevin_image": {"type": "image", "source": "assets/images/world/kevin.png"},
+      "angela_image": {"type": "image", "source": "assets/images/world/angela.png"},
+      "jenny_image": {"type": "image", "source": "assets/images/world/jenny.png"},
+      "jay_image": {"type": "image", "source": "assets/images/world/jay.png"},
+      "lindsay_image": {"type": "image", "source": "assets/images/world/lindsay.png"},
+      "chingiz_image": {"type": "image", "source": "assets/images/world/chingiz.png"},
+      "zoe_image": {"type": "image", "source": "assets/images/world/zoe.png"},
 
       "level3_level_tilemap": {"type": "tilemap", "source": "assets/maps/level3.json"}
   },
@@ -27,11 +37,10 @@
   },
   "npc_messages": {
     "townperson_message": "assets/npc_messages/townperson_message.txt",
-    "jim_message": "assets/npc_messages/jim_message.txt",
-    "jeremy_message": "assets/npc_messages/jeremy_message.txt",
-    "david_message": "assets/npc_messages/david_message.txt",
-    "granny_message": "assets/npc_messages/granny_message.txt",
-    "miche_message": "assets/npc_messages/miche_message.txt",
-    "peter_message": "assets/npc_messages/peter_message.txt"
+    "jim_message_3": "assets/npc_messages/jim_message.txt",
+    "jeremy_message_3": "assets/npc_messages/jeremy_message.txt",
+    "david_message_3": "assets/npc_messages/david_message.txt",
+    "miche_message_3": "assets/npc_messages/miche_message.txt",
+    "peter_message_3": "assets/npc_messages/peter_message.txt"
   }
 }
