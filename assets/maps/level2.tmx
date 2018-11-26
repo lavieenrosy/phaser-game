@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" tiledversion="1.1.5" orientation="orthogonal" renderorder="right-down" width="120" height="120" tilewidth="16" tileheight="16" infinite="0" nextobjectid="28">
+<map version="1.0" tiledversion="1.1.5" orientation="orthogonal" renderorder="right-down" width="120" height="120" tilewidth="16" tileheight="16" infinite="0" nextobjectid="31">
  <tileset firstgid="1" name="tileset" tilewidth="16" tileheight="16" tilecount="17731" columns="119">
   <image source="../images/Terrain.png" width="1904" height="2384"/>
  </tileset>
@@ -737,10 +737,10 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,14303,0,0,0,0,0,0,0,0,0,0,0,14303,0,0,0,14548,14669,14670,14670,14674,14675,14436,14437,14438,14674,14675,14676,14548,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,9600,9601,9602,9603,9604,9605,9606,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,14422,0,0,0,0,0,0,0,0,0,0,0,14422,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8975,8978,8977,8978,8976,8978,8982,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,14303,0,0,0,0,0,0,0,0,0,0,0,14303,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,9094,9097,9096,9097,9095,9097,9101,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,14422,0,0,0,0,0,0,0,0,0,0,0,14422,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7101,7102,7102,7102,7102,7102,7102,7102,7103,0,0,9204,9211,9207,9208,9209,9211,9206,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,14303,0,0,0,0,0,0,0,0,0,0,0,14303,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7220,7221,7221,7221,7221,7221,7221,7221,7222,0,0,9323,9330,9326,9327,9328,9330,9325,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,14422,0,0,0,1839,1840,1841,0,0,0,0,0,14422,0,0,0,0,0,0,0,0,0,0,13947,13948,13950,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7339,7340,7340,7340,7340,7340,7340,7340,7341,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,14303,0,0,0,1958,1959,1960,0,0,0,0,0,14303,0,0,0,0,0,0,0,12906,12907,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7458,7459,7459,7459,7459,7459,7459,7459,7460,0,0,0,0,0,0,0,0,636,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,14422,1843,1844,0,0,0,0,0,0,0,0,0,14422,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7101,7102,7102,7102,7102,7102,7102,7102,7103,0,0,9204,9211,9207,9208,9209,9211,9206,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,14303,1962,1963,0,0,0,0,0,0,0,0,0,14303,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7220,7221,7221,7221,7221,7221,7221,7221,7222,0,0,9323,9330,9326,9327,9328,9330,9325,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,14422,0,0,0,0,0,0,0,0,0,0,0,14422,0,0,0,0,0,0,0,0,0,0,13947,13948,13950,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7339,7340,7340,7340,7340,7340,7340,7340,7341,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,14303,0,0,0,0,0,0,0,0,0,0,0,14303,0,0,0,0,0,0,0,12906,12907,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7458,7459,7459,7459,7459,7459,7459,7459,7460,0,0,0,0,0,0,0,0,636,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,14422,0,0,0,0,0,0,0,0,0,0,0,14422,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8975,8978,8976,8978,8976,8978,8976,8978,8982,0,0,0,0,0,0,0,0,755,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,14303,0,0,0,0,0,0,0,0,0,0,0,14303,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,9094,9097,9095,9097,9095,9097,9095,9097,9101,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,5124,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,13947,13948,13949,13948,13949,13948,13949,13948,13949,13948,13949,13948,13950,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,9204,9205,9205,9205,9205,9205,9205,9205,9206,0,0,0,0,0,0,0,0,0,636,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -1035,11 +1035,11 @@
    </properties>
    <point/>
   </object>
-  <object id="4" name="jim" type="npc" x="640.995" y="1498.55">
+  <object id="4" name="jim" type="npc" x="371.408" y="1507.68">
    <properties>
     <property name="collision" type="bool" value="true"/>
     <property name="group" value="npcs"/>
-    <property name="message" value="jim_message"/>
+    <property name="message" value="jim_message_2"/>
     <property name="texture" value="jim_image"/>
    </properties>
    <point/>
@@ -1050,93 +1050,75 @@
     <property name="next_level" value="townhall"/>
    </properties>
   </object>
-  <object id="17" name="miche" type="npc" x="1428.92" y="1524.88">
+  <object id="17" name="miche" type="npc" x="1591.8" y="1510.14">
    <properties>
     <property name="collision" type="bool" value="true"/>
     <property name="group" value="npcs"/>
-    <property name="message" value="miche_message"/>
+    <property name="message" value="miche_message_2"/>
     <property name="texture" value="miche_image"/>
    </properties>
    <point/>
   </object>
-  <object id="18" name="david" type="npc" x="220.77" y="1011.89">
+  <object id="18" name="david" type="npc" x="384.348" y="1202.85">
    <properties>
     <property name="collision" type="bool" value="true"/>
     <property name="group" value="npcs"/>
-    <property name="message" value="david_message"/>
+    <property name="message" value="david_message_2"/>
     <property name="texture" value="david_image"/>
    </properties>
    <point/>
   </object>
-  <object id="19" name="townperson" type="npc" x="622.17" y="826.698">
+  <object id="20" name="jeremy" type="npc" x="1429.46" y="982.874">
    <properties>
     <property name="collision" type="bool" value="true"/>
     <property name="group" value="npcs"/>
-    <property name="message" value="townperson_message"/>
-    <property name="texture" value="villager_image"/>
-   </properties>
-   <point/>
-  </object>
-  <object id="20" name="jeremyjr" type="npc" x="1429.46" y="982.874">
-   <properties>
-    <property name="collision" type="bool" value="true"/>
-    <property name="group" value="npcs"/>
-    <property name="message" value="jeremyjr_message"/>
+    <property name="message" value="jeremy_message_2"/>
     <property name="texture" value="jeremy_image"/>
    </properties>
    <point/>
   </object>
-  <object id="21" name="granny" type="npc" x="990.758" y="893.241">
+  <object id="21" name="monica" type="npc" x="990.758" y="893.241">
    <properties>
     <property name="collision" type="bool" value="true"/>
     <property name="group" value="npcs"/>
-    <property name="message" value="granny_message"/>
-    <property name="texture" value="granny_image"/>
+    <property name="message" value="monica_message_2"/>
+    <property name="texture" value="monica_dead_image"/>
    </properties>
    <point/>
   </object>
-  <object id="22" name="peter" type="npc" x="501.783" y="752.603">
+  <object id="22" name="peter" type="npc" x="1575.22" y="1240.53">
    <properties>
     <property name="collision" type="bool" value="true"/>
     <property name="group" value="npcs"/>
-    <property name="message" value="peter_message"/>
+    <property name="message" value="peter_message_2"/>
     <property name="texture" value="peter_image"/>
    </properties>
    <point/>
   </object>
-  <object id="24" name="peter" type="npc" x="411.401" y="925.302">
+  <object id="28" name="nima" type="npc" x="722.409" y="1044.65">
    <properties>
     <property name="collision" type="bool" value="true"/>
     <property name="group" value="npcs"/>
-    <property name="message" value="peter_message"/>
-    <property name="texture" value="peter_image"/>
+    <property name="message" value="nima_message_2"/>
+    <property name="texture" value="nima_image"/>
    </properties>
    <point/>
   </object>
-  <object id="25" name="peter" type="npc" x="366.47" y="923.898">
+  <object id="29" name="kanye" type="npc" x="696.434" y="1109.94">
    <properties>
     <property name="collision" type="bool" value="true"/>
     <property name="group" value="npcs"/>
-    <property name="message" value="peter_message"/>
-    <property name="texture" value="peter_image"/>
+    <property name="message" value="kanye_message_2"/>
+    <property name="texture" value="kanye_image"/>
    </properties>
    <point/>
   </object>
-  <object id="26" name="peter" type="npc" x="520.921" y="924.6">
+  <object id="30" name="laine" type="npc" x="554.619" y="729.43">
    <properties>
     <property name="collision" type="bool" value="true"/>
     <property name="group" value="npcs"/>
-    <property name="message" value="peter_message"/>
-    <property name="texture" value="peter_image"/>
-   </properties>
-   <point/>
-  </object>
-  <object id="27" name="peter" type="npc" x="463.353" y="918.281">
-   <properties>
-    <property name="collision" type="bool" value="true"/>
-    <property name="group" value="npcs"/>
-    <property name="message" value="peter_message"/>
-    <property name="texture" value="peter_image"/>
+    <property name="message" value="laine_message_2"/>
+    <property name="texture" value="laine_image"/>
    </properties>
    <point/>
   </object>
