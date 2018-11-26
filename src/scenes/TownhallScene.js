@@ -28,19 +28,19 @@ class TownhallScene extends WorldScene {
         messageBox.remove();
         this.choice = 'A';
         this.calculatePoints(this.data.next_level);
-        this.sendPoints();
+        this.updatePoints();
         this.startScene(this.next_level);
       } else if (this.optionB.isDown) {
         messageBox.remove();
         this.choice = 'B';
         this.calculatePoints(this.data.next_level);
-        this.sendPoints();
+        this.updatePoints();
         this.startScene(this.next_level)
       } else if (this.optionC.isDown) {
         messageBox.remove();
         this.choice = 'C';
         this.calculatePoints(this.data.next_level);
-        this.sendPoints();
+        this.updatePoints();
         this.startScene(this.next_level)
       }
     }
@@ -105,9 +105,10 @@ class TownhallScene extends WorldScene {
     }
   }
 
-  sendPoints() {
-    console.log("this.money: ", this.money);
-    console.log("this.popularity: ", this.popularity);
+  updatePoints() {
+    this.sys.game.playerStats.money = this.money;
+    this.sys.game.playerStats.popularity = this.popularity;
+    this.sys.game.playerStats.level = this.next_level;
   }
 
   startScene(level) {

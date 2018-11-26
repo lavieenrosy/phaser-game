@@ -30,6 +30,13 @@ Speaking as the previous mayor, let me give you one valuable piece of advice: ch
 
     this.addMessage(message.level1);
 
+    // remove status bar
+
+    let statusBar = document.querySelector('.game__status-bar');
+    while (statusBar.firstChild) {
+      statusBar.removeChild(statusBar.firstChild);
+    }
+
   }
 
   addMessage (message) {
