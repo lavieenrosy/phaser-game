@@ -24,11 +24,11 @@
       "tilesets": ["map_tileset"]
   },
   "npc_messages": {
-    "townperson_message": "assets/npc_messages/townperson_message.txt",
+    "senior_message": "assets/npc_messages/senior_message.txt",
     "jim_message": "assets/npc_messages/jim_message.txt",
     "jeremy_message": "assets/npc_messages/jeremy_message.txt",
     "david_message": "assets/npc_messages/david_message.txt",
-    "granny_message": "assets/npc_messages/granny_message.txt",
+    "monica_message": "assets/npc_messages/monica_message.txt",
     "miche_message": "assets/npc_messages/miche_message.txt",
     "peter_message": "assets/npc_messages/peter_message.txt"
   }
