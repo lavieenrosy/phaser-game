@@ -36,7 +36,6 @@
       "tilesets": ["map_tileset"]
   },
   "npc_messages": {
-<<<<<<< HEAD
     "townperson_message_3": "assets/npc_messages/townperson_message_3.txt",
     "jim_message_3": "assets/npc_messages/jim_message_3.txt",
     "jeremy_message_3": "assets/npc_messages/jeremy_message_3.txt",
@@ -56,13 +55,5 @@
     "lindsay_message_3": "assets/npc_messages/lindsay_message_3.txt",
     "chingiz_message_3": "assets/npc_messages/chingiz_message_3.txt",
     "zoe_message_3": "assets/npc_messages/zoe_message_3.txt"
-=======
-    "townperson_message": "assets/npc_messages/townperson_message.txt",
-    "jim_message_3": "assets/npc_messages/jim_message.txt",
-    "jeremy_message_3": "assets/npc_messages/jeremy_message.txt",
-    "david_message_3": "assets/npc_messages/david_message.txt",
-    "miche_message_3": "assets/npc_messages/miche_message.txt",
-    "peter_message_3": "assets/npc_messages/peter_message.txt"
->>>>>>> master
   }
 }

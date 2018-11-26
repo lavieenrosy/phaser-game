@@ -26,7 +26,6 @@
       "key": "level2_level_tilemap",
       "tilesets": ["map_tileset"]
   },
-<<<<<<< HEAD
   "npc_messages_2": {
     "townperson_message_2": "assets/npc_messages/townperson_message_2.txt",
     "jim_message_2": "assets/npc_messages/jim_message_2.txt",
@@ -38,15 +37,5 @@
     "nima_message_2": "assets/npc_messages/nima_message_2.txt",
     "kanye_message_2": "assets/npc_messages/kanye_message_2.txt",
     "laine_message_2": "assets/npc_messages/laine_message_2.txt"
-=======
-  "npc_messages": {
-    "townperson_message": "assets/npc_messages/townperson_message.txt",
-    "jim_message_2": "assets/npc_messages/jim_message.txt",
-    "jeremy_message_2": "assets/npc_messages/jeremy_message.txt",
-    "david_message_2": "assets/npc_messages/david_message.txt",
-    "monica_message_2": "assets/npc_messages/monica_message_2.txt",
-    "miche_message_2": "assets/npc_messages/miche_message.txt",
-    "peter_message_2": "assets/npc_messages/peter_message.txt"
->>>>>>> master
   }
 }
