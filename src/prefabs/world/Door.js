@@ -12,6 +12,19 @@ class Door extends Prefab {
   }
 
   enter() {
+    if (this.scene.sys.config.key === 'TownhallScene') {
+      switch (this.scene.next_level) {
+        case 'level2':
+          this.next_level = 'level1';
+          break;
+        case 'level3':
+          this.next_level = 'level2';
+          break;
+        case 'level4':
+          this.next_level = 'level3';
+          break;
+      }
+    }
     this.scene.scene.start('BootScene', {scene: this.next_level}); 
   }
 }

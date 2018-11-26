@@ -4639,6 +4639,12 @@ class Player extends __WEBPACK_IMPORTED_MODULE_0__Prefab__["a" /* default */] {
     this.scene.physics.add.collider(this, this.scene.layers.above_blocked);
     this.scene.physics.add.collider(this, this.scene.layers.beneath_blocked);
 
+    this.body.offset.x = 5;
+    this.body.offset.y = 16;
+
+    this.body.height = 16;
+    this.body.width = 16;
+
     this.body.velocity.x = -this.walking_speed;
 
     this.move_left = this.scene.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.LEFT);
@@ -4650,7 +4656,7 @@ class Player extends __WEBPACK_IMPORTED_MODULE_0__Prefab__["a" /* default */] {
     if (!this.scene.anims.anims.has('walking_down')) {
       this.scene.anims.create({
         key: 'walking_down',
-        frames: this.scene.anims.generateFrameNumbers(this.texture.key, { frames: [0, 4, 8, 12] }),
+        frames: this.scene.anims.generateFrameNumbers(this.texture.key, { frames: [0, 1, 2] }),
         frameRate: 6,
         repeat: -1
       });
@@ -4659,7 +4665,7 @@ class Player extends __WEBPACK_IMPORTED_MODULE_0__Prefab__["a" /* default */] {
     if (!this.scene.anims.anims.has('walking_up')) {
       this.scene.anims.create({
         key: 'walking_up',
-        frames: this.scene.anims.generateFrameNumbers(this.texture.key, { frames: [1, 5, 9, 13] }),
+        frames: this.scene.anims.generateFrameNumbers(this.texture.key, { frames: [36, 37, 38] }),
         frameRate: 6,
         repeat: -1
       });
@@ -4668,7 +4674,7 @@ class Player extends __WEBPACK_IMPORTED_MODULE_0__Prefab__["a" /* default */] {
     if (!this.scene.anims.anims.has('walking_left')) {
       this.scene.anims.create({
         key: 'walking_left',
-        frames: this.scene.anims.generateFrameNumbers(this.texture.key, { frames: [2, 6, 10, 14] }),
+        frames: this.scene.anims.generateFrameNumbers(this.texture.key, { frames: [12, 13, 14] }),
         frameRate: 6,
         repeat: -1
       });
@@ -4677,13 +4683,13 @@ class Player extends __WEBPACK_IMPORTED_MODULE_0__Prefab__["a" /* default */] {
     if (!this.scene.anims.anims.has('walking_right')) {
       this.scene.anims.create({
         key: 'walking_right',
-        frames: this.scene.anims.generateFrameNumbers(this.texture.key, { frames: [3, 7, 11, 15] }),
+        frames: this.scene.anims.generateFrameNumbers(this.texture.key, { frames: [24, 25, 26] }),
         frameRate: 6,
         repeat: -1
       });
     }
 
-    this.stopped_frames = [0, 1, 0, 2, 3];
+    this.stopped_frames = [1, 37, 1, 13, 25];
 
     scene.cameras.main.startFollow(this, true);
     scene.cameras.main.setBounds(0, 0, 1920, 1920);
@@ -11526,6 +11532,19 @@ class Door extends __WEBPACK_IMPORTED_MODULE_0__Prefab__["a" /* default */] {
   }
 
   enter() {
+    if (this.scene.sys.config.key === 'TownhallScene') {
+      switch (this.scene.next_level) {
+        case 'level2':
+          this.next_level = 'level1';
+          break;
+        case 'level3':
+          this.next_level = 'level2';
+          break;
+        case 'level4':
+          this.next_level = 'level3';
+          break;
+      }
+    }
     this.scene.scene.start('BootScene', { scene: this.next_level });
   }
 }
@@ -12471,6 +12490,12 @@ class GameOverScene extends Phaser.Scene {
 
   create() {
     let image = this.add.image(340, 200, 'game_over');
+    this.showGazette();
+  }
+
+  showGazette() {
+    const gazette = document.querySelector('.results');
+    gazette.style.display = "flex";
   }
 
 }
@@ -12568,9 +12593,15 @@ class LoadingScene extends Phaser.Scene {
   }
 
   create(data) {
-
+    this.hideGazette();
     this.scene.start(data.scene, { level_data: this.level_data, next_level: data.next_level });
   }
+
+  hideGazette() {
+    const gazette = document.querySelector('.results');
+    gazette.style.display = "none";
+  }
+
 }
 
 /* harmony default export */ __webpack_exports__["a"] = (LoadingScene);

@@ -25,7 +25,7 @@ $(() => {
       url: 'https://bajo-island-api.herokuapp.com/api/users/scores',
       method: 'GET',
       success: function(result){
-        console.log("we are in success ",result);
+        console.log("successful score GET");
       },
       error: function(error){
         console.log("we are in error",error);
@@ -44,36 +44,70 @@ $(() => {
   // toggle for login and reg form
 
   $('.navbar__reg-btn').on('click', (event) => {
-    $('.reg-box').slideToggle('300', () => {
-      $('.player-name').focus();
-    });
+    toggleForm('.reg-box', '.navbar__reg-name');
   });
 
   $('.navbar__login-btn').on('click', (event) => {
-    $('.login-box').slideToggle('300', () => {
-      $('.player-name').focus();
-    });
+    toggleForm('.login-box', '.navbar__login-name');
   });
-
-  // AJAX call for reg
 
   $('.reg-box form').on('submit', () => {
-    event.preventDefault();
-    const playerName = $('.player-name').val();
-    const nameData = $('.player-name').serialize();
-
-    $.ajax({
-      url: 'https://bajo-island-api.herokuapp.com/api/register',
-      method: 'POST',
-      data: nameData,
-      success: function(result) {
-        console.log("data returning: ", result);
-      },
-      error: function(error) {
-        console.log("error: ", error);
-      }
-    });
+    register();
   });
+
+  $('.login-box form').on('submit', () => {
+    login();
+  });
+
+  function toggleForm(box, focusField) {
+    $(box).slideToggle('300', () => {
+      $('.navbar__player-name').focus();
+    });
+  }
+
+  function register() {
+    event.preventDefault();
+    const playerName = $('.navbar__reg-name').val();
+    if (playerName === "") {
+      $('.navbar__form-validation').text('Enter valid player name').slideDown("slow");
+    } else {
+      const nameData = $('.navbar__reg-name').serialize();
+      $.ajax({
+        url: 'https://bajo-island-api.herokuapp.com/api/register',
+        method: 'POST',
+        data: nameData,
+        success: function(result) {
+          console.log("name: ", result);
+          toggleForm('.reg-box');
+        },
+        error: function(error) {
+          console.log("error: ", error);
+        }
+      });
+    }
+  }
+
+  function login() {
+    event.preventDefault();
+    const playerName = $('.navbar__login-name').val();
+    if (playerName === "") {
+      $('.navbar__form-validation').text('Enter valid player name').slideDown("slow");
+    } else {
+      const nameData = $('.navbar__login-name').serialize();
+      $.ajax({
+        url: 'https://bajo-island-api.herokuapp.com/api/register',
+        method: 'GET',
+        data: nameData,
+        success: function(result) {
+          console.log("name: ", result);
+          toggleForm('.login-box');
+        },
+        error: function(error) {
+          console.log("error: ", error);
+        }
+      });
+    }
+  }
 
 });
 

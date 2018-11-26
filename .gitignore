@@ -15,6 +15,6 @@ dump/
 *.old*
 higherVolume/
 .DS_Store
-public/styles
 .sass-cache/
+public/styles/
 dist/
