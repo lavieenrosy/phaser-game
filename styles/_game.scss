@@ -16,20 +16,20 @@
     float: left;
     text-align: center;
   }
-  
+
   &__message_white {
     background-color: $reverse;
     color: $black;
     height: 150px;
   }
-  
+
   &__message_black {
     background-color: $black;
     flex-basis: 100%;
     border: 2px $highlight solid;
     color: $reverse;
     opacity: 0.3;
-    height: 250px;
+    height: 275px;
   }
 
   &__status-bar {
