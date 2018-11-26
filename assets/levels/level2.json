@@ -26,7 +26,7 @@
       "key": "level2_level_tilemap",
       "tilesets": ["map_tileset"]
   },
-  "npc_messages_2": {
+  "npc_messages": {
     "townperson_message_2": "assets/npc_messages/townperson_message_2.txt",
     "jim_message_2": "assets/npc_messages/jim_message_2.txt",
     "jeremy_message_2": "assets/npc_messages/jeremy_message_2.txt",
