@@ -51,34 +51,8 @@ class WorldScene extends JSONLevelScene {
       object_layer.objects.forEach(this.create_object, this);
     }, this);
 
-    if (document.querySelector('.game__table')) {
-      const statusBar = document.querySelector('.game__table')
-      statusBar.style.display = "none";
-    } 
-
-    this.addStatusBar();
     
   }
-
-
- addStatusBar () {
-
-    let {name, level, money, pop_points, score} = this.sys.game.playerStats
-
-    let newTable = $('<table>').addClass('game__table');
-    let newRow = $('<tr>');
-    let nameCol = $('<td>').text(`Player: ${name}`);
-    let levelCol = $('<td>').text(`Level: ${level}`);
-    let moneyCol = $('<td>').text(`Money: $${money}`);
-    let popCol = $('<td>').text(`Popularity: ${pop_points}`);
-    let scoreCol = $('<td>').text(`Score: ${score}`);
-
-    let statusBar = newTable.append(newRow).append(nameCol).append(levelCol).append(moneyCol).append(popCol).append(scoreCol);
-    $('#statusbar').append(statusBar);
-    
-  }
-
-
 
 
   create_object (object) {
