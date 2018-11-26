@@ -1068,7 +1068,7 @@
    </properties>
    <point/>
   </object>
-  <object id="20" name="jeremy" type="npc" x="1429.46" y="982.874">
+  <object id="20" name="jeremy" type="npc" x="1740.47" y="242.211">
    <properties>
     <property name="collision" type="bool" value="true"/>
     <property name="group" value="npcs"/>

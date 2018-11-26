@@ -1068,21 +1068,12 @@
    </properties>
    <point/>
   </object>
-  <object id="20" name="jeremy" type="npc" x="1495.45" y="839.656">
+  <object id="20" name="jeremy" type="npc" x="1621.12" y="137.606">
    <properties>
     <property name="collision" type="bool" value="true"/>
     <property name="group" value="npcs"/>
     <property name="message" value="jeremy_message_3"/>
     <property name="texture" value="jeremy_image"/>
-   </properties>
-   <point/>
-  </object>
-  <object id="21" name="monica" type="npc" x="990.758" y="893.241">
-   <properties>
-    <property name="collision" type="bool" value="true"/>
-    <property name="group" value="npcs"/>
-    <property name="message" value="monica_message_3"/>
-    <property name="texture" value="monica_dead_image"/>
    </properties>
    <point/>
   </object>
@@ -1104,7 +1095,7 @@
    </properties>
    <point/>
   </object>
-  <object id="29" name="kanye" type="npc" x="648.695" y="889.496">
+  <object id="29" name="kanye" type="npc" x="646.589" y="890.198">
    <properties>
     <property name="collision" type="bool" value="true"/>
     <property name="group" value="npcs"/>
@@ -1113,7 +1104,7 @@
    </properties>
    <point/>
   </object>
-  <object id="30" name="laine" type="npc" x="467.565" y="771.553">
+  <object id="30" name="laine" type="npc" x="645.184" y="611.486">
    <properties>
     <property name="collision" type="bool" value="true"/>
     <property name="group" value="npcs"/>

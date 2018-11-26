@@ -655,12 +655,12 @@
     <property name="next_level" value="level1"/>
    </properties>
   </object>
-  <object id="4" name="townperson" type="npc" x="953" y="1210.5">
+  <object id="4" name="mayor" type="npc" x="953" y="1210.5">
    <properties>
     <property name="collision" type="bool" value="true"/>
     <property name="group" value="npcs"/>
-    <property name="message" value="townperson_message"/>
-    <property name="texture" value="player_spritesheet"/>
+    <property name="message" value="mayor_message"/>
+    <property name="texture" value="mayor_image"/>
    </properties>
    <point/>
   </object>
