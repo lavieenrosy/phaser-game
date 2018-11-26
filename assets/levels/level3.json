@@ -35,11 +35,22 @@
       "tilesets": ["map_tileset"]
   },
   "npc_messages": {
-    "townperson_message": "assets/npc_messages/townperson_message.txt",
-    "jim_message_3": "assets/npc_messages/jim_message.txt",
-    "jeremy_message_3": "assets/npc_messages/jeremy_message.txt",
-    "david_message_3": "assets/npc_messages/david_message.txt",
-    "miche_message_3": "assets/npc_messages/miche_message.txt",
-    "peter_message_3": "assets/npc_messages/peter_message.txt"
+    "jim_message_3": "assets/npc_messages/jim_message_3.txt",
+    "jeremy_message_3": "assets/npc_messages/jeremy_message_3.txt",
+    "david_message_3": "assets/npc_messages/david_message_3.txt",
+    "miche_message_3": "assets/npc_messages/miche_message_3.txt",
+    "peter_message_3": "assets/npc_messages/peter_message_3.txt",
+    "nima_message_3": "assets/npc_messages/nima_message_3.txt",
+    "kanye_message_3": "assets/npc_messages/kanye_message_3.txt",
+    "nick_message_3": "assets/npc_messages/nick_message_3.txt",
+    "brennan_message_3": "assets/npc_messages/brennan_message_3.txt",
+    "guarav_message_3": "assets/npc_messages/guarav_message_3.txt",
+    "kevin_message_3": "assets/npc_messages/kevin_message_3.txt",
+    "angela_message_3": "assets/npc_messages/angela_message_3.txt",
+    "jenny_message_3": "assets/npc_messages/jenny_message_3.txt",
+    "jay_message_3": "assets/npc_messages/jay_message_3.txt",
+    "lindsay_message_3": "assets/npc_messages/lindsay_message_3.txt",
+    "chingiz_message_3": "assets/npc_messages/chingiz_message_3.txt",
+    "zoe_message_3": "assets/npc_messages/zoe_message_3.txt"
   }
 }
