@@ -1,1 +1,7 @@
-I need more cow's!
+Jim: “Finally! It’s taken you long enough. I know what you’re thinking: that this is the most amazing farm you've ever seen. Come on… you know you’re interested.”
+Charlie: “How could I not be?”
+Jim: “I knew you’d come around. Here’s what I’m thinking…”
+
+OPTION: Invest $1000/yr to help keep Jim's cattle farm open. This will create 5 new jobs, and earn a return of $5000/yr for the town.
+
+OPTION: Invest $2500/yr to help Jim switch his crops over to grains and vegetables. This will create 3 new jobs, and earn a return of $3000/yr for the town.
