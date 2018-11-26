@@ -4,7 +4,6 @@
 
       "player_spritesheet": {"type": "spritesheet", "source": "assets/images/world/player.png", "frame_width": 26, "frame_height": 36},
       "peter_image": {"type": "image", "source": "assets/images/world/peter.png"},
-      "villager_image": {"type": "image", "source": "assets/images/world/villager.png"},
       "jim_image": {"type": "image", "source": "assets/images/world/jim.png"},
       "miche_image": {"type": "image", "source": "assets/images/world/miche.png"},
       "david_image": {"type": "image", "source": "assets/images/world/david.png"},
@@ -24,7 +23,7 @@
       "tilesets": ["map_tileset"]
   },
   "npc_messages": {
-    "townperson_message": "assets/npc_messages/townperson_message.txt",
+    "senior_message": "assets/npc_messages/senior_message.txt",
     "jim_message": "assets/npc_messages/jim_message.txt",
     "jeremy_message": "assets/npc_messages/jeremy_message.txt",
     "david_message": "assets/npc_messages/david_message.txt",

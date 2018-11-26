@@ -1,4 +1,5 @@
 import StaticPlayer from '../prefabs/StaticPlayer.js';
+import { message } from './MayorMessages.js'
 
 class MayorScene extends Phaser.Scene {
 
@@ -9,26 +10,22 @@ class MayorScene extends Phaser.Scene {
   init(data) {
     if (data.next_level) {
       this.next_level = data.next_level;
+    } else {
+      this.next_level = 'level1';
     }
   }
 
   preload() {
-    this.load.spritesheet('character', 'assets/images/world/chara5.png', { frameWidth: 26, frameHeight: 36 });
+    this.load.spritesheet('senior', 'assets/images/world/military2.png', { frameWidth: 26, frameHeight: 36 });
+    this.load.spritesheet('player', 'assets/images/world/player.png', { frameWidth: 26, frameHeight: 36 });
   }
 
   create() {
 
-    const message = {
-      level1: `Congrats on your win at the polls, Charlie! Now that you’re mayor, it’s time to fulfil on your mandate: to create jobs for Bajo Island.
+    let player = new StaticPlayer(this, 180, 100, 'player', 25, 3);
+    let senior = new StaticPlayer(this, 500, 100, 'senior', 70, 3);
 
-In order to fulfil on your election promise, you must find those on Bajo who have vested interests in your platform. Gather their advice and when you are ready, return to Townhall where you will make your decision.
-
-Speaking as the previous mayor, let me give you one valuable piece of advice: choose carefully, because the decisions you make for Bajo will have far reaching consequences…`}
-
-    let mainChar1 = new StaticPlayer(this, 180, 100, 'character', 31, 3);
-    let senior = new StaticPlayer(this, 500, 100, 'character', 64, 3);
-
-    this.addMessage(message.level1);
+    this.addMessage(message[this.next_level]);
 
     // remove status bar
 

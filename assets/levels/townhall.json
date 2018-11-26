@@ -1,17 +1,14 @@
 {
   "assets": {
       "map_tileset": {"type": "image", "source": "assets/images/inside.png"},
-
       "player_spritesheet": {"type": "spritesheet", "source": "assets/images/world/player.png", "frame_width": 16, "frame_height": 16},
-
-      "villager_image": {"type": "image", "source": "assets/images/world/villager.png"},
       "mayor_image": {"type": "image", "source": "assets/images/world/mayor.png"},
       "townhall_level_tilemap": {"type": "tilemap", "source": "assets/maps/townhall.json"}
-      
+
   },
   "groups": [
       "players",
-      "npcs", 
+      "npcs",
       "hud",
       "doors"
   ],
