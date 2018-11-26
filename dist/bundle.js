@@ -3370,6 +3370,23 @@ class WorldScene extends __WEBPACK_IMPORTED_MODULE_0__JSONLevelScene__["a" /* de
     this.map.objects.forEach(function (object_layer) {
       object_layer.objects.forEach(this.create_object, this);
     }, this);
+
+    this.addStatusBar();
+  }
+
+  addStatusBar() {
+
+    let { name, level, money, popularity, score } = this.sys.game.playerStats;
+    let newTable = $('<table>').addClass('game__table');
+    let newRow = $('<tr>');
+    let nameCol = $('<td>').text(`Player: ${name}`);
+    let levelCol = $('<td>').text(`Level: ${level}`);
+    let moneyCol = $('<td>').text(`Money: $${money}`);
+    let popCol = $('<td>').text(`Popularity: ${popularity}`);
+    let scoreCol = $('<td>').text(`Score: ${score}`);
+    let statusBar = newTable.append(newRow).append(nameCol).append(levelCol).append(moneyCol).append(popCol).append(scoreCol);
+    $('.game__status-bar').empty();
+    $('.game__status-bar').append(statusBar);
   }
 
   create_object(object) {
@@ -11376,6 +11393,7 @@ game.scene.add('LoadingScene', loadingScene);
 game.scene.start('BootScene', { scene: 'title' });
 game.data = 'poop';
 console.log('Game:', game);
+game.playerStats = { level: 'level 1', name: 'Rosy', money: 1000000, popularity: 50, score: 100 };
 
 /***/ }),
 /* 761 */
@@ -11593,6 +11611,13 @@ Speaking as the previous mayor, let me give you one valuable piece of advice: ch
     let senior = new __WEBPACK_IMPORTED_MODULE_0__prefabs_StaticPlayer_js__["a" /* default */](this, 500, 100, 'character', 64, 3);
 
     this.addMessage(message.level1);
+
+    // remove status bar
+
+    let statusBar = document.querySelector('.game__status-bar');
+    while (statusBar.firstChild) {
+      statusBar.removeChild(statusBar.firstChild);
+    }
   }
 
   addMessage(message) {
@@ -12330,19 +12355,19 @@ class TownhallScene extends __WEBPACK_IMPORTED_MODULE_0__WorldScene__["a" /* def
         messageBox.remove();
         this.choice = 'A';
         this.calculatePoints(this.data.next_level);
-        this.sendPoints();
+        this.updatePoints();
         this.startScene(this.next_level);
       } else if (this.optionB.isDown) {
         messageBox.remove();
         this.choice = 'B';
         this.calculatePoints(this.data.next_level);
-        this.sendPoints();
+        this.updatePoints();
         this.startScene(this.next_level);
       } else if (this.optionC.isDown) {
         messageBox.remove();
         this.choice = 'C';
         this.calculatePoints(this.data.next_level);
-        this.sendPoints();
+        this.updatePoints();
         this.startScene(this.next_level);
       }
     }
@@ -12407,9 +12432,10 @@ class TownhallScene extends __WEBPACK_IMPORTED_MODULE_0__WorldScene__["a" /* def
     }
   }
 
-  sendPoints() {
-    console.log("this.money: ", this.money);
-    console.log("this.popularity: ", this.popularity);
+  updatePoints() {
+    this.sys.game.playerStats.money = this.money;
+    this.sys.game.playerStats.popularity = this.popularity;
+    this.sys.game.playerStats.level = this.next_level;
   }
 
   startScene(level) {
@@ -12491,6 +12517,13 @@ class GameOverScene extends Phaser.Scene {
   create() {
     let image = this.add.image(340, 200, 'game_over');
     this.showGazette();
+
+    // remove status bar
+
+    let statusBar = document.querySelector('.game__status-bar');
+    while (statusBar.firstChild) {
+      statusBar.removeChild(statusBar.firstChild);
+    }
   }
 
   showGazette() {
@@ -12571,7 +12604,6 @@ class LoadingScene extends Phaser.Scene {
 
   init(data) {
     this.level_data = data.level_data;
-    console.log("Loading Scene data:", data);
   }
 
   preload() {
