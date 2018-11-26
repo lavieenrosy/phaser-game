@@ -24,7 +24,7 @@
       "tilesets": ["map_tileset"]
   },
   "npc_messages": {
-    "townperson_message": "assets/npc_messages/townperson_message.txt",
+    "senior_message": "assets/npc_messages/senior_message.txt",
     "jim_message": "assets/npc_messages/jim_message.txt",
     "jeremy_message": "assets/npc_messages/jeremy_message.txt",
     "david_message": "assets/npc_messages/david_message.txt",
