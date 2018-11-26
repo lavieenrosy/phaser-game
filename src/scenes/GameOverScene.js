@@ -11,6 +11,13 @@ class GameOverScene extends Phaser.Scene {
   create() {
     let image = this.add.image(340, 200, 'game_over');
     this.showGazette();
+
+    // remove status bar
+
+    let statusBar = document.querySelector('.game__status-bar');
+    while (statusBar.firstChild) {
+      statusBar.removeChild(statusBar.firstChild);
+    }
   }
 
   showGazette() {
