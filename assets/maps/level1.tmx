@@ -1059,21 +1059,12 @@
    </properties>
    <point/>
   </object>
-  <object id="18" name="david" type="npc" x="295.187" y="1052.61">
+  <object id="18" name="david" type="npc" x="245.606" y="1049.26">
    <properties>
     <property name="collision" type="bool" value="true"/>
     <property name="group" value="npcs"/>
     <property name="message" value="david_message"/>
     <property name="texture" value="david_image"/>
-   </properties>
-   <point/>
-  </object>
-  <object id="19" name="townperson" type="npc" x="622.17" y="826.698">
-   <properties>
-    <property name="collision" type="bool" value="true"/>
-    <property name="group" value="npcs"/>
-    <property name="message" value="townperson_message"/>
-    <property name="texture" value="villager_image"/>
    </properties>
    <point/>
   </object>
@@ -1086,16 +1077,16 @@
    </properties>
    <point/>
   </object>
-  <object id="21" name="granny" type="npc" x="990.758" y="893.241">
+  <object id="21" name="monica" type="npc" x="990.758" y="893.241">
    <properties>
     <property name="collision" type="bool" value="true"/>
     <property name="group" value="npcs"/>
-    <property name="message" value="granny_message"/>
-    <property name="texture" value="granny_image"/>
+    <property name="message" value="monica_message"/>
+    <property name="texture" value="monica_image"/>
    </properties>
    <point/>
   </object>
-  <object id="22" name="peter" type="npc" x="238.514" y="520.927">
+  <object id="22" name="peter" type="npc" x="561.462" y="702.502">
    <properties>
     <property name="collision" type="bool" value="true"/>
     <property name="group" value="npcs"/>
