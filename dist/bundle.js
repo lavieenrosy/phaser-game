@@ -4639,6 +4639,12 @@ class Player extends __WEBPACK_IMPORTED_MODULE_0__Prefab__["a" /* default */] {
     this.scene.physics.add.collider(this, this.scene.layers.above_blocked);
     this.scene.physics.add.collider(this, this.scene.layers.beneath_blocked);
 
+    this.body.offset.x = 5;
+    this.body.offset.y = 16;
+
+    this.body.height = 16;
+    this.body.width = 16;
+
     this.body.velocity.x = -this.walking_speed;
 
     this.move_left = this.scene.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.LEFT);
@@ -11353,6 +11359,7 @@ let config = {
   physics: {
     default: 'arcade',
     arcade: {
+      debug: true,
       gravity: { y: 0 }
     }
   }
@@ -11526,6 +11533,19 @@ class Door extends __WEBPACK_IMPORTED_MODULE_0__Prefab__["a" /* default */] {
   }
 
   enter() {
+    if (this.scene.sys.config.key === 'TownhallScene') {
+      switch (this.scene.next_level) {
+        case 'level2':
+          this.next_level = 'level1';
+          break;
+        case 'level3':
+          this.next_level = 'level2';
+          break;
+        case 'level4':
+          this.next_level = 'level3';
+          break;
+      }
+    }
     this.scene.scene.start('BootScene', { scene: this.next_level });
   }
 }
@@ -12471,6 +12491,12 @@ class GameOverScene extends Phaser.Scene {
 
   create() {
     let image = this.add.image(340, 200, 'game_over');
+    this.showGazette();
+  }
+
+  showGazette() {
+    const gazette = document.querySelector('.results');
+    gazette.style.display = "flex";
   }
 
 }
@@ -12568,9 +12594,15 @@ class LoadingScene extends Phaser.Scene {
   }
 
   create(data) {
-
+    this.hideGazette();
     this.scene.start(data.scene, { level_data: this.level_data, next_level: data.next_level });
   }
+
+  hideGazette() {
+    const gazette = document.querySelector('.results');
+    gazette.style.display = "none";
+  }
+
 }
 
 /* harmony default export */ __webpack_exports__["a"] = (LoadingScene);
