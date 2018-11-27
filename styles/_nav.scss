@@ -1,14 +1,15 @@
 @import 'brand.scss';
 .navbar {
   background-color: $secondary;
-  padding: 1.8em;
-  height: 120px;
+  padding: .5em 0 .5em .5em;
+  height: 100px;
   color: $reverse;
   margin-bottom: 20px;
+
   &__title {
     float: left;
     margin-left: 10px;
-    font-size: 2.5em;
+    font-size: 2em;
   }
   &__drop-down {
     height: 190px;
