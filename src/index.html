@@ -1,59 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Bajo Island</title>
-    <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
-    <link rel="stylesheet" href="/public/styles/main.css" type="text/css">
-    <script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
 
-    <script type="text/javascript" src="/public/scripts/app.js"></script>
-    <link rel="stylesheet" href="/public/vendor/normalize-4.1.1.css">
-    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
-    <meta name="HandheldFriendly" content="True">
-    <meta name="MobileOptimized" content="320">
-    <meta http-equiv="cleartype" content="on">
-    <meta name="format-detection" content="telephone=no">
+<head>
+  <meta charset="UTF-8">
+  <title>Bajo Island</title>
+  <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+  <link rel="stylesheet" href="/public/styles/main.css" type="text/css">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+
+  <script type="text/javascript" src="/public/scripts/app.js"></script>
+  <link rel="stylesheet" href="/public/vendor/normalize-4.1.1.css">
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta http-equiv="cleartype" content="on">
+  <meta name="format-detection" content="telephone=no">
 </head>
+
 <body>
   <main>
-    <section>
-        <nav class="navbar">
-            <h1 class = "navbar__title">Bajo Island</h1>
-            </section>
-        </nav>
-        <section class="game">
-            <div class="game__container" id="game-container">
-                <article class="game__status-bar">
-                  <!-- status bar renders here -->
-                </article>
-                  <!-- game renders here -->
-                <article class="game__name-input">
-                  <!-- name input field here -->
-<!--                   <textarea class="game__textarea" name="name" placeholder="ENTER PLAYER NAME"></textarea> -->
-                </article>
-            </div>
-          </section>
-    </section>
-    <section class="guide">
-      <article class="guide__container">
-        <h2>Welcome to Bajo Island!</h2>
-        <p class="guide__content">You are the mayor of Bajo Island, talk to townspeople to help make decisions that will improve the island for generations to come.</p>
-        <p class="guide__content">Use cursor keys and mouse.</p>
-        <p class="guide__content">Good luck, friend!</p>
-      </article>
-    </section>
+
+
+    <nav class="navbar">
+      <h1 class="navbar__title">Bajo Island</h1>
+    </nav>
+    <section class="game">
+
+      <div class="game__container" id="game-container">
+        <article class="game__status-bar">
+        <!-- status bar renders here -->
+        </article>
+        <article class="game__name-input">
+            <!-- name input field here -->
+<!--<textarea class="game__textarea" name="name" placeholder="ENTER PLAYER NAME"></textarea> -->
+          </article>
+        <!-- game renders here -->
+      </div>
     <section class="results">
       <article class="results__container">
         <img class="results__img" src="../public/images/BajoGazette.png">
       </article>
     </section>
-    <section class="scores">
+    <section class="gameinfo">
+      <article class="guide__container">
+        <h2 class="guide__title">Welcome to Bajo Island!</h2>
+        <p class="guide__content">You are the mayor of Bajo Island, each round you will be given a mandate to improve
+          the island for generations to come...</p>
+        <p class="guide__content">Talk to townspeople to get their input on your decision then head back to Townhall
+          and give your predecessor your choice.</p>
+        <p class="guide__content">Use cursor keys to move around the island, press enter to exit the dialog boxes.</p>
+        <p class="guide__content">Good luck, friend!</p>
+      </article>
       <article class="scores__container">
-          <h2>High Scores</h2>
+        <h2 class="scores__title">HIGH SCORES</h2>
         <table class="scores__table">
           <thead>
             <tr>
@@ -67,7 +67,7 @@
         </table>
       </article>
     </section>
+  </section>
   </main>
-  <!-- JS -->
 </body>
 </html>
