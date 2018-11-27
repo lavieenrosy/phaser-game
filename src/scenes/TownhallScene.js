@@ -61,45 +61,54 @@ class TownhallScene extends WorldScene {
     if (currentLevel === 'level2') {
       switch (this.choice) {
         case 'A':
-          this.money += 125000;
-          this.popularity -= 20;
+        // bridge
+          this.money += 30000;
+          this.popularity += 10;
           break;
         case 'B':
-          this.money += 100000;
-          this.popularity += 0;
+        // bike
+          this.money += 35000;
+          this.popularity += 20;
           break;
         case 'C':
-          this.money += 3000
-          this.popularity += 25;
+        // road
+          this.money += 65000
+          this.popularity += 40;
           break;
       }
     } else if (currentLevel === 'level3') {
       switch (this.choice) {
         case 'A':
-          this.money += 125000;
-          this.popularity -= 20;
+        // island expantion
+          this.money -= 90000;
+          this.popularity -= 30;
           break;
         case 'B':
-          this.money += 100000;
-          this.popularity += 0;
+        // carbon tax
+          this.money -= 750;
+          this.popularity -= 20;
           break;
         case 'C':
-          this.money += 3000
-          this.popularity += 25;
+        // trees
+          this.money -= 2000
+          this.popularity += 60;
           break;
       }
     } else {
       switch (this.choice) {
         case 'A':
+        // factory
           this.money += 125000;
           this.popularity -= 20;
           break;
         case 'B':
+        // cows
           this.money += 100000;
           this.popularity += 0;
           break;
         case 'C':
-          this.money += 3000
+        // vegetables
+          this.money += 12500
           this.popularity += 25;
           break;
       }

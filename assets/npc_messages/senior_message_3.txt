@@ -1,1 +1,13 @@
+<<<<<<< HEAD
 hola from message 3
+=======
+Mayor Sr: I see you’re back! Ready to make a decision? Here are your options:
+
+OPTION A: Invest in a $90000 construction project to extend the island.
+
+OPTION B: Implement a new carbon tax, recycling program, and new building standards which will cost a total of $750 in admin fees.
+
+OPTION C: Plant trees all around the perimeter of the island: $2000.
+
+Press the key of your choice to continue...
+>>>>>>> upstream/master
