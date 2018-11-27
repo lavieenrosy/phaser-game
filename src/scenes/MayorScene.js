@@ -25,7 +25,10 @@ class MayorScene extends Phaser.Scene {
     let senior = new StaticPlayer(this, 500, 100, 'senior', 70, 3);
 
     this.addMessage(message[this.next_level]);
-    this.addYear();
+
+    if (this.next_level !== 'level1') {
+      this.addYear();
+    }
 
     // remove status bar from WorldScene
 
