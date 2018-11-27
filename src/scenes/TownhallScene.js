@@ -116,9 +116,11 @@ class TownhallScene extends WorldScene {
   }
 
   updatePoints() {
-    this.sys.game.playerStats.money = this.money;
-    this.sys.game.playerStats.popularity = this.popularity;
-    this.sys.game.playerStats.level = this.next_level;
+    let currentStats = this.sys.game.playerStats;
+    currentStats.money = this.money;
+    currentStats.popularity = this.popularity;
+    currentStats.score = Math.floor(currentStats.money / 60000 + currentStats.popularity * 1000);
+    currentStats.level = this.next_level;
   }
 
   startScene(level) {
