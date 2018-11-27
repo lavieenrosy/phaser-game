@@ -7,39 +7,38 @@
   justify-content: space-evenly;
 
   &__container {
-    flex-basis: 75%;
+    flex-basis: 30%;
     margin: 10px;
     width: auto;
     height: auto;
     position: relative;
-    border-bottom: 5px $reverse solid;
-
+    border: 5px $reverse solid;
+    padding: 0 1em 0 1em;
+    text-align: center;
   }
 
   &__table {
     font-size: 2em;
     text-align: center;
+    width: 100%;
   }
 
   &__td {
     color: $highScore;
-    padding-right:1.5em;
-    justify-content: space-evenly;
-  
-  }
-  &__td {
-    color: $highScore;
-    padding-right:1.5em;
+    // padding-right:1.5em;
     justify-content: space-evenly;
   
   }
 
   &__th {
-    padding-right:1.5em;
+    // padding-right:1.5em;
     justify-content: space-evenly;
   
   }
 
+  &__title {
+    font-size: 2em;
+  }
 
 
 

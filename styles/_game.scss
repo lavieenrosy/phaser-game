@@ -5,7 +5,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  padding: 2em 0 1em 0;
+  padding-bottom: 1em;
 
   &__container{
     flex-basis: 100%;
@@ -16,6 +16,8 @@
     float: left;
     text-align: center;
   }
+
+  
 
   &__message_white {
     background-color: $reverse;

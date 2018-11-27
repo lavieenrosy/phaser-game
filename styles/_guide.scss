@@ -5,22 +5,22 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  // padding: 5em 0 1em 0;
 
   &__container {
-    flex-basis: 75%;
+    flex-basis: 60%;
     margin: 10px;
     width: auto;
     height: auto;
     position: relative;
-    float: left;
-    border-bottom: 5px $reverse solid;
-    // text-align: center;
   }
 
   &__content {
     font-size: 1.5em;
   }
 
+  &__title {
+    font-size: 2em;
+  }
+  
 }
 
