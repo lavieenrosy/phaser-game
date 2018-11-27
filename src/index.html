@@ -23,29 +23,6 @@
     <section>
         <nav class="navbar">
             <h1 class = "navbar__title">Bajo Island</h1>
-            <a href="#" class="navbar__reg-btn">Register</h4>
-            <a href="#" class="navbar__login-btn">Login</h4>
-            <section class="navbar__drop-down reg-box">
-              <form action="https://bajo-island-api.herokuapp.com/api/register" method="post" class="navbar__form">
-                <p>Register your player name</p>
-                <input name="name" type="text" placeholder="Player name" class="navbar__form-input navbar__reg-name">
-                <br>
-                <input type="password" placeholder="Password" class="navbar__form-input">
-                <br>
-                <span class="navbar__form-validation"></span>
-                <input type="submit" value="Register" class="navbar__nav-link">
-              </form>
-            </section>
-            <section class="navbar__drop-down login-box">
-              <form action="https://bajo-island-api.herokuapp.com/api/register" method="get" class="navbar__form">
-                <p>Login</p>
-                <input name="name" type="text" placeholder="Player name" class="navbar__form-input navbar__login-name">
-                <br>
-                <input type="password" placeholder="Password" class="navbar__form-input">
-                <br>
-                <span class="navbar__form-validation"></span>
-                <input type="submit" value="Login" class="navbar__nav-link">
-              </form>
             </section>
         </nav>
         <section class="game">
@@ -54,8 +31,11 @@
                   <!-- status bar renders here -->
                 </article>
                   <!-- game renders here -->
+                <article class="game__name-input">
+                  <!-- name input field here -->
+<!--                   <textarea class="game__textarea" name="name" placeholder="ENTER PLAYER NAME"></textarea> -->
+                </article>
             </div>
-
           </section>
     </section>
     <section class="guide">
