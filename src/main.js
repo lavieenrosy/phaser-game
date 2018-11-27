@@ -44,6 +44,5 @@ game.scene.add('LoadingScene', loadingScene);
 game.scene.start('BootScene', {scene: 'title'});
 game.data = 'poop';
 game.playerStats = { level: 'level1', name: 'Rosy', money: 1000000, popularity: 50, score: 0 };
-console.log('frommainjs', game.playerStats);
 
 
