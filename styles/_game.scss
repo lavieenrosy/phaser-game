@@ -32,6 +32,13 @@
     border: none;
     height: 70px;
     margin-top: 375px;
+    resize: none;
+  }
+
+  &__years {
+    position: absolute;
+    font-size: 2em;
+    margin: 20px;
   }
 
   &__message_white {

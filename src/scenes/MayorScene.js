@@ -21,13 +21,13 @@ class MayorScene extends Phaser.Scene {
   }
 
   create() {
-
     let player = new StaticPlayer(this, 180, 100, 'player', 25, 3);
     let senior = new StaticPlayer(this, 500, 100, 'senior', 70, 3);
 
     this.addMessage(message[this.next_level]);
+    this.addYear();
 
-    // remove status bar
+    // remove status bar from WorldScene
 
     let statusBar = document.querySelector('.game__status-bar');
     while (statusBar.firstChild) {
@@ -35,7 +35,24 @@ class MayorScene extends Phaser.Scene {
     }
 
     this.hideInput();
+  }
 
+  update() {
+    const spacebar = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.SPACE);
+    if (spacebar.isDown) {
+      this.start_game();
+    };
+
+    // remove elements from page on transition
+
+    const messageBox = document.querySelector('#messagebox');
+    const yearMsg = $('.game__years span')
+    if (messageBox && spacebar.isDown) {
+      messageBox.remove();
+    }
+    if (yearMsg && spacebar.isDown) {
+      yearMsg.remove();
+    }
   }
 
   addMessage (message) {
@@ -50,17 +67,10 @@ class MayorScene extends Phaser.Scene {
     gameContainer.appendChild(newDiv);
   }
 
-  update() {
-    let spacebar = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.SPACE);
-    if (spacebar.isDown) {
-      this.start_game();
-    };
-
-    let messageBox = document.querySelector('#messagebox');
-
-    if(messageBox && spacebar.isDown) {
-      messageBox.remove();
-    }
+  addYear() {
+    const yearMsg = $('<span>').text('25 years later...');
+    const yearContainer = $('.game__years');
+    yearContainer.append(yearMsg);
   }
 
   hideInput() {

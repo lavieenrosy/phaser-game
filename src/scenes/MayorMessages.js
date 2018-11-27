@@ -12,7 +12,7 @@ You’ve won on a platform to strengthen infrastructure on the island. Let the c
 
 Remember what I told you when you were young: your decisions will impact future generations of Bajoians, so choose wisely…`,
 
-level3: `Oh, Charlie the Third. Times are a-changin’! It's time for me to pass the reigns over to you, to lead the next generation of islanders.
+level3: `Oh, Charlie the III. Times are a-changin’! It's time for me to pass the reigns over to you, to lead the next generation of islanders.
 
 You’ve won the election with the mandate to combat overcrowding on Bajo. It's a tough one, but I see that you're up to the task. When you’re ready to make a decision, return here to Townhall.
 
