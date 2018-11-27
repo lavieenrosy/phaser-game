@@ -1,6 +1,6 @@
-Laine: “Hiya, mayor! Boy am I glad to hear that someone is finally doing something about this mess!”
+Laine Jr: “Hiya, mayor! Boy am I glad to hear that someone is finally doing something about this mess!”
 You: “What do you suggest, Laine?”
-Laine: “We’re losing liveable space on Bajo because of sea-level rise and climate-related weather events like the forest fire in 2058. We need to fight overcrowding by introducing a carbon tax, implementing mandatory recycling programs, building standards, and planting trees along our banks to avoid further eroding.”
+Laine Jr: “We’re losing liveable space on Bajo because of sea-level rise and climate-related weather events like the forest fire in 2058. We need to fight overcrowding by introducing a carbon tax, implementing mandatory recycling programs, building standards, and planting trees along our banks to avoid further eroding.”
 
 OPTION: Implement a new carbon tax, recycling program, and new building standards which will cost a total of $750 in admin fees.
 
