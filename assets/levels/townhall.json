@@ -17,6 +17,8 @@
       "tilesets": ["map_tileset"]
   },
   "npc_messages": {
-    "mayor_message": "assets/npc_messages/mayor_message.txt"
+    "mayor_message": "assets/npc_messages/mayor_message.txt", 
+    "senior_message_2": "assets/npc_messages/senior_message_2.txt", 
+    "senior_message_3": "assets/npc_messages/senior_message_3.txt"
   }
 }

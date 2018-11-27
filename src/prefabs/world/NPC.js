@@ -8,6 +8,17 @@ export default class NPC extends Prefab {
 
     this.message = this.scene.cache.text.get(properties.message);
 
+    if (this.scene.sys.config.key === 'TownhallScene' && this.name === 'mayor') {
+      switch (this.scene.sys.game.playerStats.level) {
+        case 'level2':
+          this.message = this.scene.cache.text.get('senior_message_2');
+          break;
+        case 'level3':
+          this.message = this.scene.cache.text.get('senior_message_3');
+          break;
+      }
+    }
+
     this.body.immovable = true;
 
     this.Message_box_position = {x: this.x - 300, y: this.y + 90};
