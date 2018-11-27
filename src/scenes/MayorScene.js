@@ -34,6 +34,8 @@ class MayorScene extends Phaser.Scene {
       statusBar.removeChild(statusBar.firstChild);
     }
 
+    this.hideInput();
+
   }
 
   addMessage (message) {
@@ -49,17 +51,21 @@ class MayorScene extends Phaser.Scene {
   }
 
   update() {
-    let enterKey = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.ENTER);
-    if (enterKey.isDown) {
+    let spacebar = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.SPACE);
+    if (spacebar.isDown) {
       this.start_game();
     };
 
     let messageBox = document.querySelector('#messagebox');
-    this.enter_key = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.ENTER);
 
-    if(messageBox && this.enter_key.isDown) {
+    if(messageBox && spacebar.isDown) {
       messageBox.remove();
     }
+  }
+
+  hideInput() {
+    const input = document.querySelector('.game__name-input');
+    input.style.display = "none";
   }
 
   start_game() {

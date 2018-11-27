@@ -1,5 +1,5 @@
-Miche: “Mayor Charlie! I hear you want to create more jobs. Would you be interested in investing in my electronics manufacturing business?”
-Charlie: “I’m listening...”
+Miche: “Mayor! I hear you want to create more jobs. Would you be interested in investing in my electronics manufacturing business?”
+You: “I’m listening...”
 Miche: “This is what I’m thinking...”
 
 OPTION: Invest $2000/yr in Miche's business which will create 5 new jobs, and earn a $7000/yr return for the town.
