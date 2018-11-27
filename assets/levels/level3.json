@@ -44,13 +44,14 @@
     "kanye_message_3": "assets/npc_messages/kanye_message_3.txt",
     "nick_message_3": "assets/npc_messages/nick_message_3.txt",
     "brennan_message_3": "assets/npc_messages/brennan_message_3.txt",
-    "guarav_message_3": "assets/npc_messages/guarav_message_3.txt",
+    "gaurav_message_3": "assets/npc_messages/gaurav_message_3.txt", 
     "kevin_message_3": "assets/npc_messages/kevin_message_3.txt",
     "angela_message_3": "assets/npc_messages/angela_message_3.txt",
     "jenny_message_3": "assets/npc_messages/jenny_message_3.txt",
     "jay_message_3": "assets/npc_messages/jay_message_3.txt",
     "lindsay_message_3": "assets/npc_messages/lindsay_message_3.txt",
     "chingiz_message_3": "assets/npc_messages/chingiz_message_3.txt",
+    "laine_message_3": "assets/npc_messages/laine_message_3.txt",
     "zoe_message_3": "assets/npc_messages/zoe_message_3.txt"
   }
 }

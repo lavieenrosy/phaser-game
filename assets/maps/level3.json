@@ -285,8 +285,8 @@
                  "type":"npc",
                  "visible":true,
                  "width":0,
-                 "x":231.301,
-                 "y":1324.3
+                 "x":227.088700084246,
+                 "y":1420.48084807638
                 }, 
                 {
                  "height":0,
@@ -415,8 +415,8 @@
                  "type":"npc",
                  "visible":true,
                  "width":0,
-                 "x":640.517333333333,
-                 "y":740.152666666667
+                 "x":640.517,
+                 "y":740.153
                 }, 
                 {
                  "height":0,
@@ -625,6 +625,58 @@
                  "width":0,
                  "x":1142.94,
                  "y":1616.06
+                }, 
+                {
+                 "height":0,
+                 "id":43,
+                 "name":"jay",
+                 "point":true,
+                 "properties":
+                    {
+                     "collision":true,
+                     "group":"npcs",
+                     "message":"jay_message_3",
+                     "texture":"jay_image"
+                    },
+                 "propertytypes":
+                    {
+                     "collision":"bool",
+                     "group":"string",
+                     "message":"string",
+                     "texture":"string"
+                    },
+                 "rotation":0,
+                 "type":"npc",
+                 "visible":true,
+                 "width":0,
+                 "x":240.803145183937,
+                 "y":1495.36647009267
+                }, 
+                {
+                 "height":0,
+                 "id":44,
+                 "name":"lindsay",
+                 "point":true,
+                 "properties":
+                    {
+                     "collision":true,
+                     "group":"npcs",
+                     "message":"lindsay_message_3",
+                     "texture":"lindsay_image"
+                    },
+                 "propertytypes":
+                    {
+                     "collision":"bool",
+                     "group":"string",
+                     "message":"string",
+                     "texture":"string"
+                    },
+                 "rotation":0,
+                 "type":"npc",
+                 "visible":true,
+                 "width":0,
+                 "x":519.51698960966,
+                 "y":764.532434709351
                 }],
          "opacity":1,
          "properties":
@@ -640,7 +692,7 @@
          "x":0,
          "y":0
         }],
- "nextobjectid":43,
+ "nextobjectid":45,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.1.5",
