@@ -18,11 +18,26 @@ class Level4Scene extends WorldScene {
     if (messageBox && this.spaceBar.isDown) {
       messageBox.remove();
       this.next_level();
+      this.sumbit_score();
     }
 
   }
   next_level() {
     this.scene.start('BootScene', {scene: 'gameover'});
+  }
+
+  sumbit_score() {
+    $.ajax({
+      url: 'https://bajo-island-api.herokuapp.com/api/register',
+      method: 'POST',
+      data: {name: this.sys.game.playerStats.name, score: this.sys.game.playerStats.score},
+        success: function(result) {
+          console.log("name: ", result);
+        },
+        error: function(error) {
+          console.log("error: ", error);
+        }
+    });
   }
 }
 

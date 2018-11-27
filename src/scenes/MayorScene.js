@@ -1,4 +1,5 @@
 import StaticPlayer from '../prefabs/StaticPlayer.js';
+import { message } from './MayorMessages.js'
 
 class MayorScene extends Phaser.Scene {
 
@@ -9,6 +10,8 @@ class MayorScene extends Phaser.Scene {
   init(data) {
     if (data.next_level) {
       this.next_level = data.next_level;
+    } else {
+      this.next_level = 'level1';
     }
   }
 
@@ -19,17 +22,10 @@ class MayorScene extends Phaser.Scene {
 
   create() {
 
-    const message = {
-      level1: `Congrats on your win at the polls, Charlie! Now that you’re mayor, it’s time to fulfil on your mandate: to create jobs for Bajo Island.
-
-In order to fulfil on your election promise, you must find those on Bajo who have vested interests in your platform. Gather their advice and when you are ready, return to Townhall where you will make your decision.
-
-Speaking as the previous mayor, let me give you one valuable piece of advice: choose carefully, because the decisions you make for Bajo will have far reaching consequences…`}
-
     let player = new StaticPlayer(this, 180, 100, 'player', 25, 3);
     let senior = new StaticPlayer(this, 500, 100, 'senior', 70, 3);
 
-    this.addMessage(message.level1);
+    this.addMessage(message[this.next_level]);
 
     // remove status bar
 
@@ -37,6 +33,8 @@ Speaking as the previous mayor, let me give you one valuable piece of advice: ch
     while (statusBar.firstChild) {
       statusBar.removeChild(statusBar.firstChild);
     }
+
+    this.hideInput();
 
   }
 
@@ -53,17 +51,21 @@ Speaking as the previous mayor, let me give you one valuable piece of advice: ch
   }
 
   update() {
-    let enterKey = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.ENTER);
-    if (enterKey.isDown) {
+    let spacebar = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.SPACE);
+    if (spacebar.isDown) {
       this.start_game();
     };
 
     let messageBox = document.querySelector('#messagebox');
-    this.enter_key = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.ENTER);
 
-    if(messageBox && this.enter_key.isDown) {
+    if(messageBox && spacebar.isDown) {
       messageBox.remove();
     }
+  }
+
+  hideInput() {
+    const input = document.querySelector('.game__name-input');
+    input.style.display = "none";
   }
 
   start_game() {

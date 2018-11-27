@@ -5,7 +5,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  padding: 2em 0 1em 0;
+  padding-bottom: 1em;
 
   &__container{
     flex-basis: 100%;
@@ -16,20 +16,37 @@
     float: left;
     text-align: center;
   }
-  
+
+  &__name-input {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+  }
+
+  &__textarea {
+    background-color: rgba( $primary, 0.8);
+    font-size: 2.5em;
+    color: white;
+    border-radius: 25px;
+    border: none;
+    height: 70px;
+    margin-top: 375px;
+  }
+
   &__message_white {
     background-color: $reverse;
     color: $black;
     height: 150px;
   }
-  
+
   &__message_black {
     background-color: $black;
     flex-basis: 100%;
     border: 2px $highlight solid;
     color: $reverse;
     opacity: 0.3;
-    height: 250px;
+    height: 275px;
   }
 
   &__status-bar {
