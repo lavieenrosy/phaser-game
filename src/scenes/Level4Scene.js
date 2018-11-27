@@ -31,13 +31,36 @@ class Level4Scene extends WorldScene {
       url: 'https://bajo-island-api.herokuapp.com/api/register',
       method: 'POST',
       data: {name: this.sys.game.playerStats.name, score: this.sys.game.playerStats.score},
-        success: function(result) {
+        success: (result) => {
           console.log("name: ", result);
+          this.loadScores();
         },
-        error: function(error) {
+        error: (error) => {
           console.log("error: ", error);
         }
     });
+  }
+
+  loadScores(){
+    $.get('https://bajo-island-api.herokuapp.com/api/users/scores', (scores) => {
+      $('#scores').empty();
+      scores.forEach((score) => {
+        $('#scores').append(this.createScoreTableRows(score));
+      });
+    });
+  }
+
+  createScoreTableRows(score) {
+
+    const vname = score.name;
+    const vscore = score.scores;
+    const vrow = $('<tr>');
+    const nameData = $('<td>').addClass('scores__td').text(vname);
+    const scoreData = $('<td>').addClass('scores__td').text(vscore);
+
+    let scoreRow = vrow.append(nameData).append(scoreData);
+
+    return scoreRow;
   }
 }
 

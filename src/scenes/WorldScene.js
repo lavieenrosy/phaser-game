@@ -74,6 +74,7 @@ console.log("I AM SAVED!!!", this.sys.game.playerStats.name)
 
 
   create_object (object) {
+    
     let position = {x: object.x + (object.width / 2), y: object.y + (object.height / 2)};
     if (this.prefab_classes.hasOwnProperty(object.type)) {
         let prefab = new this.prefab_classes[object.type](this, object.name, position, object.properties);
