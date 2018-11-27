@@ -27,7 +27,7 @@
   &__textarea {
     background-color: rgba( $primary, 0.8);
     font-size: 2.5em;
-    color: white;
+    color: $reverse;
     border-radius: 25px;
     border: none;
     height: 60px;
@@ -35,6 +35,7 @@
     resize: none;
     text-transform: uppercase;
     text-align: center;
+    line-height: 60px;
     outline: none;
   }
 
