@@ -1,6 +1,6 @@
 # Bajo Island
 
-Bajo Island is a top-down choose your own adventure game, designed for the user to experience the impacts of environmental change. Built on Phaser, Webpack, and Posgres, the project also utilises AJAX, jQuery, SASS, and Tiled. It is deployed on Heroku at https://bajoisland.herokuapp.com/.
+Bajo Island is a top-down choose your own adventure game, designed for the user to experience the impacts of environmental change. Built on Phaser, Webpack, Express, and Posgres, the project also utilises AJAX, jQuery, SASS, and Tiled. It is deployed on Heroku at https://bajoisland.herokuapp.com/.
 
 ## Premise
 
@@ -13,6 +13,10 @@ nkholski who provided the Phaser 3 + ES6 + Webpack skeleton that this game was b
 * https://github.com/lean/phaser-es6-webpack
 * https://github.com/belohlavek/phaser-es6-boilerplate 
 * https://github.com/cstuncsik/phaser-es6-demo
+
+## Game Server
+
+The project runs on a game server located here: https://github.com/danesco/game-server.
 
 ## Dependencies
 
@@ -40,6 +44,13 @@ nkholski who provided the Phaser 3 + ES6 + Webpack skeleton that this game was b
 "clean-webpack-plugin": "^0.1.17",
 "copy-webpack-plugin": "^4.3.1",
 "html-webpack-plugin": "^2.30.1"
+
+## Setup
+
+1. Navigate to your workplace directory.
+2. Git clone `git@github.com:lavieenrosy/phaser-game.git`
+3. Run `npm install`
+4. Run `npm run dev` and `npm run sass`
 
 
 
