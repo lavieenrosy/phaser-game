@@ -1,1 +1,2 @@
-kanye_message_2.txt
+Kanye: "Hurry up with my damn croissant!"
+You: "Um... I gotta go."

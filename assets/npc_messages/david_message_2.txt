@@ -1,1 +1,5 @@
-david 2
+David Jr: “Mayor, congrats on the win! Since you’re here, I’ve got a great plan for some changes around here…”
+You: “Happy to be a sounding board!”
+David Jr: “The road has been falling apart for years. I have two words for you: bike path.”
+
+OPTION: Invest $90,000 to replace the road with a bike path, which will earn the town a return of $3000/year.
