@@ -30,10 +30,12 @@
     color: white;
     border-radius: 25px;
     border: none;
-    height: 70px;
-    margin-top: 375px;
+    height: 60px;
+    margin-top: 350px;
     resize: none;
     text-transform: uppercase;
+    text-align: center;
+    padding: 10px;
   }
 
   &__years {
@@ -56,7 +58,7 @@
     border: 2px $highlight solid;
     color: $reverse;
     opacity: 0.3;
-    height: 275px;
+    height: 300px;
   }
 
   &__status-bar {

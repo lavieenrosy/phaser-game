@@ -21,8 +21,8 @@ class MayorScene extends Phaser.Scene {
   }
 
   create() {
-    let player = new StaticPlayer(this, 180, 100, 'player', 25, 3);
-    let senior = new StaticPlayer(this, 500, 100, 'senior', 70, 3);
+    let player = new StaticPlayer(this, 180, 90, 'player', 25, 3);
+    let senior = new StaticPlayer(this, 500, 90, 'senior', 70, 3);
 
     this.addMessage(message[this.next_level]);
 
