@@ -30,7 +30,7 @@ class TitleScene extends JSONLevelScene {
   }
 
   renderInput() {
-    const textarea = $('<textarea>').addClass('game__textarea').attr("name", "name").attr("placeholder", "ENTER PLAYER NAME");
+    const textarea = $('<textarea>').addClass('game__textarea').attr("name", "name").attr('placeholder', 'ENTER PLAYER NAME').attr('maxlength', '3');
     const article = $('.game__name-input');
     article.append(textarea);
   }
