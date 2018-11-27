@@ -2,5 +2,5 @@ Jeremy Jr: “My dad was never a fan of you mayors and I can’t help but agree.
 You: “Er - I’m happy to hear you out.”
 Jeremy Jr: “I guess that’s as good as I’ll get.”
 
-OPTION: Invest $70,000 in the bridge, which will earn a return of $2000/yr for the town.
+OPTION: Invest $70,000 in the bridge, which will earn the town a return of $2000/year.
 

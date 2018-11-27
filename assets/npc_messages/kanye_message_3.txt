@@ -1,1 +1,5 @@
-kanye_message_3.txt
+Nima: “Yo, wat up mayor! This is my buddy, Kanye.”
+You: “Nice to meet you. Do you two have any thoughts about my agenda to tackle overcrowding?”
+Kanye. “The answer is obvious, dawg. My greatest pain in life is that I will never be able to see myself perform live. So I say: YOLO. Don’t hold back, the time is now. It’s time to expand.”
+
+OPTION: Invest in a $90000 construction project to extend the island.
