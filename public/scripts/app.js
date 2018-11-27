@@ -4,7 +4,7 @@ $(() => {
   function createScoreTableRows(score) {
 
     const vname = score.name;
-    const vscore = score.score;
+    const vscore = score.scores;
     const vrow = $('<tr>');
     const nameData = $('<td>').addClass('scores__td').text(vname);
     const scoreData = $('<td>').addClass('scores__td').text(vscore);

@@ -405,7 +405,8 @@ textarea {
 
 ::-webkit-input-placeholder {
   color: inherit;
-  opacity: 0.54;
+  line-height: 70px;
+  text-align: center;
 }
 
 /**
