@@ -1,5 +1,7 @@
-Jeremy Jr: “My dad was never a fan of you mayors and I can’t help but agree. They seem to give anyone the job who wants it these days. Unfortunately for me, I have no choice but to appeal to what I hope is your ability to help. That goshdarn bridge of mine is going to blow over any minute. You’ve come to help, I take it?”
+Jeremy Jr: “My dad was never a fan of you mayors and I can’t help but agree. They seem to give anyone the job who wants it these days. Unfortunately for me, I have no choice but to appeal to what I *hope* is your ability to help. That !@#$%^&* bridge of mine is going to blow over any minute! You’ve come to help, I take it?”
+
 You: “Er - I’m happy to hear you out.”
+
 Jeremy Jr: “I guess that’s as good as I’ll get.”
 
 OPTION: Invest $70,000 in the bridge, which will earn the town a return of $2000/year.
