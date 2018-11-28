@@ -14,13 +14,12 @@ class Level4Scene extends WorldScene {
 
     super.update();
 
-    let messageBox = $('#messagebox')
+    let messageBox = $('#messagebox');
 
     if (messageBox) {
-      messageBox.style.height = '230px';
+      messageBox.css('height', '230px');
       $('.game__footer').empty().text("press spacebar to continue")
-      
-    } 
+    }
 
     if (messageBox && this.spaceBar.isDown) {
       messageBox.remove();
@@ -55,8 +54,8 @@ class Level4Scene extends WorldScene {
         $('#scores').append(this.createScoreTableRows(scores));
       }
     });
-  } 
-  
+  }
+
 
   createScoreTableRows(score) {
 
