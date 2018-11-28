@@ -26,7 +26,7 @@ class TitleScene extends JSONLevelScene {
     // set player name in game object
 
     const name = $('.game__textarea').val();
-    this.sys.game.playerStats.name = name;
+    this.sys.game.playerStats.name = name.toUpperCase();
   }
 
   renderInput() {
