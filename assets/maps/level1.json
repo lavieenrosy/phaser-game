@@ -311,8 +311,8 @@
                  "type":"npc",
                  "visible":true,
                  "width":0,
-                 "x":1630.65514070352,
-                 "y":138.658157453936
+                 "x":1630.66,
+                 "y":138.658
                 }, 
                 {
                  "height":0,
@@ -365,6 +365,30 @@
                  "width":0,
                  "x":561.462,
                  "y":702.502
+                }, 
+                {
+                 "height":0,
+                 "id":23,
+                 "name":"foxy",
+                 "point":true,
+                 "properties":
+                    {
+                     "collision":true,
+                     "group":"npcs",
+                     "message":"foxy_message"
+                    },
+                 "propertytypes":
+                    {
+                     "collision":"bool",
+                     "group":"string",
+                     "message":"string"
+                    },
+                 "rotation":0,
+                 "type":"npc",
+                 "visible":true,
+                 "width":0,
+                 "x":696.817420435511,
+                 "y":300.167504187605
                 }],
          "opacity":1,
          "properties":
@@ -380,7 +404,7 @@
          "x":0,
          "y":0
         }],
- "nextobjectid":23,
+ "nextobjectid":24,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.1.5",
