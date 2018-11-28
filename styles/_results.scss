@@ -5,9 +5,9 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  display: none;
 
   &__container {
-    display: none;
     flex-basis: 85%;
     margin: 10px;
     width: auto;
