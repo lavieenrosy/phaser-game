@@ -1,9 +1,7 @@
-Mayor Sr: I see you’re back! Ready to make a decision? Here are your options:
+Mayor: Junior, good to see ya! Ready to make a decision? Here are your options:
 
 OPTION A: Invest $70,000 in the bridge, which will earn the town a return of $2000/year.
 
 OPTION B: Invest $90,000 to replace the road with a bike path, which will earn the town a return of $3000/year.
 
 OPTION C: Invest $60,000 to fix potholes and build a new road through town, which will earn a return of $3000/year.
-
-Press the key of your choice to continue...

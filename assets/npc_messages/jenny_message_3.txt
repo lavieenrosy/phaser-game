@@ -1,3 +1,5 @@
 Jenny: "I'm still, I'm still Jenny from the block..."
-You: "...Used to have a little now you've got a lot..."
+
+You: "...used to have a little now you've got a lot..."
+
 Jenny: "Good one, Mayor!"

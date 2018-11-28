@@ -2,8 +2,6 @@ Mayor Sr: I see you’re back! Ready to make a decision? Here are your options:
 
 OPTION A: Invest $2000/yr in Miche's business which will create 5 new jobs, and earn a $7000/yr return for the town.
 
-OPTION B: Invest $1000/yr to help keep Jim's cattle farm open. This will create 5 new jobs, and earn a return of $5000/yr for the town.
+OPTION B: Invest $1000/yr to help Jim expand his cattle farm. This will create 5 new jobs, and earn a return of $5000/yr for the town.
 
 OPTION C: Invest $2500/yr to help Jim switch his crops over to grains and vegetables. This will create 3 new jobs, and earn a return of $3000/yr for the town.
-
-Press the key of your choice to continue...
