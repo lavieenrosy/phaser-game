@@ -23,7 +23,7 @@ $(() => {
 
   function createScoreTableRows(score) {
 
-    const vname = score.name;
+    const vname = score.name.toUpperCase();
     const vscore = score.scores;
     const vrow = $('<tr>');
     const nameData = $('<td>').addClass('scores__td').text(vname);
@@ -32,13 +32,12 @@ $(() => {
     let scoreRow = vrow.append(nameData).append(scoreData);
 
     return scoreRow;
-  }
+  }  
 
-  //iterate through the score data
-  function renderScores(scores){
-    scores.forEach(function (score) {
-      $('#scores').append(createScoreTableRows(score));
-    });
+  function renderScores(score) {
+    for(let i = 0; i < 7; i ++) {
+      $('#scores').append(createScoreTableRows(score[i]));
+    }
   }
 
     $.ajax({
@@ -130,7 +129,7 @@ $(() => {
     }
   }
 
-  $('.fb-share').click(function() {
+  $('#fb-share').click(function() {
     FB.ui({
       method: 'feed',
       name: '',

@@ -32,16 +32,18 @@
     padding-right: 0px;
     text-decoration: underline;
   }
-  &__login-btn {
+  &__btn {
     color: $reverse;
     background-color: $primary;
     text-transform: uppercase;
-    letter-spacing: .2em;
+    letter-spacing: 0.1em;
     padding: 1em;
     font-size: 1.3em;
     text-decoration: none;
     border-radius: 10px;
     float: right;
+    margin-right: 1em;
+    margin-top: .4em;
   }
 
   &__form {
