@@ -94,9 +94,10 @@
   &__footer {
     padding: 10px 20px 0 20px;
     margin-bottom: -50px;
-    background-color: grey;
-    color: $black;
-    height: 50px;
+    background-color: $secondary;
+    color: $reverse;
+    height: 54px;
+    border-radius: 0 0 6px 6px;
   }
 
 }
