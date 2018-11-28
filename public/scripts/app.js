@@ -129,7 +129,7 @@ $(() => {
     }
   }
 
-  $('.fb-share').click(function() {
+  $('#fb-share').click(function() {
     FB.ui({
       method: 'feed',
       name: '',
