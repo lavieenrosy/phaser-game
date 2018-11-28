@@ -11,6 +11,7 @@ class GameOverScene extends Phaser.Scene {
   create() {
     let image = this.add.image(340, 200, 'game_over');
     this.showGazette();
+    this.renderReplay();
 
     // remove status bar
 
@@ -23,6 +24,14 @@ class GameOverScene extends Phaser.Scene {
   showGazette() {
     const gazette = document.querySelector('.results');
     gazette.style.display = "flex";
+  }
+
+  renderReplay() {
+    const button = $('<button>').addClass('game__replay');
+    const link = $('<a>').attr('href', '/').text('REPLAY>');
+    const article = $('.game__name-input');
+    button.append(link)
+    article.append(button);
   }
 
 }
