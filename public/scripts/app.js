@@ -1,9 +1,29 @@
+(function(d, s, id) {
+  var js,
+    fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s);
+  js.id = id;
+  js.src = '//connect.facebook.net/en_US/all.js';
+  fjs.parentNode.insertBefore(js, fjs);
+})(document, 'script', 'facebook-jssdk');
+
+window.fbAsyncInit = function() {
+  FB.init({
+    appId: '918996038489223',
+    status: true,
+    xfbml: true,
+    cookie: true
+  });
+};
+
+
 $(() => {
   console.log("we are in document ready")
 
   function createScoreTableRows(score) {
 
-    const vname = score.name;
+    const vname = score.name.toUpperCase();
     const vscore = score.scores;
     const vrow = $('<tr>');
     const nameData = $('<td>').addClass('scores__td').text(vname);
@@ -12,13 +32,12 @@ $(() => {
     let scoreRow = vrow.append(nameData).append(scoreData);
 
     return scoreRow;
-  }
+  }  
 
-  //iterate through the score data
-  function renderScores(scores){
-    scores.forEach(function (score) {
-      $('#scores').append(createScoreTableRows(score));
-    });
+  function renderScores(score) {
+    for(let i = 0; i < 7; i ++) {
+      $('#scores').append(createScoreTableRows(score[i]));
+    }
   }
 
     $.ajax({
@@ -109,6 +128,16 @@ $(() => {
       });
     }
   }
+
+  $('#fb-share').click(function() {
+    FB.ui({
+      method: 'feed',
+      name: '',
+      link: 'https://bajoisland.herokuapp.com/',
+      picture: '',
+      description: ''
+    });
+  });
 
 });
 
