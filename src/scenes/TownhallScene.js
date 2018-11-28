@@ -25,6 +25,7 @@ class TownhallScene extends WorldScene {
     let messageBox = document.querySelector('#messagebox')
     if (messageBox) {
       messageBox.style.height = '230px';
+      // let newFooterContent = document.createTextNode("press | A | or | B | or | C | keys for options")
       if (this.optionA.isDown) {
         messageBox.remove();
         this.choice = 'A';
