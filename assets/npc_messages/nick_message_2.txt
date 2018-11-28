@@ -1,2 +1,3 @@
-Nick: "There was totally a beach here last time I checked, is the island getting smaller?"
-You: "It seems the water levels are rising a tad... That's interesting, I wonder why?"
+Nick: "There was totally a beach here last time I checked. Is the island getting smaller?"
+
+You: "It appears that the water level has risen a tad... maybe it's just the time of the day?"
