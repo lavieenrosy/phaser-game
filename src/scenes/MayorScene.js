@@ -77,8 +77,11 @@ class MayorScene extends Phaser.Scene {
   }
 
   hideInput() {
-    const input = document.querySelector('.game__name-input');
-    input.style.display = "none";
+    const input = document.querySelector('.game__textarea');
+    // input.style.display = "none";
+    if (input) {
+      input.remove();
+    }
   }
 
   start_game() {

@@ -39,6 +39,14 @@
     outline: none;
   }
 
+  &__replay {
+    background-color: rgba( $primary, 0.8);
+    font-size: 2.5em;
+    color: $reverse;
+    margin-top: 365px;
+    padding: 8px 20px;
+  }
+
   &__years {
     position: absolute;
     font-size: 2em;
