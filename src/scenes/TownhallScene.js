@@ -18,11 +18,14 @@ class TownhallScene extends WorldScene {
     this.setScene(data.next_level);
   }
 
+  
   update() {
 
     super.update();
 
+
     let messageBox = document.querySelector('#messagebox')
+
     if (messageBox) {
       messageBox.style.height = '230px';
       if (this.optionA.isDown) {
