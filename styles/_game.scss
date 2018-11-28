@@ -17,6 +17,7 @@
     text-align: center;
   }
 
+
   &__name-input {
     position: absolute;
     margin: auto;
@@ -69,6 +70,10 @@
     opacity: 0.3;
     height: 300px;
   }
+  
+  &__p {
+    padding: 0 20px 0 20px
+  }
 
   &__status-bar {
     position: absolute;
@@ -79,7 +84,6 @@
     right: 0;
     opacity: 0.8;
     background-color: $reverse;
-    // justify-content: space-between;
   }
 
   &__table{
@@ -95,7 +99,18 @@
     color: $highScore;
   }
 
+  &__footer {
+    padding: 10px 20px 0 20px;
+    margin-bottom: -50px;
+    background-color: $secondary;
+    color: $reverse;
+    height: 54px;
+    border-radius: 0 0 6px 6px;
+  }
+
 }
+
+
 
 #messagebox {
   position: absolute;
@@ -105,7 +120,6 @@
   left: 0;
   right: 0;
   opacity: 0.8;
-  padding: 0 20px;
   bottom: 40px;
   overflow: scroll;
   border-radius: 6px;
