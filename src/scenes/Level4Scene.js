@@ -48,7 +48,7 @@ class Level4Scene extends WorldScene {
         $('#scores').append(this.createScoreTableRows(scores));
       }
     });
-  }
+  } 
   
 
   createScoreTableRows(score) {
