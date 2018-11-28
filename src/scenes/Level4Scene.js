@@ -14,7 +14,14 @@ class Level4Scene extends WorldScene {
 
     super.update();
 
-    let messageBox = document.querySelector('#messagebox');
+    let messageBox = $('#messagebox')
+
+    if (messageBox) {
+      messageBox.style.height = '230px';
+      $('.game__footer').empty().text("press spacebar to continue")
+      
+    } 
+
     if (messageBox && this.spaceBar.isDown) {
       messageBox.remove();
       this.next_level();
