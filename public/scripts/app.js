@@ -1,3 +1,23 @@
+(function(d, s, id) {
+  var js,
+    fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s);
+  js.id = id;
+  js.src = '//connect.facebook.net/en_US/all.js';
+  fjs.parentNode.insertBefore(js, fjs);
+})(document, 'script', 'facebook-jssdk');
+
+window.fbAsyncInit = function() {
+  FB.init({
+    appId: '918996038489223',
+    status: true,
+    xfbml: true,
+    cookie: true
+  });
+};
+
+
 $(() => {
   console.log("we are in document ready")
 
@@ -109,6 +129,16 @@ $(() => {
       });
     }
   }
+
+  $('.fb-share').click(function() {
+    FB.ui({
+      method: 'feed',
+      name: '',
+      link: 'https://bajoisland.herokuapp.com/',
+      picture: '',
+      description: ''
+    });
+  });
 
 });
 
