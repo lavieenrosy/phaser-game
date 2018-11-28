@@ -32,7 +32,7 @@ export default class NPC extends Prefab {
     let newP = document.createElement("p");
     let newFooter = document.createElement("footer");
     let newContent = document.createTextNode(this.message);
-    let newFooterContent = document.createTextNode("press enter to exit dialog")
+    let newFooterContent = document.createTextNode("press enter to continue")
 
     let gameContainer = document.querySelector('#game-container');
     

@@ -28,6 +28,7 @@ class TownhallScene extends WorldScene {
 
     if (messageBox) {
       messageBox.style.height = '230px';
+      $('.game__footer').empty().text("press A, B, or C keys to continue")
       if (this.optionA.isDown) {
         messageBox.remove();
         this.choice = 'A';

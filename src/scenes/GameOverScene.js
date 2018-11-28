@@ -21,6 +21,7 @@ class GameOverScene extends Phaser.Scene {
     }
   }
 
+
   showGazette() {
     const gazette = document.querySelector('.results');
     gazette.style.display = "flex";
