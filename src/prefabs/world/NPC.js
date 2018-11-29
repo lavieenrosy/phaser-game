@@ -25,6 +25,7 @@ export default class NPC extends Prefab {
 
     this.scene.physics.add.collider(this, this.scene.groups.players, this.talk, null, this);
 
+    this.talkTo = true;
   }
 
   addMessage () {
@@ -52,9 +53,10 @@ export default class NPC extends Prefab {
     player.stop();
     let msgbox = document.querySelector('#messagebox')
 
-    if(!msgbox){
+    if(!msgbox && this.talkTo){
     //create a new message box and pass the npc message property as the text
-
+      this.talkTo = false;
+      setTimeout(() => this.talkTo = true, 2000);
       this.addMessage();
     }
   }

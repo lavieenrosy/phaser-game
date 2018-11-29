@@ -135,7 +135,6 @@ class TownhallScene extends WorldScene {
       } else {
       this.scene.start('BootScene', {scene: 'mayor', level: level, money: this.money, popularity: this.popularity});
       }
-      console.log('townhall level data:', level)
     });
   }
 

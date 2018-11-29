@@ -19,7 +19,6 @@ window.fbAsyncInit = function() {
 
 
 $(() => {
-  console.log("we are in document ready")
 
   function createScoreTableRows(score) {
 
@@ -44,10 +43,8 @@ $(() => {
       url: 'https://bajo-island-api.herokuapp.com/api/users/scores',
       method: 'GET',
       success: function(result){
-        console.log("successful score GET");
       },
       error: function(error){
-        console.log("we are in error",error);
       }
     });
 
@@ -97,7 +94,6 @@ $(() => {
         method: 'POST',
         data: nameData,
         success: function(result) {
-          console.log("name: ", result);
           toggleForm('.reg-box');
         },
         error: function(error) {
@@ -119,7 +115,6 @@ $(() => {
         method: 'GET',
         data: nameData,
         success: function(result) {
-          console.log("name: ", result);
           toggleForm('.login-box');
         },
         error: function(error) {
