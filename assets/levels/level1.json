@@ -29,6 +29,7 @@
     "david_message": "assets/npc_messages/david_message.txt",
     "monica_message": "assets/npc_messages/monica_message.txt",
     "miche_message": "assets/npc_messages/miche_message.txt",
-    "peter_message": "assets/npc_messages/peter_message.txt"
+    "peter_message": "assets/npc_messages/peter_message.txt",
+    "foxy_message": "assets/npc_messages/foxy_message.txt"
   }
 }
