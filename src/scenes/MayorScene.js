@@ -64,7 +64,7 @@ class MayorScene extends Phaser.Scene {
     let newP = document.createElement("p");
     let newFooter = document.createElement("footer");
     let newContent = document.createTextNode(message);
-    let newFooterContent = document.createTextNode("press spacebar to exit dialog")
+    let newFooterContent = document.createTextNode("press spacebar to continue")
     
     let gameContainer = document.querySelector('#game-container');
     
