@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" tiledversion="1.1.5" orientation="orthogonal" renderorder="right-down" width="120" height="120" tilewidth="16" tileheight="16" infinite="0" nextobjectid="45">
+<map version="1.0" tiledversion="1.1.5" orientation="orthogonal" renderorder="right-down" width="120" height="120" tilewidth="16" tileheight="16" infinite="0" nextobjectid="46">
  <tileset firstgid="1" name="tileset" tilewidth="16" tileheight="16" tilecount="17731" columns="119">
   <image source="../images/Terrain.png" width="1904" height="2384"/>
  </tileset>
@@ -1059,12 +1059,12 @@
    </properties>
    <point/>
   </object>
-  <object id="18" name="david" type="npc" x="227.089" y="1420.48">
+  <object id="18" name="hat" type="npc" x="1668.66" y="599.491">
    <properties>
     <property name="collision" type="bool" value="true"/>
     <property name="group" value="npcs"/>
-    <property name="message" value="david_message_3"/>
-    <property name="texture" value="david_image"/>
+    <property name="message" value="hat_message_3"/>
+    <property name="texture" value="hat_image"/>
    </properties>
    <point/>
   </object>
@@ -1104,7 +1104,7 @@
    </properties>
    <point/>
   </object>
-  <object id="30" name="laine" type="npc" x="640.517" y="740.153">
+  <object id="30" name="laine" type="npc" x="584.364" y="687.873">
    <properties>
     <property name="collision" type="bool" value="true"/>
     <property name="group" value="npcs"/>
@@ -1113,7 +1113,7 @@
    </properties>
    <point/>
   </object>
-  <object id="31" name="brennan" type="npc" x="435.973" y="1366.19">
+  <object id="31" name="brennan" type="npc" x="1583.23" y="1099.95">
    <properties>
     <property name="collision" type="bool" value="true"/>
     <property name="group" value="npcs"/>
@@ -1122,7 +1122,7 @@
    </properties>
    <point/>
   </object>
-  <object id="32" name="nick" type="npc" x="346.813" y="1039.74">
+  <object id="32" name="nick" type="npc" x="1723.52" y="866.442">
    <properties>
     <property name="collision" type="bool" value="true"/>
     <property name="group" value="npcs"/>
@@ -1131,7 +1131,7 @@
    </properties>
    <point/>
   </object>
-  <object id="33" name="jenny" type="npc" x="1073.43" y="681.691">
+  <object id="33" name="jenny" type="npc" x="1150.44" y="1109.69">
    <properties>
     <property name="collision" type="bool" value="true"/>
     <property name="group" value="npcs"/>
@@ -1140,7 +1140,7 @@
    </properties>
    <point/>
   </object>
-  <object id="34" name="gaurav" type="npc" x="590.424" y="1630.86">
+  <object id="34" name="gaurav" type="npc" x="725.965" y="1692.82">
    <properties>
     <property name="collision" type="bool" value="true"/>
     <property name="group" value="npcs"/>
@@ -1149,7 +1149,7 @@
    </properties>
    <point/>
   </object>
-  <object id="35" name="kevin" type="npc" x="665.543" y="1583.12">
+  <object id="35" name="kevin" type="npc" x="1269.67" y="689.519">
    <properties>
     <property name="collision" type="bool" value="true"/>
     <property name="group" value="npcs"/>
@@ -1158,7 +1158,7 @@
    </properties>
    <point/>
   </object>
-  <object id="36" name="angela" type="npc" x="1550.83" y="1314.94">
+  <object id="36" name="angela" type="npc" x="1290.4" y="1180.37">
    <properties>
     <property name="collision" type="bool" value="true"/>
     <property name="group" value="npcs"/>
@@ -1185,7 +1185,7 @@
    </properties>
    <point/>
   </object>
-  <object id="43" name="jay" type="npc" x="240.803" y="1495.37">
+  <object id="43" name="jay" type="npc" x="516.725" y="1688.03">
    <properties>
     <property name="collision" type="bool" value="true"/>
     <property name="group" value="npcs"/>
@@ -1194,12 +1194,21 @@
    </properties>
    <point/>
   </object>
-  <object id="44" name="lindsay" type="npc" x="519.517" y="764.532">
+  <object id="44" name="lindsay" type="npc" x="800.28" y="550.571">
    <properties>
     <property name="collision" type="bool" value="true"/>
     <property name="group" value="npcs"/>
     <property name="message" value="lindsay_message_3"/>
     <property name="texture" value="lindsay_image"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="45" name="david" type="npc" x="1619.71" y="726.111">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+    <property name="group" value="npcs"/>
+    <property name="message" value="david_message_3"/>
+    <property name="texture" value="david_image"/>
    </properties>
    <point/>
   </object>
