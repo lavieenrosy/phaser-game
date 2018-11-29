@@ -57,7 +57,6 @@ class WorldScene extends JSONLevelScene {
 
 
  addStatusBar () {
-console.log("I AM SAVED!!!", this.sys.game.playerStats.name)
     let {name, level, money, popularity, score} = this.sys.game.playerStats
     let newTable = $('<table>').addClass('game__table');
     let newRow = $('<tr>');

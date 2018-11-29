@@ -35,7 +35,6 @@ class Level4Scene extends WorldScene {
       method: 'POST',
       data: {name: this.sys.game.playerStats.name, score: this.sys.game.playerStats.score},
         success: (result) => {
-          console.log("name: ", result);
           this.loadScores();
         },
         error: (error) => {
