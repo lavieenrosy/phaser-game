@@ -129,6 +129,9 @@ class Player extends Prefab {
 
   }
 
+  stop () {
+    console.log("Stop bruh!")
+  }
 }
 
 export default Player;
