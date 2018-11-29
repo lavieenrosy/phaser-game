@@ -20,21 +20,22 @@ class Level4Scene extends WorldScene {
     }
     if (messageBox && this.spaceBar.isDown) {
       messageBox.remove();
-      this.next_level();
-      this.sumbit_score();
+      this.nextLevel();
+      this.submitScore();
     }
   }
 
-  next_level() {
+  nextLevel() {
     this.scene.start('BootScene', {scene: 'gameover'});
   }
 
-  sumbit_score() {
+  submitScore() {
     $.ajax({
       url: 'https://bajo-island-api.herokuapp.com/api/register',
       method: 'POST',
       data: {name: this.sys.game.playerStats.name, score: this.sys.game.playerStats.score},
         success: (result) => {
+          $('#scores').empty();
           this.loadScores();
         },
         error: (error) => {
@@ -46,7 +47,7 @@ class Level4Scene extends WorldScene {
   loadScores(){
     $.get('https://bajo-island-api.herokuapp.com/api/users/scores', (scores) => {
       for(let i = 0; i < 7; i ++) {
-        $('#scores').append(this.createScoreTableRows(scores));
+        $('#scores').append(this.createScoreTableRows(scores[i]));
       }
     });
   }

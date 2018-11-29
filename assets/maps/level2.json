@@ -259,8 +259,8 @@
                  "type":"npc",
                  "visible":true,
                  "width":0,
-                 "x":1621.28609941028,
-                 "y":1625.27619769728
+                 "x":1621.29,
+                 "y":1625.28
                 }, 
                 {
                  "height":0,
@@ -285,8 +285,8 @@
                  "type":"npc",
                  "visible":true,
                  "width":0,
-                 "x":422.960749227745,
-                 "y":869.376256669475
+                 "x":422.961,
+                 "y":869.376
                 }, 
                 {
                  "height":0,
@@ -316,32 +316,6 @@
                 }, 
                 {
                  "height":0,
-                 "id":21,
-                 "name":"monica",
-                 "point":true,
-                 "properties":
-                    {
-                     "collision":true,
-                     "group":"npcs",
-                     "message":"monica_message_2",
-                     "texture":"monica_dead_image"
-                    },
-                 "propertytypes":
-                    {
-                     "collision":"bool",
-                     "group":"string",
-                     "message":"string",
-                     "texture":"string"
-                    },
-                 "rotation":0,
-                 "type":"npc",
-                 "visible":true,
-                 "width":0,
-                 "x":990.758,
-                 "y":893.241
-                }, 
-                {
-                 "height":0,
                  "id":22,
                  "name":"peter",
                  "point":true,
@@ -363,8 +337,8 @@
                  "type":"npc",
                  "visible":true,
                  "width":0,
-                 "x":249.749626509407,
-                 "y":999.726854816063
+                 "x":249.75,
+                 "y":999.727
                 }, 
                 {
                  "height":0,
@@ -389,8 +363,8 @@
                  "type":"npc",
                  "visible":true,
                  "width":0,
-                 "x":1602.07763240663,
-                 "y":869.839553496209
+                 "x":1602.08,
+                 "y":869.84
                 }, 
                 {
                  "height":0,
@@ -415,8 +389,8 @@
                  "type":"npc",
                  "visible":true,
                  "width":0,
-                 "x":1567.67803257512,
-                 "y":869.136854816063
+                 "x":1567.68,
+                 "y":869.137
                 }, 
                 {
                  "height":0,
@@ -446,32 +420,6 @@
                 }, 
                 {
                  "height":0,
-                 "id":31,
-                 "name":"angela",
-                 "point":true,
-                 "properties":
-                    {
-                     "collision":true,
-                     "group":"npcs",
-                     "message":"angela_message_2",
-                     "texture":"angela_image"
-                    },
-                 "propertytypes":
-                    {
-                     "collision":"bool",
-                     "group":"string",
-                     "message":"string",
-                     "texture":"string"
-                    },
-                 "rotation":0,
-                 "type":"npc",
-                 "visible":true,
-                 "width":0,
-                 "x":1031.31142937377,
-                 "y":939.342881213143
-                }, 
-                {
-                 "height":0,
                  "id":32,
                  "name":"miche",
                  "point":true,
@@ -493,8 +441,8 @@
                  "type":"npc",
                  "visible":true,
                  "width":0,
-                 "x":1592.95141814097,
-                 "y":1496.77057006459
+                 "x":1592.95,
+                 "y":1496.77
                 }, 
                 {
                  "height":0,
@@ -519,8 +467,60 @@
                  "type":"npc",
                  "visible":true,
                  "width":0,
-                 "x":311.008143779837,
-                 "y":1639.98876720022
+                 "x":311.008,
+                 "y":1639.99
+                }, 
+                {
+                 "height":0,
+                 "id":36,
+                 "name":"angela",
+                 "point":true,
+                 "properties":
+                    {
+                     "collision":true,
+                     "group":"npcs",
+                     "message":"angela_message_3",
+                     "texture":"angela_image"
+                    },
+                 "propertytypes":
+                    {
+                     "collision":"bool",
+                     "group":"string",
+                     "message":"string",
+                     "texture":"string"
+                    },
+                 "rotation":0,
+                 "type":"npc",
+                 "visible":true,
+                 "width":0,
+                 "x":980,
+                 "y":889
+                }, 
+                {
+                 "height":0,
+                 "id":37,
+                 "name":"monica",
+                 "point":true,
+                 "properties":
+                    {
+                     "collision":true,
+                     "group":"npcs",
+                     "message":"monica_message",
+                     "texture":"monica_image"
+                    },
+                 "propertytypes":
+                    {
+                     "collision":"bool",
+                     "group":"string",
+                     "message":"string",
+                     "texture":"string"
+                    },
+                 "rotation":0,
+                 "type":"npc",
+                 "visible":true,
+                 "width":0,
+                 "x":951,
+                 "y":889
                 }],
          "opacity":1,
          "properties":
@@ -536,7 +536,7 @@
          "x":0,
          "y":0
         }],
- "nextobjectid":34,
+ "nextobjectid":38,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.1.5",
