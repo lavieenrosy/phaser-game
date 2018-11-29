@@ -265,14 +265,14 @@
                 {
                  "height":0,
                  "id":18,
-                 "name":"david",
+                 "name":"hat",
                  "point":true,
                  "properties":
                     {
                      "collision":true,
                      "group":"npcs",
-                     "message":"david_message_3",
-                     "texture":"david_image"
+                     "message":"hat_message_3",
+                     "texture":"hat_image"
                     },
                  "propertytypes":
                     {
@@ -285,8 +285,8 @@
                  "type":"npc",
                  "visible":true,
                  "width":0,
-                 "x":227.088700084246,
-                 "y":1420.48084807638
+                 "x":1668.6612722432,
+                 "y":599.49055281247
                 }, 
                 {
                  "height":0,
@@ -415,8 +415,8 @@
                  "type":"npc",
                  "visible":true,
                  "width":0,
-                 "x":640.517,
-                 "y":740.153
+                 "x":584.364419885759,
+                 "y":687.873011617775
                 }, 
                 {
                  "height":0,
@@ -441,8 +441,8 @@
                  "type":"npc",
                  "visible":true,
                  "width":0,
-                 "x":435.973,
-                 "y":1366.19
+                 "x":1583.22830060993,
+                 "y":1099.94931842386
                 }, 
                 {
                  "height":0,
@@ -467,8 +467,8 @@
                  "type":"npc",
                  "visible":true,
                  "width":0,
-                 "x":346.813,
-                 "y":1039.74
+                 "x":1723.51936073192,
+                 "y":866.441519992255
                 }, 
                 {
                  "height":0,
@@ -493,8 +493,8 @@
                  "type":"npc",
                  "visible":true,
                  "width":0,
-                 "x":1073.43,
-                 "y":681.691
+                 "x":1150.44219927758,
+                 "y":1109.6880012949
                 }, 
                 {
                  "height":0,
@@ -519,8 +519,8 @@
                  "type":"npc",
                  "visible":true,
                  "width":0,
-                 "x":590.424,
-                 "y":1630.86
+                 "x":725.964710620583,
+                 "y":1692.82146771227
                 }, 
                 {
                  "height":0,
@@ -545,8 +545,8 @@
                  "type":"npc",
                  "visible":true,
                  "width":0,
-                 "x":665.543,
-                 "y":1583.12
+                 "x":1269.6673101946,
+                 "y":689.519457837157
                 }, 
                 {
                  "height":0,
@@ -571,8 +571,8 @@
                  "type":"npc",
                  "visible":true,
                  "width":0,
-                 "x":1550.83,
-                 "y":1314.94
+                 "x":1290.39820602188,
+                 "y":1180.36743731242
                 }, 
                 {
                  "height":0,
@@ -649,8 +649,8 @@
                  "type":"npc",
                  "visible":true,
                  "width":0,
-                 "x":240.803145183937,
-                 "y":1495.36647009267
+                 "x":516.725160906187,
+                 "y":1688.03143866783
                 }, 
                 {
                  "height":0,
@@ -675,8 +675,34 @@
                  "type":"npc",
                  "visible":true,
                  "width":0,
-                 "x":519.51698960966,
-                 "y":764.532434709351
+                 "x":800.279900571207,
+                 "y":550.57130680608
+                }, 
+                {
+                 "height":0,
+                 "id":45,
+                 "name":"david",
+                 "point":true,
+                 "properties":
+                    {
+                     "collision":true,
+                     "group":"npcs",
+                     "message":"david_message_3",
+                     "texture":"david_image"
+                    },
+                 "propertytypes":
+                    {
+                     "collision":"bool",
+                     "group":"string",
+                     "message":"string",
+                     "texture":"string"
+                    },
+                 "rotation":0,
+                 "type":"npc",
+                 "visible":true,
+                 "width":0,
+                 "x":1619.71149191596,
+                 "y":726.110949753122
                 }],
          "opacity":1,
          "properties":
@@ -692,7 +718,7 @@
          "x":0,
          "y":0
         }],
- "nextobjectid":45,
+ "nextobjectid":46,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.1.5",
