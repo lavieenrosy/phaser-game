@@ -19,14 +19,15 @@ class TitleScene extends JSONLevelScene {
 
   update () {
     let enterKey = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.ENTER);
-    if (enterKey.isDown) {
-      this.start_game();
-    };
 
     // set player name in game object
 
     const name = $('.game__textarea').val();
     this.sys.game.playerStats.name = name.toUpperCase();
+
+    if (enterKey.isDown && name) {
+      this.start_game();
+    };
   }
 
   renderInput() {
