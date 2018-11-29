@@ -1,0 +1,7 @@
+Foxy: "Yip yip yip yip!"
+
+You: "Is that so, Foxy?"
+
+Foxy: "Yip!"
+
+You: "And a good day to you, sir!"
