@@ -61,7 +61,7 @@ class WorldScene extends JSONLevelScene {
     let newTable = $('<table>').addClass('game__table');
     let newRow = $('<tr>');
     let nameCol = $('<td>').text(`Player: ${name}`);
-    let levelCol = $('<td>').text(`Level: ${level}`);
+    let levelCol = $('<td>').text(`Level: ${level.slice(5)}`);
     let moneyCol = $('<td>').text(`Money: $${money}`);
     let popCol = $('<td>').text(`Popularity: ${popularity}`);
     let scoreCol = $('<td>').text(`Score: ${score}`);
