@@ -5,6 +5,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  display: none;
 
   &__container {
     flex-basis: 85%;
@@ -12,12 +13,11 @@
     width: auto;
     height: auto;
     position: relative;
-    float: left;
-    border-bottom: 5px $reverse solid;
+    // float: left;
   }
 
   &__img {
-    width: 100%;
+    width: 1020px;
   }
 
 }
