@@ -2,7 +2,7 @@
   "assets": {
       "map_tileset": {"type": "image", "source": "assets/images/Terrain.png"},
 
-      "player_spritesheet": {"type": "spritesheet", "source": "assets/images/world/player.png", "frame_width": 16, "frame_height": 16},
+      "player_spritesheet": {"type": "spritesheet", "source": "assets/images/world/player.png", "frame_width": 26, "frame_height": 36},
       "peter_image": {"type": "image", "source": "assets/images/world/peter.png"},
       "jim_image": {"type": "image", "source": "assets/images/world/jim.png"},
       "miche_image": {"type": "image", "source": "assets/images/world/miche.png"},
@@ -20,6 +20,7 @@
       "lindsay_image": {"type": "image", "source": "assets/images/world/lindsay.png"},
       "chingiz_image": {"type": "image", "source": "assets/images/world/chingiz.png"},
       "zoe_image": {"type": "image", "source": "assets/images/world/zoe.png"},
+      "hat_image": {"type": "image", "source": "assets/images/world/hat.png"},
 
       "level3_level_tilemap": {"type": "tilemap", "source": "assets/maps/level3.json"}
   },
@@ -50,6 +51,7 @@
     "lindsay_message_3": "assets/npc_messages/lindsay_message_3.txt",
     "chingiz_message_3": "assets/npc_messages/chingiz_message_3.txt",
     "laine_message_3": "assets/npc_messages/laine_message_3.txt",
+    "hat_message_3": "assets/npc_messages/hat_message_3.txt",
     "zoe_message_3": "assets/npc_messages/zoe_message_3.txt"
   }
 }
