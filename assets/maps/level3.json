@@ -285,8 +285,8 @@
                  "type":"npc",
                  "visible":true,
                  "width":0,
-                 "x":1668.6612722432,
-                 "y":599.49055281247
+                 "x":1668.66,
+                 "y":599.491
                 }, 
                 {
                  "height":0,
@@ -415,8 +415,8 @@
                  "type":"npc",
                  "visible":true,
                  "width":0,
-                 "x":584.364419885759,
-                 "y":687.873011617775
+                 "x":584.364,
+                 "y":687.873
                 }, 
                 {
                  "height":0,
@@ -441,8 +441,8 @@
                  "type":"npc",
                  "visible":true,
                  "width":0,
-                 "x":1583.22830060993,
-                 "y":1099.94931842386
+                 "x":1583.23,
+                 "y":1099.95
                 }, 
                 {
                  "height":0,
@@ -467,8 +467,8 @@
                  "type":"npc",
                  "visible":true,
                  "width":0,
-                 "x":1723.51936073192,
-                 "y":866.441519992255
+                 "x":1723.52,
+                 "y":866.442
                 }, 
                 {
                  "height":0,
@@ -493,8 +493,8 @@
                  "type":"npc",
                  "visible":true,
                  "width":0,
-                 "x":1150.44219927758,
-                 "y":1109.6880012949
+                 "x":1150.44,
+                 "y":1109.69
                 }, 
                 {
                  "height":0,
@@ -519,8 +519,8 @@
                  "type":"npc",
                  "visible":true,
                  "width":0,
-                 "x":725.964710620583,
-                 "y":1692.82146771227
+                 "x":725.965,
+                 "y":1692.82
                 }, 
                 {
                  "height":0,
@@ -545,34 +545,8 @@
                  "type":"npc",
                  "visible":true,
                  "width":0,
-                 "x":1269.6673101946,
-                 "y":689.519457837157
-                }, 
-                {
-                 "height":0,
-                 "id":36,
-                 "name":"angela",
-                 "point":true,
-                 "properties":
-                    {
-                     "collision":true,
-                     "group":"npcs",
-                     "message":"angela_message_3",
-                     "texture":"angela_image"
-                    },
-                 "propertytypes":
-                    {
-                     "collision":"bool",
-                     "group":"string",
-                     "message":"string",
-                     "texture":"string"
-                    },
-                 "rotation":0,
-                 "type":"npc",
-                 "visible":true,
-                 "width":0,
-                 "x":1290.39820602188,
-                 "y":1180.36743731242
+                 "x":1269.67,
+                 "y":689.519
                 }, 
                 {
                  "height":0,
@@ -649,8 +623,8 @@
                  "type":"npc",
                  "visible":true,
                  "width":0,
-                 "x":516.725160906187,
-                 "y":1688.03143866783
+                 "x":516.725,
+                 "y":1688.03
                 }, 
                 {
                  "height":0,
@@ -675,8 +649,8 @@
                  "type":"npc",
                  "visible":true,
                  "width":0,
-                 "x":800.279900571207,
-                 "y":550.57130680608
+                 "x":800.28,
+                 "y":550.571
                 }, 
                 {
                  "height":0,
@@ -701,8 +675,60 @@
                  "type":"npc",
                  "visible":true,
                  "width":0,
-                 "x":1619.71149191596,
-                 "y":726.110949753122
+                 "x":1619.71,
+                 "y":726.111
+                }, 
+                {
+                 "height":0,
+                 "id":46,
+                 "name":"monica",
+                 "point":true,
+                 "properties":
+                    {
+                     "collision":true,
+                     "group":"npcs",
+                     "message":"monica_message_2",
+                     "texture":"monica_dead_image"
+                    },
+                 "propertytypes":
+                    {
+                     "collision":"bool",
+                     "group":"string",
+                     "message":"string",
+                     "texture":"string"
+                    },
+                 "rotation":0,
+                 "type":"npc",
+                 "visible":true,
+                 "width":0,
+                 "x":971,
+                 "y":892
+                }, 
+                {
+                 "height":0,
+                 "id":47,
+                 "name":"angela",
+                 "point":true,
+                 "properties":
+                    {
+                     "collision":true,
+                     "group":"npcs",
+                     "message":"angela_message_2",
+                     "texture":"angela_image"
+                    },
+                 "propertytypes":
+                    {
+                     "collision":"bool",
+                     "group":"string",
+                     "message":"string",
+                     "texture":"string"
+                    },
+                 "rotation":0,
+                 "type":"npc",
+                 "visible":true,
+                 "width":0,
+                 "x":1005,
+                 "y":949
                 }],
          "opacity":1,
          "properties":
@@ -718,7 +744,7 @@
          "x":0,
          "y":0
         }],
- "nextobjectid":46,
+ "nextobjectid":48,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.1.5",
